@@ -120,3 +120,10 @@ WHERE E.E_ID = D.E_ID AND D.D_ID = S.D_ID;
 UPDATE Employee
 SET Income = Income + (Income * 0.05);
 ```
+
+14. Find Names of Employee Starting with `A`
+```SQL
+SELECT Name 
+FROM Employee
+WHERE Name LIKE 'A%';
+```
