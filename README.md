@@ -127,3 +127,63 @@ SELECT Name
 FROM Employee
 WHERE Name LIKE 'A%';
 ```
+
+15. Find Number of Employees working in Department of Data Science
+```SQL
+SELECT COUNT(*) 
+FROM Employee
+WHERE Department = 'Data Science';
+```
+
+16. Find Details of Employee whose FirstName End with 'A' and contains 6 Alphabets
+```SQL
+SELECT * FROM Employee
+WHERE FirstName LIKE '______A'
+```
+
+17. Find Employees whose Salary lies `between` 10,000 and 50,000
+```SQL
+SELECT * FROM Employee
+WHERE Salary BETWEEN 10000 AND 50000;
+```
+
+### Constraints (Rules)
+
+1. CREATE Table
+2. ALTER Table
+
+1. NOT NULL (Non Empty Values in the Column)
+```SQL
+CREATE TABLE Employee
+(
+  ID           INT NOT NULL,
+  EmployeeName VARCHAR(255) NOT NULL
+);
+
+ALTER TABLE Employee
+MODIFY EmployeeName NOT NULL;
+```
+
+2. UNIQUE (Different Values in the Column)
+```SQL
+ALTER TABLE Employee
+ADD UNIQUE(ID);
+```
+
+3. PRIMARY KEY
+```SQL
+CREATE TABLE Employee
+(
+  ID INT NOT NULL PRIMARY KEY,
+  Name VARCHAR(255)
+);
+```
+
+```SQL
+CREATE TABLE Employee
+(
+  ID INT NOT NULL,
+  Name VARCHAR(255),  
+  PRIMARY KEY (ID)
+);
+```
