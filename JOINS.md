@@ -1,6 +1,6 @@
 # JOINS
 
-## Tables (Example)
+### Tables (Example)
 
 ### Employee Table
 
