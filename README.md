@@ -83,8 +83,8 @@ INTERSECT
 SELECT * FROM Table2
 ```
 
-<table>
-  <th>
-  <td>EID</td><td>Employee Name</td>
-  </th>
-</table>
+### Employee Table
+
+EID | EmployeeName
+--- | ---
+
