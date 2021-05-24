@@ -196,3 +196,11 @@ CREATE TABLE Employee
   Age INT CHECK(AGE >= 18)
 );
 ```
+
+### Inner Join
+```SQL
+SELECT Orders.ID, Customers.Name
+FROM Orders
+INNER JOIN Customers 
+ON Orders.ID = Customers.ID;
+```
