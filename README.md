@@ -67,7 +67,7 @@ CREATE TABLE NewTable
 SELECT * FROM OldTable;
 
 SELECT * INTO NewTable 
-FROM OldTable
+FROM OldTable;
 
 CREATE TABLE NewTable
 LIKE OldTable;
@@ -80,7 +80,7 @@ SELECT * FROM OldTable;
 ```SQL
 SELECT * FROM Table1
 INTERSECT
-SELECT * FROM Table2
+SELECT * FROM Table2;
 ```
 
 ### Employee Table
@@ -112,5 +112,5 @@ ON D.D_ID = S.D_ID;
 ```SQL
 SELECT EmployeeName, DepartmentName, Manager, Salary
 FROM Employee E, Salary S, Department D
-WHERE E.E_ID = D.E_ID AND D.D_ID = S.D_ID
+WHERE E.E_ID = D.E_ID AND D.D_ID = S.D_ID;
 ```
