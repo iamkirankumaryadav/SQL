@@ -60,3 +60,18 @@ WHERE EID IN (SELECT EID FROM Employee
               GROUP BY Department
               HAVING COUNT(*) > 1);
 ```
+
+9. Clone Table or Empty Table with Same Structure
+```SQL
+CREATE TABLE NewTable 
+SELECT * FROM OldTable;
+
+SELECT * INTO NewTable 
+FROM OldTable
+
+CREATE TABLE NewTable
+LIKE OldTable;
+
+INSERT INTO NewTable
+SELECT * FROM OldTable;
+```
