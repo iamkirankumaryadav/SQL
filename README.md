@@ -83,65 +83,33 @@ INTERSECT
 SELECT * FROM Table2;
 ```
 
-### Employee Table
-
-E_ID | EmployeeName
---- | ---
-
-### Salary Table
-
-E_ID | D_ID |  Salary
---- | --- | ---
-
-### Department Table
-
-D_ID | DepartmentName | Manager
---- | --- | ---
-
-11. Use Joins ( More than 2 Tables )
-```SQL
-SELECT EmployeeName, DepartmentName, Manager, Salary
-FROM Employee E
-INNER JOIN Salary S
-ON E.E_ID  = S.E_ID
-INNER JOIN Department D 
-ON D.D_ID = S.D_ID;
-```
-
-12. Join using Child Parent Relationship
-```SQL
-SELECT EmployeeName, DepartmentName, Manager, Salary
-FROM Employee E, Salary S, Department D
-WHERE E.E_ID = D.E_ID AND D.D_ID = S.D_ID;
-```
-
-13. **Increase** Income of all Employees by `5%` in a Table
+11. **Increase** Income of all Employees by `5%` in a Table
 ```SQL
 UPDATE Employee
 SET Income = Income + (Income * 0.05);
 ```
 
-14. Find Names of Employee Starting with `A`
+12. Find Names of Employee Starting with `A`
 ```SQL
 SELECT Name 
 FROM Employee
 WHERE Name LIKE 'A%';
 ```
 
-15. Find Number of Employees working in Department of Data Science
+13. Find Number of Employees working in Department of Data Science
 ```SQL
 SELECT COUNT(*) 
 FROM Employee
 WHERE Department = 'Data Science';
 ```
 
-16. Find Details of Employee whose FirstName End with 'A' and contains 6 Alphabets
+14. Find Details of Employee whose FirstName End with 'A' and contains 6 Alphabets
 ```SQL
 SELECT * FROM Employee
 WHERE FirstName LIKE '______A'
 ```
 
-17. Find Employees whose Salary lies `between` 10,000 and 50,000
+15. Find Employees whose Salary lies `between` 10,000 and 50,000
 ```SQL
 SELECT * FROM Employee
 WHERE Salary BETWEEN 10000 AND 50000;
