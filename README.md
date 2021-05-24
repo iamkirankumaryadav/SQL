@@ -41,6 +41,6 @@ WHERE Name Like 'Kiran%';
 6. Retrieve Only First Name from FullName
 ```SQL
 SELECT 
-SUBSTRING(Designation,0,Charindex(' ',Designation))
+SUBSTRING(FullName,0,Charindex(' ',FullName))
 FROM Employee;
 ```
