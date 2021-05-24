@@ -204,3 +204,35 @@ FROM Orders
 INNER JOIN Customers 
 ON Orders.ID = Customers.ID;
 ```
+
+### LEFT Join
+```SQL
+SELECT O.ID, C.Name
+FROM Orders O
+LEFT JOIN Customers C
+ON O.ID = C.ID;
+```
+
+### RIGHT Join
+```SQL
+SELECT O.ID, C.Name
+FROM Orders O
+RIGHT JOIN Customers C
+ON O.ID = C.ID;
+```
+
+### SELF Join
+```SQL
+SELECT DISTINCT E.Name
+FROM Employees E
+INNER JOIN Managers M
+ON E.ID = M.ID;
+```
+
+DELETE | TRUNCATE | DROP
+--- | --- | ---
+DML | DDL | DDL
+Remove `Some` or `All` Rows | Remove `All` Rows | Remove `Table` from Database
+WHERE Clause | `No` WHERE Clause | `No` WHERE Clause
+Roll Back | `No` Roll Back | `No` Roll Back
+Do not Remove Permanently | Remove Records Permanently | Remove Records, Indexes, Structures Permanently
