@@ -88,3 +88,12 @@ SELECT * FROM Table2
 EID | EmployeeName
 --- | ---
 
+### Salary Table
+
+EID | DID |  Salary
+--- | --- | ---
+
+### Department Table
+
+DID | DepartmentName | Manager
+--- | --- | ---
