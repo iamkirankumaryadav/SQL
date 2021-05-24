@@ -47,8 +47,16 @@ FROM Employee;
 
 7. Fetch Duplicate Records from Table
 ```SQL
-SELECT EID, FullName, COUNT(*)
+SELECT EID, Department, COUNT(*)
 FROM Employee
 GROUP BY EID, FullName
 HAVING COUNT(*) > 1;
+```
+
+8. Remove Duplicates
+```SQL
+DELETE FROM Employee
+WHERE EID IN (SELECT EID FROM Employee
+              GROUP BY Department
+              HAVING COUNT(*) > 1);
 ```
