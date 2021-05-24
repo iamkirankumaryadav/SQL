@@ -248,7 +248,7 @@ WHERE EID IN (1,2,3)
 TRUNCATE Table Employee
 ```
 
-### DROP Table
-```
+### DROP 
+```SQL
 DROP Table Employee
 ```
