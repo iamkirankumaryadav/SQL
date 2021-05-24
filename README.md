@@ -114,3 +114,9 @@ SELECT EmployeeName, DepartmentName, Manager, Salary
 FROM Employee E, Salary S, Department D
 WHERE E.E_ID = D.E_ID AND D.D_ID = S.D_ID;
 ```
+
+13. **Increase** Income of all Employees by `5%` in a Table
+```SQL
+UPDATE Employee
+SET Income = Income + (Income * 0.05);
+```
