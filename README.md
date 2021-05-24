@@ -23,3 +23,17 @@ SELECT
 CONCAT(FirstName, ' ', LastName) AS FullName
 FROM Employee;
 ```
+
+4. Retrieve **Designation** along with Total Salaries Paid for each of them.
+```SQL
+SELECT Designation, SUM(Salary)
+FROM Employee
+GROUP BY Designation;
+```
+
+5. Retrieve **Name** of Employee which includes Name Kiran
+```SQL
+SELECT * 
+FROM Employee
+WHERE Name Like 'Kiran%';
+```
