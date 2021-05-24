@@ -85,15 +85,25 @@ SELECT * FROM Table2
 
 ### Employee Table
 
-EID | EmployeeName
+E_ID | EmployeeName
 --- | ---
 
 ### Salary Table
 
-EID | DID |  Salary
+E_ID | D_ID |  Salary
 --- | --- | ---
 
 ### Department Table
 
-DID | DepartmentName | Manager
+D_ID | DepartmentName | Manager
 --- | --- | ---
+
+11. Use Joins ( More than 2 Tables )
+```SQL
+SELECT EmployeeName, DepartmentName, Manager, Salary
+FROM Employee E
+INNER JOIN Salary S
+ON E.E_ID  = S.E_ID
+INNER JOIN Department D 
+ON D.D_ID = S.D_ID;
+```
