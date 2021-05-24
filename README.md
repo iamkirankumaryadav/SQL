@@ -149,8 +149,7 @@ WHERE Salary BETWEEN 10000 AND 50000;
 
 ### Constraints (Rules)
 
-1. CREATE Table
-2. ALTER Table
+CREATE Table and ALTER Table
 
 1. NOT NULL (Non Empty Values in the Column)
 ```SQL
