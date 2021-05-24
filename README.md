@@ -75,3 +75,10 @@ LIKE OldTable;
 INSERT INTO NewTable
 SELECT * FROM OldTable;
 ```
+
+10. Fetch Common Records between 2 Tables
+```SQL
+SELECT * FROM Table1
+INTERSECT
+SELECT * FROM Table2
+```
