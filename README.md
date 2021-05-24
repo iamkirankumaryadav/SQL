@@ -44,3 +44,11 @@ SELECT
 SUBSTRING(FullName,0,Charindex(' ',FullName))
 FROM Employee;
 ```
+
+7. Fetch Duplicate Records from Table
+```SQL
+SELECT EID, FullName, COUNT(*)
+FROM Employee
+GROUP BY EID, FullName
+HAVING COUNT(*) > 1;
+```
