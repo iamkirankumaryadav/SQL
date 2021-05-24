@@ -107,3 +107,10 @@ ON E.E_ID  = S.E_ID
 INNER JOIN Department D 
 ON D.D_ID = S.D_ID;
 ```
+
+12. Join using Child Parent Relationship
+```SQL
+SELECT EmployeeName, DepartmentName, Manager, Salary
+FROM Employee E, Salary S, Department D
+WHERE E.E_ID = D.E_ID AND D.D_ID = S.D_ID
+```
