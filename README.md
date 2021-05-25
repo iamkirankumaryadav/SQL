@@ -66,14 +66,18 @@ WHERE EID IN (SELECT EID FROM Employee
 CREATE TABLE NewTable 
 SELECT * FROM OldTable;
 
-SELECT * INTO NewTable 
-FROM OldTable;
+SELECT * 
+INTO NewTable 
+FROM OldTable
+WHERE 0 = 1;
 
 CREATE TABLE NewTable
 LIKE OldTable;
 
-INSERT INTO NewTable
-SELECT * FROM OldTable;
+INSERT 
+INTO NewTable
+SELECT * 
+FROM OldTable;
 ```
 
 10. Fetch Common Records between 2 Tables
