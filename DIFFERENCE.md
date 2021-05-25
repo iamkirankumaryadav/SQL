@@ -176,6 +176,7 @@ UNION | JOIN
 --- | ---
 `Combine` Rows | `Merge` Columns  
 Number of `Columns` and Data Type of Columns should be same | Combines on the basis of Common `Column` ( ID )
+`Vertical` | `Horizontal`
 
 ### UNION 
 ```SQL
