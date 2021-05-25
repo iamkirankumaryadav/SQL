@@ -23,3 +23,23 @@ FROM Students
 WHERE Marks > 75
 ORDER BY SUBSTRING(Name, -3, 3), ID;
 ```
+
+Query an Alphabetically Ordered List of all Names, Immediately followed by `First` Character enclosed in Paranthesis.
+
+Name | Occupation
+--- | ---
+Jake | Doctor
+Alan | Actor
+Charlie | Singer
+
+```SQL
+SELECT CONCAT(Name, '(', SUBSTRING(Occupation, 1, 1), ')')
+FROM Occupation;
+```
+
+```
+Output : 
+Jake (D)
+Alan (A)
+Charlie (S)
+``
