@@ -13,17 +13,17 @@ Do not Remove Permanently | Remove Records Permanently | Remove Records, Indexes
 ### DELETE 
 ```SQL 
 DELETE FROM Employee
-WHERE EID IN (1,2,3)
+WHERE EID IN (1,2,3);
 ```
 
 ### TRUNCATE
 ```SQL
-TRUNCATE Table Employee
+TRUNCATE Table Employee;
 ```
 
 ### DROP 
 ```SQL
-DROP Table Employee
+DROP Table Employee;
 ```
 
 ### 2. Where vs Having
@@ -40,7 +40,7 @@ WHERE | HAVING
 ```SQL
 SELECT * 
 FROM Employee
-WHERE Designation = 'Data Scientist'
+WHERE Designation = 'Data Scientist';
 ```
 
 ### HAVING
@@ -48,7 +48,7 @@ WHERE Designation = 'Data Scientist'
 SELECT MAX(Salary)
 FROM Employee
 GROUP BY Designation
-HAVING MAX(Salary) > 100000
+HAVING MAX(Salary) > 100000;
 ```
 
 ### 3. Union vs Union All
@@ -66,7 +66,7 @@ UNION | UNION
 SELECT * FROM Sales
 UNION
 SELECT * FROM Product
-ORDER BY ProductName
+ORDER BY ProductName;
 ```
 
 ### UNION ALL
@@ -74,5 +74,34 @@ ORDER BY ProductName
 SELECT * FROM Sales
 UNION ALL
 SELECT * FROM Product
-ORDER BY ProductName
+ORDER BY ProductName;
+```
+
+### 4. In vs Exist 
+
+### IN 
+- Multiple `OR`
+
+```SQL
+SELECT * FROM Employee
+WHERE City = 'Mumbai' OR City = 'Bangalore' OR City = 'Pune';
+```
+
+```SQL
+SELECT * FROM Employee
+WHERE City IN (`Mumbai`, `Bangalore`, `Pune`);
+```
+
+```SQL
+SELECT * FROM Sales
+WHERE City IN (SELECT City FROM Returns)
+```
+
+### EXISTS
+- Returns either `True` or `False` Value ( Tests for Existance of Record in a Sub Query )
+
+```SQL
+SELECT * FROM Sales
+WHERE EXISTS (SELECT City FROM Returns
+              WHERE Returns.ID = Sales.ID AND Price < 500)
 ```
