@@ -17,3 +17,9 @@ LIKE '\_r%'	| Finds any values that have "r" in the second position
 LIKE 'a_%'	| Finds any values that start with "a" and are at least 2 characters in length
 LIKE 'a__%' |	Finds any values that start with "a" and are at least 3 characters in length
 LIKE 'a%o' | Finds any values that start with "a" and ends with "o"
+
+```SQL
+SELECT Column1, Column2
+FROM TableName
+WHERE Column1 LIKE 'a%';
+```
