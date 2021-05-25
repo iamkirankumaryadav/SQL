@@ -119,7 +119,14 @@ SELECT * FROM Employee
 WHERE Salary BETWEEN 10000 AND 50000;
 ```
 
-16. Second Highest Salary
+16. Highest Salary in Department
+```SQL
+SELECT ID, MAX(Salary) 
+FROM Employees
+GROUP BY ID;
+```
+
+17. Second Highest Salary
 
 MAX | LIMIT | TOP
 
