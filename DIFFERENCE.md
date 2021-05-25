@@ -1,6 +1,6 @@
 # Difference
 
-###  Delete vs Truncate vs Drop
+###  1. Delete vs Truncate vs Drop
 
 DELETE | TRUNCATE | DROP
 --- | --- | ---
@@ -26,7 +26,7 @@ TRUNCATE Table Employee
 DROP Table Employee
 ```
 
-### Where vs Having
+### 2. Where vs Having
 
 WHERE | HAVING
 --- | ---
@@ -49,4 +49,25 @@ SELECT MAX(Salary)
 FROM Employee
 GROUP BY Designation
 HAVING MAX(Salary) > 100000
+```
+
+### 3. Union vs Union All
+
+UNION | UNION
+`Remove` Duplicate Records | `Keep` Duplicate Records
+
+### UNION
+```SQL
+SELECT * FROM Sales
+UNION
+SELECT * FROM Product
+ORDER BY ProductName
+```
+
+### UNION ALL
+```SQL
+SELECT * FROM Sales
+UNION ALL
+SELECT * FROM Product
+ORDER BY ProductName
 ```
