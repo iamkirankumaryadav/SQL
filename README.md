@@ -223,3 +223,26 @@ CREATE TABLE Employee
   Age INT CHECK(AGE >= 18)
 );
 ```
+
+### Drop Duplicates from Table
+
+1. Using `Temporary` Table
+
+```SQL
+SELECT DISTINCT * 
+INTO NewTable
+FROM OldTable
+```
+
+```SQL
+DROP * FROM OldTable
+```
+
+```SQL
+INSERT INTO OldTable
+SELECT * FROM NewTable
+```
+
+```SQL
+DROP TABLE NewTable
+```
