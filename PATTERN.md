@@ -31,3 +31,34 @@ Symbol | Description |	Example
 `!` or `^` |	Represents any character not in the brackets | h\[!oa]t finds hit, but not hot and hat
 `-`	| Represents a range of characters | c\[a-b]t finds cat and cbt
 `#`	| Represents any single numeric character |	2#5 finds 205, 215, 225, 235, 245, 255, 265, 275, 285, and 295
+
+1. Select Employee Names `Starting` with 'K'
+```SQL
+SELECT * 
+FROM Employee
+WHERE Name LIKE 'K%'
+```
+
+2. Select Employee Name that have 'Kumar' in `Any` position
+```SQL
+SELECT * 
+FROM Employees
+WHERE Name LIKE '%Kumar%'
+```
+
+3. Select Employee Name that have 's' in the `Second` Position
+```SQL
+SELECT * 
+FROM Employee
+WHERE Name LIKE '_i%'
+```
+
+4. Select Employee Name that Starts with 'A' and are atleast `4` Characters in Length
+
+( Amit, Anil, Adil )
+
+```SQL
+SELECT * 
+FROM Employees
+WHERE Name LIKE 'A___%'
+```
