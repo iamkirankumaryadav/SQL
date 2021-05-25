@@ -115,6 +115,34 @@ SELECT * FROM Employee
 WHERE Salary BETWEEN 10000 AND 50000;
 ```
 
+16. Second Highest Salary
+
+### MAX | LIMIT | TOP
+
+### MAX 
+```SQL
+SELECT MAX(Salary) 
+FROM Employee
+WHERE Salary < (SELECT MAX(Salary) 
+                FROM Employee);                               
+```
+
+### LIMIT
+```SQL
+SELECT Salary
+FROM (SELECT Salary FROM Employee ORDER BY  Salary DESC LIMIT 2)
+AS EmployeeSalary 
+ORDER BY Salary LIMIT 1;
+```
+
+### TOP
+```SQL
+SELECT Top 1 Salary
+FROM (SELECT Top 2 Salary FROM Employee ORDER BY  Salary DESC)
+AS EmployeeSalary 
+ORDER BY Salary ASC;
+```
+
 ### Constraints (Rules)
 
 CREATE Table and ALTER Table
