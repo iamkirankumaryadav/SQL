@@ -174,7 +174,7 @@ AS EmployeeSalary
 ORDER BY Salary ASC;
 ```
 
-### Constraints (Rules)
+### Constraints ( Rules )
 
 CREATE Table and ALTER Table
 
