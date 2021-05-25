@@ -105,3 +105,41 @@ SELECT * FROM Sales
 WHERE EXISTS (SELECT City FROM Returns
               WHERE Returns.ID = Sales.ID AND Price < 500)
 ```
+
+### 5. Order By vs Group By
+
+ORDER BY | GROUP BY
+--- | ---
+Sorting in `ASC` or `DESC` Order | Used with `Aggregate` Functions
+
+### ORDER BY
+
+```SQL
+SELECT * FROM Sales
+ORDER BY City 
+DESC;
+```
+
+### GROUP BY
+```SQL
+SELECT IsActive, COUNT(*)
+FROM Customers
+GROUP BY IsActive;
+```
+
+WHERE Clause is Used with SELECT Clause before GROUP BY
+```SQL
+SELECT Designation, Salary 
+FROM Employee
+WHERE Designation IN ('Data Scientist', 'Data Analyst', 'Business Analyst', 'Data Architect', 'Machine Learning Engineer')
+GROUP BY Designation;
+```
+
+HAVING Clause is used with GROUP BY and WHERE Clause `cannot` be used after GROUP BY
+```SQL
+SELECT Model, Price 
+FROM Vehicles
+GROUP BY Model
+HAVING SUM(Price) > 5000000
+ORDER BY Price DESC;
+```
