@@ -9,6 +9,7 @@ The Percent Sign ( `%` ) represents Zero, One or Multiple Characters.
 The Underscore Sign ( `_` ) represents Single Character.
 
 LIKE Operator |	Description
+--- | ---
 LIKE 'a%' |	Finds any values that start with "a"
 LIKE '%a'	| Finds any values that end with "a"
 LIKE '%or%' |	Finds any values that have "or" in any position
