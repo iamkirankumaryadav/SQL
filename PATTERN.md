@@ -36,21 +36,21 @@ Symbol | Description |	Example
 ```SQL
 SELECT * 
 FROM Employee
-WHERE Name LIKE 'K%'
+WHERE Name LIKE 'K%';
 ```
 
 2. Select Employee Name that have 'Kumar' in `Any` position
 ```SQL
 SELECT * 
 FROM Employees
-WHERE Name LIKE '%Kumar%'
+WHERE Name LIKE '%Kumar%';
 ```
 
 3. Select Employee Name that have 's' in the `Second` Position
 ```SQL
 SELECT * 
 FROM Employee
-WHERE Name LIKE '_i%'
+WHERE Name LIKE '_i%';
 ```
 
 4. Select Employee Name that Starts with 'A' and are atleast `4` Characters in Length
@@ -60,5 +60,15 @@ WHERE Name LIKE '_i%'
 ```SQL
 SELECT * 
 FROM Employees
-WHERE Name LIKE 'A___%'
+WHERE Name LIKE 'A___%';
+```
+
+5. Select Employee Name that Starts with 'S' and End with 'a'
+
+( Smita, Sunita, Sneha, Shweta ... )
+
+```SQL
+SELECT * 
+FROM Employee
+WHERE Name LIKE 's%a';
 ```
