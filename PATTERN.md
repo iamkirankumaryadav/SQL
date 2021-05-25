@@ -10,13 +10,13 @@ The Underscore Sign ( `_` ) represents Single Character.
 
 LIKE Operator |	Description
 --- | ---
-LIKE 'a%' |	Finds any values that start with "a"
-LIKE '%a'	| Finds any values that end with "a"
-LIKE '%or%' |	Finds any values that have "or" in any position
-LIKE '\_r%'	| Finds any values that have "r" in the second position
-LIKE 'a_%'	| Finds any values that start with "a" and are at least 2 characters in length
-LIKE 'a__%' |	Finds any values that start with "a" and are at least 3 characters in length
-LIKE 'a%o' | Finds any values that start with "a" and ends with "o"
+'a%' |	Finds any values that start with "a"
+'%a'	| Finds any values that end with "a"
+'%or%' |	Finds any values that have "or" in any position
+'\_r%'	| Finds any values that have "r" in the second position
+'a_%'	| Finds any values that start with "a" and are at least 2 characters in length
+'a__%' |	Finds any values that start with "a" and are at least 3 characters in length
+'a%o' | Finds any values that start with "a" and ends with "o"
 
 ```SQL
 SELECT Column1, Column2
