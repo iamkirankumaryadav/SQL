@@ -72,3 +72,31 @@ SELECT *
 FROM Employee
 WHERE Name LIKE 's%a';
 ```
+
+6. Select all EMployee Names that do not starts with 'a'
+```SQL
+SELECT * 
+FROM Employees
+WHERE Name NOT LIKE 'a%';
+```
+
+7. All Customer Names with First Character is a Letter in the Range A through F
+```SQL
+SELECT * 
+FROM Employee 
+WHERE Name LIKE '[A-F]%';
+```
+
+8. All Employee Names containing Exactly 5 Characters
+```SQL
+SELECT * 
+FROM Employees
+WHERE Name LIKE '_____';
+```
+
+9. All Employee Names that Starts with 'Kiran' or 'Yadav'
+```SQL
+SELECT * 
+FROM Employees
+WHERE Name LIKE 'Kiran' OR Name LIKE 'Yadav';
+```
