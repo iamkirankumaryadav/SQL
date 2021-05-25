@@ -175,4 +175,4 @@ ON O.CustomerID = C.CustomerID
 UNION | JOIN
 --- | ---
 `Combine` Rows | `Merge` Columns
-Number of `Columns` and Data Type of Columns should be same | Combines `Column` based on Common `Rows`
+Number of `Columns` and Data Type of Columns should be same | Combines on the basis of Common `Column` ( ID )
