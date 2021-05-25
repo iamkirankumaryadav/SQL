@@ -26,7 +26,7 @@ WHERE Column1 LIKE 'a%';
 Symbol | Description |	Example
 --- | --- | ---
 `*` or `%` |	Represents `Zero` or `More` Characters | bl* finds bl, black, blue, and blob
-`?` |	Represents a `Single` Character |	h?t finds hot, hat, and hit
+`?` or `_` |	Represents a `Single` Character |	h?t finds hot, hat, and hit
 `[ ]` |	Represents any `Single` Character within the brackets |	h\[oa]t finds hot and hat, but not hit
 `!` or `^` |	Represents any character not in the brackets | h\[!oa]t finds hit, but not hot and hat
 `-`	| Represents a range of characters | c\[a-b]t finds cat and cbt
