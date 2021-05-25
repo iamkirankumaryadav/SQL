@@ -174,5 +174,20 @@ ON O.CustomerID = C.CustomerID
 
 UNION | JOIN
 --- | ---
-`Combine` Rows | `Merge` Columns
+`Combine` Rows | `Merge` Columns  
 Number of `Columns` and Data Type of Columns should be same | Combines on the basis of Common `Column` ( ID )
+
+### UNION 
+```SQL
+SELECT City from Table1
+UNION
+SELECT City from Table2;
+```
+
+### JOIN
+```SQL
+SELECT A.City, B.Name
+FROM Departments A
+JOIN Employee B
+ON A.ID = B.ID;
+```
