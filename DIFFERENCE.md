@@ -169,3 +169,10 @@ FROM Customers C
 JOIN Orders O
 ON O.CustomerID = C.CustomerID
 ```
+
+### Union vs Join
+
+UNION | JOIN
+--- | ---
+`Combine` Rows | `Merge` Columns
+Number of `Columns` and Data Type of Columns should be same | Combines `Column` based on Common `Rows`
