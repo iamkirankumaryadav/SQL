@@ -1,5 +1,7 @@
 # Difference
 
+###  Delete vs Truncate vs Drop
+
 DELETE | TRUNCATE | DROP
 --- | --- | ---
 DML | DDL | DDL
@@ -22,4 +24,25 @@ TRUNCATE Table Employee
 ### DROP 
 ```SQL
 DROP Table Employee
+```
+
+### Where vs Having
+
+WHERE | HAVING
+--- | ---
+`Filter` Rows | Works on `Aggregated` Data
+
+### WHERE
+```SQL
+SELECT * 
+FROM Employee
+WHERE Designation = 'Data Scientist'
+```
+
+### HAVING
+```SQL
+SELECT MAX(Salary)
+FROM Employee
+GROUP BY Designation
+HAVING MAX(Salary) > 100000
 ```
