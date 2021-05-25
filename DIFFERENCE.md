@@ -32,6 +32,10 @@ WHERE | HAVING
 --- | ---
 `Filter` Rows | Works on `Aggregated` Data
 
+**Aggregate Functions** are use to `Summarize` Data ( Returns Single Value for Multiple Rows )
+
+### SUM | AVG | COUNT | MAX | MIN
+
 ### WHERE
 ```SQL
 SELECT * 
