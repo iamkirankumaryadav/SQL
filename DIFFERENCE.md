@@ -53,10 +53,10 @@ HAVING MAX(Salary) > 100000
 
 ### 3. Union vs Union All
 
-Combines 2 or more Tables
-- Tables must have same Number of `Columns`.
-- Columns must have same `Data Types`.
-- Columns must have same `Order`.
+Combines `2` or `more` Tables
+- Tables must have same Number of `Columns`
+- Columns must have same `Data Types`
+- Columns must have same `Order`
 
 UNION | UNION
 `Remove` Duplicate Records | `Keep` Duplicate Records
