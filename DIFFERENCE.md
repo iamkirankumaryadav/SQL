@@ -143,3 +143,29 @@ GROUP BY Model
 HAVING SUM(Price) > 5000000
 ORDER BY Price DESC;
 ```
+
+### 6. Join vs Sub Query
+
+`Combine` Data from Different Tables into a Single Table
+
+### Sub Query
+
+Select only from `First` Table
+
+```SQL
+SELECT Phone, CustomerName
+FROM Customers
+WHERE C_ID IN (SELECT C_ID 
+               FROM Orders)
+```
+
+### JOIN
+
+Select from `Either` of the Table
+
+```SQL
+SELECT Phone, CustomerName, OrderID
+FROM Customers C
+JOIN Orders O
+ON O.CustomerID = C.CustomerID
+```
