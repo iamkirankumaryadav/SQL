@@ -24,6 +24,7 @@ FROM TableName
 WHERE Column1 LIKE 'a%';
 ```
 Symbol | Description |	Example
+--- | --- | ---
 * |	Represents `Zero` or `More` Characters | bl* finds bl, black, blue, and blob
 ? |	Represents a `Single` Character |	h?t finds hot, hat, and hit
 \[] |	Represents any `Single` Character within the brackets |	h\[oa]t finds hot and hat, but not hit
