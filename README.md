@@ -126,6 +126,18 @@ FROM Employees
 GROUP BY ID;
 ```
 
+Select from Multiple Tables
+```SQL
+SELECT D.Name AS 'Department', E.Name AS 'Employee', E.Salary
+FROM Employee E
+INNER JOIN Department D
+ON E.ID = D.ID
+WHERE (ID, Salary)
+IN (SELECT ID, MAX(Salary) 
+    FROM Employees 
+    GROUP BY ID)
+```
+
 17. Second Highest Salary
 
 MAX | LIMIT | TOP
@@ -136,6 +148,14 @@ SELECT MAX(Salary)
 FROM Employee
 WHERE Salary < (SELECT MAX(Salary) 
                 FROM Employee);                               
+```
+
+18. Find all Duplicate Emails
+```SQL
+SELECT Email
+FROM Employee
+GROUP BY Email
+HAVING COUNT(Email) > 1
 ```
 
 B. LIMIT
