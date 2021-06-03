@@ -1,6 +1,14 @@
 # SQL
 Structured Query Language
 
+### Most Basic Query
+
+```SQL
+SELECT * <All Columns>
+FROM     <Table Name>
+LIMIT    <No. of Rows>
+```
+
 ```SQL
 SELECT   <Columns>
 FROM     <Table>
@@ -9,7 +17,7 @@ WHERE    <Filter Condition>
 GROUP BY <Grouping>
 HAVING   <Aggregate Filter>
 ORDER BY <Column List>
-LIMIT    <Rows>
+LIMIT    <No. of Rows>
 ```
 
 
