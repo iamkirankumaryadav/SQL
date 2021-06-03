@@ -1,6 +1,18 @@
 # SQL
 Structured Query Language
 
+```SQL
+SELECT   <Columns>
+FROM     <Table>
+JOIN     <Another Table>
+WHERE    <Filter Condition>
+GROUP BY <Grouping>
+HAVING   <Aggregate Filter>
+ORDER BY <Column List>
+LIMIT    <Number of Rows>
+```
+
+
 1. Select Name in **Upper Case** as Alias
 ```SQL
 SELECT
