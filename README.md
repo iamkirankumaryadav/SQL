@@ -9,7 +9,7 @@ WHERE    <Filter Condition>
 GROUP BY <Grouping>
 HAVING   <Aggregate Filter>
 ORDER BY <Column List>
-LIMIT    <Number of Rows>
+LIMIT    <Rows>
 ```
 
 
