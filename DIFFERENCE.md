@@ -85,6 +85,28 @@ We can have only one Primary Key in a Table | We can have more than one Unique K
 Do not accept `NULL` Value | Accepts only `One` Null Value.
 Identify Unique `Row` from Table | Maintain Unique `Data` in a Column.
 
+### Primary Key
+
+```SQL
+CREATE TABLE Person
+(
+    ID INT NOT NULL PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,    
+    Age INT
+);
+```
+
+### Unique Key
+
+```SQL
+CREATE TABLE Person
+(
+    ID INT NOT NULL UNIQUE,
+    Name VARCHAR(255) NOT NULL,    
+    Age INT
+);
+```
+
 ### 5. In vs Exist 
 
 ### IN 
