@@ -1,13 +1,18 @@
 # Difference
 
-<a href = '#dt'>1. Delete vs Truncate</a>
-<a href = '#wh'>2. Where vs Having</a>
-<a href = '#pkfk'>3. Primary Key vs Foreign Key</a>
-<a href = '#pkfk'>4. Primary Key vs Foreign Key</a>
-<a href = '#pkfk'>5. Primary Key vs Foreign Key</a>
-<a href = '#pkfk'>6. Primary Key vs Foreign Key</a>
-<a href = '#pkfk'>7. Primary Key vs Foreign Key</a>
-<a href = '#pkfk'>8. Primary Key vs Foreign Key</a>
+<table>
+    <tr>
+        <td><a href = '#dt'>1. Delete vs Truncate</a></td>
+        <td><a href = '#wh'>2. Where vs Having</a></td>
+        <td><a href = '#ua'>3. Union vs Union All</a></td>
+        <td><a href = '#pku'>4. Primary Key vs Unique</a></td>
+        <td><a href = '#pkfk'>5. Primary Key vs Foreign Key</a></td>
+        <td><a href = '#wh'>6. In vs Exist</a></td>
+        <td><a href = '#obgb'>7. Order By vs Group By</a></td>
+        <td><a href = '#jsq'>8. Join vs Sub Query</a></td>
+        <td><a href = '#uj'>9. Union vs Join</a></td>
+    </tr>
+</table>
 
 <h3 name='dt'>1. Delete vs Truncate vs Drop</h3>
 
@@ -60,7 +65,7 @@ GROUP BY Designation
 HAVING MAX(Salary) > 100000;
 ```
 
-### 3. Union vs Union All
+<h3 name='ua'>3. Union vs Union All</h3>
 
 Combines `2` or `more` Tables
 - Tables must have same Number of `Columns`
@@ -86,7 +91,7 @@ SELECT * FROM Product
 ORDER BY ProductName;
 ```
 
-### 4. Primary Key vs Unique 
+<h3 name='pku'>4. Primary Key vs Unique</h3>
 
 Primary Key | Unique Key
 :--- | :---
@@ -147,8 +152,7 @@ CREATE TABLE Person
 );
 ```
 
-
-### 6. In vs Exist 
+<h3 name='ie'>6. In vs Exist</h3>
 
 ### IN 
 - Multiple `OR`
@@ -177,7 +181,7 @@ WHERE EXISTS (SELECT City FROM Returns
               WHERE Returns.ID = Sales.ID AND Price < 500)
 ```
 
-### 7. Order By vs Group By
+<h3 name='obgb'>7. Order By vs Group By</h3>
 
 ORDER BY | GROUP BY
 --- | ---
@@ -215,7 +219,7 @@ HAVING SUM(Price) > 5000000
 ORDER BY Price DESC;
 ```
 
-### 8. Join vs Sub Query
+<h3 name='jsq'>8. Join vs Sub Query</h3>
 
 `Combine` Data from Different Tables into a Single Table
 
@@ -241,7 +245,7 @@ JOIN Orders O
 ON O.CustomerID = C.CustomerID
 ```
 
-### 9. Union vs Join
+<h3 name='uj'>9. Union vs Join</h3>
 
 UNION | JOIN
 --- | ---
