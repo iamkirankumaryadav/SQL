@@ -1,5 +1,7 @@
 # Difference
 
+<a href = '#pkfk'>Primary Key vs Foreign Key</a>
+
 ###  1. Delete vs Truncate vs Drop
 
 DELETE | TRUNCATE | DROP
@@ -77,7 +79,7 @@ SELECT * FROM Product
 ORDER BY ProductName;
 ```
 
-### 4. Primary Key vs Unique Key
+### 4. Primary Key vs Unique 
 
 Primary Key | Unique Key
 :--- | :---
@@ -107,7 +109,39 @@ CREATE TABLE Person
 );
 ```
 
-### 5. In vs Exist 
+<h3 name = 'pkfk'>5. Primary Key vs Foreign Key</h3>
+
+Primary Key | Foreign Key
+:--- | :---
+Identify Unique `Row` in the Table | Column in a Table which is Primary Key in another Table
+We can have only one Primary Key in the Table | We can have more than one Foreign Key in the Table
+Primary Key can not accept NULL Value | Foreign Key Accepts NULL Value
+Primary Key will not allow Duplicate Value | Foreign Key will allow Duplicate Value.
+
+### Primary Key
+
+```SQL
+CREATE TABLE Person
+(
+    ID INT NOT NULL PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,    
+    Age INT
+);
+```
+
+### Unique Key
+
+```SQL
+CREATE TABLE Person
+(
+    ID INT NOT NULL UNIQUE,
+    Name VARCHAR(255) NOT NULL,    
+    Age INT
+);
+```
+
+
+### 6. In vs Exist 
 
 ### IN 
 - Multiple `OR`
@@ -136,7 +170,7 @@ WHERE EXISTS (SELECT City FROM Returns
               WHERE Returns.ID = Sales.ID AND Price < 500)
 ```
 
-### 6. Order By vs Group By
+### 7. Order By vs Group By
 
 ORDER BY | GROUP BY
 --- | ---
@@ -174,7 +208,7 @@ HAVING SUM(Price) > 5000000
 ORDER BY Price DESC;
 ```
 
-### 7. Join vs Sub Query
+### 8. Join vs Sub Query
 
 `Combine` Data from Different Tables into a Single Table
 
@@ -200,7 +234,7 @@ JOIN Orders O
 ON O.CustomerID = C.CustomerID
 ```
 
-### 8. Union vs Join
+### 9. Union vs Join
 
 UNION | JOIN
 --- | ---
