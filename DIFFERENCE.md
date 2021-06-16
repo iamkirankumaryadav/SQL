@@ -192,3 +192,10 @@ FROM Departments A
 JOIN Employee B
 ON A.ID = B.ID;
 ```
+
+### Primary Key vs Unique Key
+
+Primary Key | Unique Key
+:--- | :---
+We can have only one Primary Key in a Table | We can have more than one Unique Key in a Table
+Do not accept `NULL` Value | Accepts only `One` Null Value.
