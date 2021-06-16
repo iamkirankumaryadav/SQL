@@ -77,7 +77,15 @@ SELECT * FROM Product
 ORDER BY ProductName;
 ```
 
-### 4. In vs Exist 
+### 4. Primary Key vs Unique Key
+
+Primary Key | Unique Key
+:--- | :---
+We can have only one Primary Key in a Table | We can have more than one Unique Key in a Table
+Do not accept `NULL` Value | Accepts only `One` Null Value.
+Identify Unique `Row` from Table | Maintain Unique `Data` in a Column.
+
+### 5. In vs Exist 
 
 ### IN 
 - Multiple `OR`
@@ -106,7 +114,7 @@ WHERE EXISTS (SELECT City FROM Returns
               WHERE Returns.ID = Sales.ID AND Price < 500)
 ```
 
-### 5. Order By vs Group By
+### 6. Order By vs Group By
 
 ORDER BY | GROUP BY
 --- | ---
@@ -144,7 +152,7 @@ HAVING SUM(Price) > 5000000
 ORDER BY Price DESC;
 ```
 
-### 6. Join vs Sub Query
+### 7. Join vs Sub Query
 
 `Combine` Data from Different Tables into a Single Table
 
@@ -170,7 +178,7 @@ JOIN Orders O
 ON O.CustomerID = C.CustomerID
 ```
 
-### Union vs Join
+### 8. Union vs Join
 
 UNION | JOIN
 --- | ---
@@ -192,11 +200,3 @@ FROM Departments A
 JOIN Employee B
 ON A.ID = B.ID;
 ```
-
-### Primary Key vs Unique Key
-
-Primary Key | Unique Key
-:--- | :---
-We can have only one Primary Key in a Table | We can have more than one Unique Key in a Table
-Do not accept `NULL` Value | Accepts only `One` Null Value.
-Identify Unique `Row` from Table | Maintain Unique `Data` in a Column.
