@@ -27,6 +27,7 @@ D_ID | DepartmentName | Manager
 --- | --- | ---
 
 <h3 name='inner'>1. Inner Join</h3>
+
 ```SQL
 SELECT Orders.ID, Customers.Name
 FROM Orders
@@ -35,6 +36,7 @@ ON Orders.ID = Customers.ID;
 ```
 
 <h3 name='left'>2. LEFT Join</h3>
+
 ```SQL
 SELECT O.ID, C.Name
 FROM Orders O
@@ -43,6 +45,7 @@ ON O.ID = C.ID;
 ```
 
 <h3 name='right'>3. RIGHT Join</h3>
+
 ```SQL
 SELECT O.ID, C.Name
 FROM Orders O
@@ -51,6 +54,7 @@ ON O.ID = C.ID;
 ```
 
 <h3 name='self'>4. SELF Join</h3>
+
 ```SQL
 SELECT DISTINCT E.Name
 FROM Employees E
@@ -59,6 +63,7 @@ ON E.ID = M.ID;
 ```
 
 <h3 name='more'>5. Joins ( More than 2 Tables )</h3>
+
 ```SQL
 SELECT EmployeeName, DepartmentName, Manager, Salary
 FROM Employee E
@@ -69,6 +74,7 @@ ON D.D_ID = S.D_ID;
 ```
 
 <h3 name='child'>6. Join using Child Parent Relationship</h3>
+
 ```SQL
 SELECT EmployeeName, DepartmentName, Manager, Salary
 FROM Employee E, Salary S, Department D
