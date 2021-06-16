@@ -1,8 +1,15 @@
 # Difference
 
-<a href = '#pkfk'>Primary Key vs Foreign Key</a>
+<a href = '#dt'>1. Delete vs Truncate</a>
+<a href = '#wh'>2. Where vs Having</a>
+<a href = '#pkfk'>3. Primary Key vs Foreign Key</a>
+<a href = '#pkfk'>4. Primary Key vs Foreign Key</a>
+<a href = '#pkfk'>5. Primary Key vs Foreign Key</a>
+<a href = '#pkfk'>6. Primary Key vs Foreign Key</a>
+<a href = '#pkfk'>7. Primary Key vs Foreign Key</a>
+<a href = '#pkfk'>8. Primary Key vs Foreign Key</a>
 
-###  1. Delete vs Truncate vs Drop
+<h3 name='dt'>1. Delete vs Truncate vs Drop</h3>
 
 DELETE | TRUNCATE | DROP
 --- | --- | ---
@@ -28,7 +35,7 @@ TRUNCATE Table Employee;
 DROP Table Employee;
 ```
 
-### 2. Where vs Having
+<h3 name='wh'>2. Where vs Having</h3>
 
 WHERE | HAVING
 --- | ---
