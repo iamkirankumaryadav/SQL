@@ -1,12 +1,16 @@
 # JOINS
 
 <table>
-        <tr><th align=left><a href = '#inner'>1. Inner Join</a></th></tr>
-        <tr><th align=left><a href = '#left'>2. Left Join</a></th></tr>
-        <tr><th align=left><a href = '#right'>3. Right Join</a></th></tr>
-        <tr><th align=left><a href = '#self'>4. Self Join</a></th></tr>
-        <tr><th align=left><a href = '#more'>5. Join More than 2 Tables</a></th></tr>
-        <tr><th align=left><a href = '#child'>6. Join Child Parent Relationship</a></th></tr>    
+        <tr>
+                <th align=left><a href = '#inner'>1. Inner Join</a></th>
+                <th align=left><a href = '#left'>2. Left Join</a></th>
+                <th align=left><a href = '#right'>3. Right Join</a></th>
+                <th align=left><a href = '#self'>4. Self Join</a></th>
+        </tr>
+        <tr>
+                <th align=left colspan=2><a href = '#more'>5. Join More than 2 Tables</a></th>
+                <th align=left colspan=2><a href = '#child'>6. Join Child Parent Relationship</a></th>
+        </tr>    
 </table>
 
 ### Tables (Example)
