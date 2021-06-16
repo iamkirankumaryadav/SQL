@@ -1,17 +1,15 @@
 # Difference
 
 <table>
-    <tr>
-        <td><a href = '#dt'>1. Delete vs Truncate</a></td>
-        <td><a href = '#wh'>2. Where vs Having</a></td>
-        <td><a href = '#ua'>3. Union vs Union All</a></td>
-        <td><a href = '#pku'>4. Primary Key vs Unique</a></td>
-        <td><a href = '#pkfk'>5. Primary Key vs Foreign Key</a></td>
-        <td><a href = '#wh'>6. In vs Exist</a></td>
-        <td><a href = '#obgb'>7. Order By vs Group By</a></td>
-        <td><a href = '#jsq'>8. Join vs Sub Query</a></td>
-        <td><a href = '#uj'>9. Union vs Join</a></td>
-    </tr>
+        <tr><a href = '#dt'>1. Delete vs Truncate</a></tr>
+        <tr><a href = '#wh'>2. Where vs Having</a></tr>
+        <tr><a href = '#ua'>3. Union vs Union All</a></tr>
+        <tr><a href = '#pku'>4. Primary Key vs Unique</a></tr>
+        <tr><a href = '#pkfk'>5. Primary Key vs Foreign Key</a></tr>
+        <tr><a href = '#wh'>6. In vs Exist</a></tr>
+        <tr><a href = '#obgb'>7. Order By vs Group By</a></tr>
+        <tr><a href = '#jsq'>8. Join vs Sub Query</a></tr>
+        <tr><a href = '#uj'>9. Union vs Join</a></tr>
 </table>
 
 <h3 name='dt'>1. Delete vs Truncate vs Drop</h3>
