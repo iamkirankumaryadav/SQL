@@ -1,5 +1,14 @@
 # JOINS
 
+<table>
+        <tr><th align=left><a href = '#inner'>1. Inner Join</a></th></tr>
+        <tr><th align=left><a href = '#left'>2. Left Join</a></th></tr>
+        <tr><th align=left><a href = '#right'>3. Right Join</a></th></tr>
+        <tr><th align=left><a href = '#self'>4. Self Join</a></th></tr>
+        <tr><th align=left><a href = '#more'>5. Join More than 2 Tables</a></th></tr>
+        <tr><th align=left><a href = '#child'>6. Join Child Parent Relationship</a></th></tr>    
+</table>
+
 ### Tables (Example)
 
 ### Employee Table
@@ -17,7 +26,7 @@ E_ID | D_ID |  Salary
 D_ID | DepartmentName | Manager
 --- | --- | ---
 
-### Inner Join
+<h3 name='inner'>1. Inner Join</h3>
 ```SQL
 SELECT Orders.ID, Customers.Name
 FROM Orders
@@ -25,7 +34,7 @@ INNER JOIN Customers
 ON Orders.ID = Customers.ID;
 ```
 
-### LEFT Join
+<h3 name='left'>2. LEFT Join</h3>
 ```SQL
 SELECT O.ID, C.Name
 FROM Orders O
@@ -33,7 +42,7 @@ LEFT JOIN Customers C
 ON O.ID = C.ID;
 ```
 
-### RIGHT Join
+<h3 name='right'>3. RIGHT Join</h3>
 ```SQL
 SELECT O.ID, C.Name
 FROM Orders O
@@ -41,7 +50,7 @@ RIGHT JOIN Customers C
 ON O.ID = C.ID;
 ```
 
-### SELF Join
+<h3 name='self'>4. SELF Join</h3>
 ```SQL
 SELECT DISTINCT E.Name
 FROM Employees E
@@ -49,7 +58,7 @@ INNER JOIN Managers M
 ON E.ID = M.ID;
 ```
 
-### Joins ( More than 2 Tables )
+<h3 name='more'>5. Joins ( More than 2 Tables )</h3>
 ```SQL
 SELECT EmployeeName, DepartmentName, Manager, Salary
 FROM Employee E
@@ -59,7 +68,7 @@ INNER JOIN Department D
 ON D.D_ID = S.D_ID;
 ```
 
-### Join using Child Parent Relationship
+<h3 name='child'>6. Join using Child Parent Relationship</h3>
 ```SQL
 SELECT EmployeeName, DepartmentName, Manager, Salary
 FROM Employee E, Salary S, Department D
