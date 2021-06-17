@@ -8,7 +8,7 @@
     <th>Data Definition Language</th><th>Data Query Language</th><th>Data Manipulation Language</th><th>Data Control Language</th>
   </tr>
   <tr>
-    <th>Define Data Structure</th><th>Retrieve Data from Database</th><th>Manipulate Data in Database</th><th>Control Access to Data stored in Database</th>
+    <td>Define Data Structure</td><td>Retrieve Data from Database</td><td>Manipulate Data in Database</td><td>Control Access to Data stored in Database</td>
   </tr>
   <tr>
     <td>
