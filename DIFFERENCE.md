@@ -10,6 +10,7 @@
         <tr><th align=left><a href = '#obgb'>7. Order By vs Group By</a></th></tr>
         <tr><th align=left><a href = '#jsq'>8. Join vs Sub Query</a></th></tr>
         <tr><th align=left><a href = '#uj'>9. Union vs Join</a></th></tr>
+        <tr><th align=left><a href = '#cluster'>10. Clustered Index vs Non Clustered Index</a></th></tr>
 </table>
 
 <h3 name='dt'>1. Delete vs Truncate vs Drop</h3>
@@ -265,3 +266,17 @@ FROM Departments A
 JOIN Employee B
 ON A.ID = B.ID;
 ```
+
+<h3 name='cluster'>10. Clustered Index vs Non Clustered Index</h3>
+
+### Clustered Index
+
+- Defines the `Order` in which Data is Physically stored in a Table.
+- When we Create a Table with ID as `PRIMARY KEY`, this Automatically creates Clustered Index.
+
+### Non Clustered Index
+
+- Doesn't `Sort` the Physical Data inside the Table.
+- Non Clustered Index is stored at different place then the Table Data.
+- e.g. Textbook content | Index is located on first page but the actual content is all at different pages.
+- Index contains column value and Address of the Record.
