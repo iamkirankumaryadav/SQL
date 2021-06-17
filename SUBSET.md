@@ -2,7 +2,10 @@
 
 <table>
   <tr>
-    <th>DDL (Definition)</th><th>DQL (Query)</th><th>DML (Manipulation)</th><th>DCL (Control)</th>
+    <th>DDL</th><th>DQL</th><th>DML</th><th>DCL</th>
+  </tr>
+  <tr>
+    <td>Data Definition Language</td><td>Data Query Language</td><td>Data Manipulation Language</td><td>Data Control Language</td>
   </tr>
   <tr>
     <td>Define Data Structure</td><td>Retrieve Data from Database</td><td>Manipulate Data in Database</td><td>Control Access to Data stored in Database</td>
