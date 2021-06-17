@@ -2,6 +2,8 @@
 
 ### Virtual Table (Do not Exist in Reality)
 
+You can't `Modify` Data in the View.
+
 ### Columns = Fields 
 
 ### Rows = Records
