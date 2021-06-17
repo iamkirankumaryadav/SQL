@@ -32,6 +32,8 @@ D_ID | DepartmentName | Manager
 
 <h3 name='inner'>1. Inner Join</h3>
 
+Join Matching `Rows` in both the Tables.
+
 ```SQL
 SELECT Orders.ID, Customers.Name
 FROM Orders
@@ -40,6 +42,8 @@ ON Orders.ID = Customers.ID;
 ```
 
 <h3 name='left'>2. LEFT Join</h3>
+
+Join all the Rows from Left Table and Matching Rows from Right Table.
 
 ```SQL
 SELECT O.ID, C.Name
@@ -50,6 +54,8 @@ ON O.ID = C.ID;
 
 <h3 name='right'>3. RIGHT Join</h3>
 
+Join all the Rows from Right Table and Matching Rows from the Left Table.
+
 ```SQL
 SELECT O.ID, C.Name
 FROM Orders O
@@ -58,6 +64,8 @@ ON O.ID = C.ID;
 ```
 
 <h3 name='self'>4. SELF Join</h3>
+
+Join with Itself.
 
 ```SQL
 SELECT DISTINCT E.Name
