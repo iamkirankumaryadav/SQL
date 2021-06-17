@@ -8,7 +8,6 @@ Structured Query Language
 ```SQL
 SELECT * <All Columns>
 FROM     <Table Name>
-LIMIT    <No. of Rows>
 ```
 
 ```SQL
