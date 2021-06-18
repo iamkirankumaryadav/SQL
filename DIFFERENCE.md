@@ -13,6 +13,7 @@
         <tr><th align=left><a href = '#index'>10. Index</a></th></tr>
         <tr><th align=left><a href = '#cluster'>11. Clustered Index vs Non Clustered Index</a></th></tr>
         <tr><th align=left><a href = '#func'>12. Stored Procedure vs Function</a></th></tr>
+        <tr><th align=left><a href = '#inner'>13. Inner Join vs Outer Join</a></th></tr>
 </table>
 
 <h3 name='dt'>1. Delete vs Truncate vs Drop</h3>
@@ -325,3 +326,18 @@ Stored Procedure | Function
 Stored Procedure can return `0` or `N` Values | Function must return a `Value`
 Can have Multiple `Input` as well as `Output` Parameters | Can have only One `Input` Parameter
 Procedures cannot be called from `Function` | Functions can be called from `Procedure`
+
+<h3 name='inner'>13. Inner Join vs Outer Join</h3>
+
+Inner Join | Outer Join
+:--- | :---
+Return Only `Matching` Rows between both the Tables | Returns `Matching` and `Unmatching` Rows between both the Tables
+`Default` Join | It is not a Default Joint 
+
+<h3 name='inner'>14. Left Join vs Right Join</h3>
+
+Left Join | Right Join
+:--- | :---
+Returns All the Rows from Left Table and Only `Matching` Rows from the Right Table | Returns All the Rows from Right Table and Only `Matching` Rows from the Left Table
+
+
