@@ -277,6 +277,7 @@ ON A.ID = B.ID;
 ### Types of Indexes
 
 #### Single Column Index
+- Index based on only `One` Column.
 
 ```SQL
 CREATE INDEX IndexName 
