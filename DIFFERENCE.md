@@ -10,7 +10,8 @@
         <tr><th align=left><a href = '#obgb'>7. Order By vs Group By</a></th></tr>
         <tr><th align=left><a href = '#jsq'>8. Join vs Sub Query</a></th></tr>
         <tr><th align=left><a href = '#uj'>9. Union vs Join</a></th></tr>
-        <tr><th align=left><a href = '#cluster'>10. Clustered Index vs Non Clustered Index</a></th></tr>
+        <tr><th align=left><a href = '#index'>10. Index</a></th></tr>
+        <tr><th align=left><a href = '#cluster'>11. Clustered Index vs Non Clustered Index</a></th></tr>
 </table>
 
 <h3 name='dt'>1. Delete vs Truncate vs Drop</h3>
@@ -267,7 +268,28 @@ JOIN Employee B
 ON A.ID = B.ID;
 ```
 
-<h3 name='cluster'>10. Clustered Index vs Non Clustered Index</h3>
+<h3 name='cluster'>10. Index</h3>
+
+- `Index` are used for fast retrieval of data.
+- Index in the Database is very similar to an Index in the back of a book.
+- e.g. If you want to Refer to a pages in a book, you first refer to the `Index`.
+
+### Single Column Index
+
+```SQL
+CREATE INDEX IndexName 
+ON TableName (ColumnName);
+```
+
+### Unique Index
+- Does not allow any `Duplicate` Values to be inserted into the table.
+
+```SQL
+CREATE UNIQUE INDEX IndexName
+ON TableName (ColumnName);
+```
+
+<h3 name='cluster'>11. Clustered Index vs Non Clustered Index</h3>
 
 ### Clustered Index
 
