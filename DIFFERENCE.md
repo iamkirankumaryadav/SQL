@@ -14,6 +14,7 @@
         <tr><th align=left><a href = '#cluster'>11. Clustered Index vs Non Clustered Index</a></th></tr>
         <tr><th align=left><a href = '#func'>12. Stored Procedure vs Function</a></th></tr>
         <tr><th align=left><a href = '#inner'>13. Inner Join vs Outer Join</a></th></tr>
+        <tr><th align=left><a href = '#lr'>13. Left Join vs Right Join</a></th></tr>
 </table>
 
 <h3 name='dt'>1. Delete vs Truncate vs Drop</h3>
@@ -334,7 +335,7 @@ Inner Join | Outer Join
 Return Only `Matching` Rows between both the Tables | Returns `Matching` and `Unmatching` Rows between both the Tables
 `Default` Join | It is not a Default Joint 
 
-<h3 name='inner'>14. Left Join vs Right Join</h3>
+<h3 name='lr'>14. Left Join vs Right Join</h3>
 
 Left Join | Right Join
 :--- | :---
