@@ -268,20 +268,22 @@ JOIN Employee B
 ON A.ID = B.ID;
 ```
 
-<h3 name='cluster'>10. Index</h3>
+<h3 name='index'>10. Index</h3>
 
 - `Index` are used for fast retrieval of data.
 - Index in the Database is very similar to an Index in the back of a book.
 - e.g. If you want to Refer to a pages in a book, you first refer to the `Index`.
 
-### Single Column Index
+### Types of Indexes
+
+#### Single Column Index
 
 ```SQL
 CREATE INDEX IndexName 
 ON TableName (ColumnName);
 ```
 
-### Unique Index
+#### Unique Index
 - Does not allow any `Duplicate` Values to be inserted into the table.
 
 ```SQL
@@ -289,14 +291,25 @@ CREATE UNIQUE INDEX IndexName
 ON TableName (ColumnName);
 ```
 
+#### Composite Indexes
+- An Index on Two or More Columns of a Table.
+
+```SQL
+CREATE INDEX IndexName
+ON TableName (ColumnName1, ColumnName2);
+```     
+
+#### Implicit Indexes
+- Index Automatically created by `Primary Key` Constraints and `Unique` Constraints when an Object is created.
+
 <h3 name='cluster'>11. Clustered Index vs Non Clustered Index</h3>
 
-### Clustered Index
+#### Clustered Index
 
 - Defines the `Order` in which Data is Physically stored in a Table.
 - When we Create a Table with ID as `PRIMARY KEY`, this Automatically creates Clustered Index.
 
-### Non Clustered Index
+#### Non Clustered Index
 
 - Doesn't `Sort` the Physical Data inside the Table.
 - Non Clustered Index is stored at different place then the Table Data.
