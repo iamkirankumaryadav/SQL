@@ -50,3 +50,10 @@ FROM Employee E
 INNER JOIN Employees M
 ON E.EmployeeID = M.EmployeeID
 ```
+
+5. `5th` Highest Salary
+
+```SQL
+SELECT * FROM ((SELECT * FROM Employee ORDER BY Salary DESC Limit 5) AS T)
+ORDER BY T.Salary ASC Limit 1;
+```
