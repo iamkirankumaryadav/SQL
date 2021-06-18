@@ -338,6 +338,6 @@ Return Only `Matching` Rows between both the Tables | Returns `Matching` and `Un
 
 Left Join | Right Join
 :--- | :---
-Returns All the Rows from Left Table and Only `Matching` Rows from the Right Table | Returns All the Rows from Right Table and Only `Matching` Rows from the Left Table
-
+Return `All` the Rows from `Left` Table  | Return `All` the Rows from `Right` Table  
+Return Only `Matching` Rows from the `Right` Table | Return Only `Matching` Rows from the `Left` Table
 
