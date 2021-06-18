@@ -12,6 +12,7 @@
         <tr><th align=left><a href = '#uj'>9. Union vs Join</a></th></tr>
         <tr><th align=left><a href = '#index'>10. Index</a></th></tr>
         <tr><th align=left><a href = '#cluster'>11. Clustered Index vs Non Clustered Index</a></th></tr>
+        <tr><th align=left><a href = '#func'>12. Stored Procedure vs Function</a></th></tr>
 </table>
 
 <h3 name='dt'>1. Delete vs Truncate vs Drop</h3>
@@ -316,3 +317,11 @@ ON TableName (ColumnName1, ColumnName2);
 - Non Clustered Index is stored at different place then the Table Data.
 - e.g. Textbook content | Index is located on first page but the actual content is all at different pages.
 - Index contains column value and Address of the Record.
+
+<h3 name='func'>12. Stored Procedure vs Function</h3>
+
+Stored Procedure | Function
+:--- | :---
+Must return a `Value` | It is Optional in Stored Procedure, can return `0` or `N` values
+Can have only One `Input` Parameter | Can have Multiple `Input` as well as `Output` Parameters
+Functions can be called from `Procedure` | Procedures cannot be called from `Function`
