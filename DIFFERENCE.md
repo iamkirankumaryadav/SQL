@@ -322,6 +322,6 @@ ON TableName (ColumnName1, ColumnName2);
 
 Stored Procedure | Function
 :--- | :---
-Must return a `Value` | It is Optional in Stored Procedure, can return `0` or `N` values
-Can have only One `Input` Parameter | Can have Multiple `Input` as well as `Output` Parameters
-Functions can be called from `Procedure` | Procedures cannot be called from `Function`
+It is Optional in Stored Procedure, can return `0` or `N` values | Must return a `Value`
+Can have Multiple `Input` as well as `Output` Parameters | Can have only One `Input` Parameter
+Procedures cannot be called from `Function` | Functions can be called from `Procedure`
