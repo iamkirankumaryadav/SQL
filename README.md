@@ -267,3 +267,10 @@ SELECT * FROM NewTable
 ```SQL
 DROP TABLE NewTable
 ```
+
+### Compare Two Columns
+
+```SQL
+SELECT * FROM Employee
+WHERE Employee_Name IN (SELECT Employee_Name FROM Department)
+```
