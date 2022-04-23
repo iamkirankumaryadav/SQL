@@ -40,7 +40,7 @@ DROP Column Email
 ```
 
 ### `DROP`
-Drop the entire table including structure and constraints.
+Delete the entire table data including structure and constraints.
 ```sql
 DROP Table Employee
 ```
