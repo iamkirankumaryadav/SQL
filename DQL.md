@@ -27,7 +27,7 @@ Square Brackets : [ ] | or
 
 SELECT Last_Name 
 FROM Employee
-WHERE Last_Name LIKE 'Wi[lk]%'
+WHERE Last_Name LIKE 'Wi[lk]%' # 'Wi' followed with either 'l' or 'k'
 
 Results :
 'Williams'
