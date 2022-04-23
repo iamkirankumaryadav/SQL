@@ -1,4 +1,4 @@
-# `DQL` : Data Query Language
+# `DDL` : Data Definition Language
 
 ### `CREATE` 
 ```sql
