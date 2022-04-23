@@ -2,7 +2,7 @@
 
 1. Query the List of City Names from A Table that do not Start with `Vowels` and do not End with `Vowels` + Result cannot contain Duplicates.
 
-SUBSTRING(Column, Index, Length)
+`SUBSTRING(Column, Index, Length)`
 
 ```SQL
 SELECT DISTINCT City 
