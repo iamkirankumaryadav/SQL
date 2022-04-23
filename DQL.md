@@ -35,4 +35,21 @@ Results :
 'Wikipedia'
 ```
 
+```sql
+Percentage : %  
+
+------------------------------
+Get only Google mails :
+
+SELECT First_Name, Email 
+FROM Employee
+WHERE Email LIKE '%@gmail.com'
+
+------------------------------
+Get mails another than gmail
+
+SELECT First_Name, Email
+FROM Employee
+WHERE Email NOT LIKE '%@gmail.com' 
+```
 
