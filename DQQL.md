@@ -1,1 +1,0 @@
-# `DQL` : Data Query Language
