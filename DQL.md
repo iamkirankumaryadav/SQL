@@ -51,5 +51,11 @@ Get mails another than gmail
 SELECT First_Name, Email
 FROM Employee
 WHERE Email NOT LIKE '%@gmail.com' 
+
+----------------------------------
+
+SELECT First_Name, City
+FROM Employee
+WHERE First_Name LIKE 'B[iro]%' AND City NOT LIKE '%UL%'
 ```
 
