@@ -38,3 +38,9 @@ Delete data from the table, while retaining the structure of the table.
 TRUNCATE Table Employee
 DROP Column Email
 ```
+
+### `DROP`
+Drop the entire table including structure and constraints.
+```sql
+DROP Table Employee
+```
