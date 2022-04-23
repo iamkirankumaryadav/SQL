@@ -23,3 +23,18 @@ Change the structure (Data type, column names, add or drop columns) of table.
 ALTER Table Employee
 DROP Column Email
 ```
+```sql
+ALTER Table Employee
+ADD Age INT, Department NVARCHAR(50)
+```
+```sql
+ALTER Table Employee
+ALTER Column Country NVARCHAR(30)
+```
+
+### `TRUNCATE`
+Delete data from the table, while retaining the structure of the table.
+```sql
+TRUNCATE Table Employee
+DROP Column Email
+```
