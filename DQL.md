@@ -9,7 +9,7 @@ Keyword Comparison Operators
 5. IS NOT NULL : Returns not null values.
 6. EXISTS      : Determine if a subquery returns values or not.
 ```
-Querying the table with logical operator `LIKE` :
+### Querying the table with logical operator `LIKE` :
 ```sql
 Underscore : _
 
@@ -59,3 +59,25 @@ FROM Employee
 WHERE First_Name LIKE 'B[iro]%' AND City NOT LIKE '%UL%'
 ```
 
+### Querying ythe table with logical operators IN and BETWEEN
+
+```sql
+SELECT First_Name, Shirt_Size 
+FROM Customer
+WHERE Shirt_Size IN ('M', 'L', 'XL', 'XXL')
+ORDER BY Shirt_Size ASC
+```
+
+```sql
+SELECT First_Name, Pant_Size, DATENAME(Month, Birthday) as BirthMonth 
+FROM Customer
+WHERE Dress_Size BETWEEN 2 AND 16 AND Pant_Size LIKE '%L'
+ORDER BY BirthMonth
+```
+
+```sql
+SELECT First_Name, DATENAME(Year, Birthday) as BirthYear 
+FROM Customer
+WHERE Birthday BETWEEN '1980' AND '1982'
+ORDER BY BirthYear DESC
+```
