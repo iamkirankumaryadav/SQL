@@ -81,3 +81,12 @@ FROM Customer
 WHERE Birthday BETWEEN '1980' AND '1982'
 ORDER BY BirthYear DESC
 ```
+
+### `COALESCE`
+Return the first non null value in the list.
+```sql
+SELECT First_Name, Last_Name, Starting_Salary, Current_Salary, 
+COALESCE(Current_Salary*1.1, Starting_Salary) AS New_Salary 
+FROM Employee
+WHERE Starting_Salary <= 35000
+```
