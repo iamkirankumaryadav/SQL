@@ -1,7 +1,6 @@
 # `DQL` : Data Query Language
 
-### `Create` and `Read` a table with data 
-
+### `CREATE` 
 ```sql
 CREATE Table Employee
 (
@@ -10,4 +9,10 @@ CREATE Table Employee
     Last_Name   NVARCHAR(60),
     Email       NVARCHAR(60)
 )
+```
+
+### `INSERT`
+```sql
+INSERT INTO Employee(First_Name, Last_Name, Email)  # Employee_ID will increment automatically. 
+VALUES('Kirankumar', 'Yadav', 'Kirankumaryadav@gmail.com')
 ```
