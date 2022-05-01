@@ -2,10 +2,10 @@
 
 ### Changing Schema
 
-1. Adding columns in an existing table.
-2. Removing columns from an existing table.
-3. Adding or changing constraints of an existing table.
-4. Changing data type.
+1. **Adding** columns in an existing table.
+2. **Removing** columns from an existing table.
+3. Adding or changing **constraints** of an existing table.
+4. Changing **data type** of an existing column.
 
 ```sql
 CREATE TABLE Employee
