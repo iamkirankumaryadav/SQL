@@ -4,6 +4,7 @@
 2. <a href='#id'>ID Column</a>
 3. <a href=#drop>DROP TABLE IF EXISTS</a>
 
+---
 
 <h3 name='schema'>Changing Schema</h3>
 
