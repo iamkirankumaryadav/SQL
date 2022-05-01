@@ -2,6 +2,7 @@
 
 1. <a href='#schema'>Changing Schema</a>
 2. <a href='#id'>ID Column</a>
+3. <a href=#drop>DROP TABLE IF EXISTS</a>
 
 
 <h3 name='schema'>Changing Schema</h3>
@@ -73,3 +74,12 @@ Employee_ID | First_Name| Last_Name | Designation
 1 | Kirankumar | Yadav | Data Scientist
 2 | Suraj | MS | MLE  
 3 | Pavan | Kumar | Stistician
+
+<h3 name=drop>DROP TABLE IF EXISTS</h3>
+
+- Drop the table only if the table exists in a database otherwise.
+- No Error will be visible if there is no such table in the database.
+
+```sql
+DROP TABLE IF EXISTS Employee;
+```
