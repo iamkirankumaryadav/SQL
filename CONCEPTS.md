@@ -79,8 +79,9 @@ Employee_ID | First_Name| Last_Name | Designation
 
 <h2 name=drop>DROP TABLE IF EXISTS</h2>
 
-- Drop the table only if the table exists in a database otherwise.
+- Drop the table only if that table exists in a database.
 - No Error will be visible if there is no such table in the database.
+- Normally if we just drop the table it will display an error that there is no such table in the database.
 
 ```sql
 DROP TABLE IF EXISTS Employee;
