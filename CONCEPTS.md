@@ -1,7 +1,7 @@
 # Funcdamental Concepts
 
 1. <a href='#schema'>Changing Schema</a>
-2. <a href='#schema'>Changing Schema</a>
+2. <a href='#id'>ID Column</a>
 
 
 <h3 name='schema'>Changing Schema</h3>
@@ -46,3 +46,30 @@ Kirankumar | Yadav | Data Scientist | Data Science
 Suraj | MS | MLE | Data Science
 Pavan | Kumar | Statistician | Data Science
 
+<h3 name='id'>ID Column</h3>
+
+1. Column that holds a **unique** value for each row in a table.
+2. Typically ID columns are **automatically** populated or incrmented.
+
+```sql
+CREATE TABLE Employee
+(
+  Employee_ID INTEGER PRIMARY KEY
+  First_Name TEXT,
+  Last_Name TEXT,
+  Designation TEXT
+);
+
+INSERT INTO Test ( First_Name, Last_Name, Designation )
+VALUES ('Kirankumar', 'Yadav', 'Data Scientist'),
+VALUES ('Suraj', 'MS', 'MLE'),
+VALUES ('Pavan', 'Kumar', 'Statistician');
+
+SELECT * FROM Employee;
+```
+Output
+Employee_ID | First_Name| Last_Name | Designation
+:--- |:--- | :--- | :--- 
+1 | Kirankumar | Yadav | Data Scientist
+2 | Suraj | MS | MLE  
+3 | Pavan | Kumar | Stistician
