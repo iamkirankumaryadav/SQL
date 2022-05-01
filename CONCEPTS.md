@@ -27,6 +27,8 @@ ADD Department TEXT DEFAULT 'Data Science';
 ```   
 Output
 First_Name| Last_Name | Designation | Department
---- | --- |--- | ---
+:--- | :--- | :--- | :---
 Kirankumar | Yadav | Data Scientist | Data Science
+Suraj | MS | MLE | Data Science
+Pavan | Kumar | Statistician | Data Science
 
