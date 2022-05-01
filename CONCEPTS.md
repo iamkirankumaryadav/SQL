@@ -47,6 +47,8 @@ Kirankumar | Yadav | Data Scientist | Data Science
 Suraj | MS | MLE | Data Science
 Pavan | Kumar | Statistician | Data Science
 
+---
+
 <h3 name='id'>ID Column</h3>
 
 1. Column that holds a **unique** value for each row in a table.
@@ -74,6 +76,8 @@ Employee_ID | First_Name| Last_Name | Designation
 1 | Kirankumar | Yadav | Data Scientist
 2 | Suraj | MS | MLE  
 3 | Pavan | Kumar | Stistician
+
+---
 
 <h3 name=drop>DROP TABLE IF EXISTS</h3>
 
