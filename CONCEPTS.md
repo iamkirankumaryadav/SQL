@@ -1,4 +1,4 @@
-# Funcdamental Concepts
+# Fundamental Concepts
 
 1. <a href='#schema'>Changing Schema</a>
 2. <a href='#id'>ID Column</a>
