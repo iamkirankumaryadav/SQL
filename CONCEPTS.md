@@ -142,6 +142,7 @@ WHERE Designation IS NULL
 SELECT * FROM Employee
 WHERE Designation IS NOT NULL
 ```
+
 <h2 name=order>Ordering rows</h2>
 ```sql
 # Order the rows in Ascending Order | ASC by default :
