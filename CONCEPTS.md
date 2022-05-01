@@ -21,7 +21,15 @@ VALUES ('Suraj', 'MS', 'MLE'),
 VALUES ('Pavan', 'Kumar', 'Statistician');
 
 SELECT * FROM Employee;
+```
+Output
+First_Name| Last_Name | Designation
+:--- | :--- | :--- 
+Kirankumar | Yadav | Data Scientist
+Suraj | MS | MLE  
+Pavan | Kumar | Stistician
 
+```sql
 ALTER TABLE 
 ADD Department TEXT DEFAULT 'Data Science';
 ```   
