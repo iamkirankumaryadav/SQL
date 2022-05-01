@@ -1,6 +1,6 @@
 # Funcdamental Concepts
 
-<a href='schema'>Changing Schema</a>
+<a href='#schema'>Changing Schema</a>
 
 <h3 name='schema'>Changing Schema</h3>
 
