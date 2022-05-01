@@ -1,8 +1,8 @@
 # Funcdamental Concepts
 
-<a name='schema'>Changing Schema</a>
+<a href='schema'>Changing Schema</a>
 
-### <a href='schema'>Changing Schema</a>
+<h3 name='schema'>Changing Schema</h3>
 
 1. **Adding** columns in an existing table.
 2. **Removing** columns from an existing table.
