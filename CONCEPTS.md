@@ -11,6 +11,7 @@
 9. <a href=#order>Ordering rows</a>
 
 <h2 name=create>Creating a table</h2>
+
 ```sql
 CREATE TABLE Employee
 (
@@ -22,6 +23,7 @@ CREATE TABLE Employee
 ```
 
 <h2 name=insert>Inserting rows</h2>
+
 ```sql
 # Insert every row values :
 INSERT INTO Employee
@@ -40,6 +42,7 @@ SELECT First, Last, Role FROM Training;
 ```
 
 <h2 name=drow>Deleting rows</h2>
+
 ```sql
 DELETE FROM Employee WHERE ID = 3
 ```
@@ -133,6 +136,7 @@ Employee_ID | First_Name| Last_Name | Designation
 ---
 
 <h2 name=null>NULL value</h2>
+
 ```sql
 # Fetch only rows with NULL value :
 SELECT * FROM Employee
@@ -144,6 +148,7 @@ WHERE Designation IS NOT NULL
 ```
 
 <h2 name=order>Ordering rows</h2>
+
 ```sql
 # Order the rows in Ascending Order | ASC by default :
 SELECT First_Name, Last_Name, Designation 
