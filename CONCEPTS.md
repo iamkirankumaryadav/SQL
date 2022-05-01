@@ -20,8 +20,13 @@ VALUES ('Kirankumar', 'Yadav', 'Data Scientist'),
 VALUES ('Suraj', 'MS', 'MLE'),
 VALUES ('Pavan', 'Kumar', 'Statistician');
 
-SELECTT * FROM Employee;
+SELECT * FROM Employee;
 
 ALTER TABLE 
 ADD Department TEXT DEFAULT 'Data Science';
 ```   
+Output
+First_Name| Last_Name | Designation | Department
+--- | --- |--- | ---
+Kirankumar | Yadav | Data Scientist | Data Science
+
