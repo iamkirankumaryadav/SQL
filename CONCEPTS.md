@@ -32,6 +32,8 @@ Pavan | Kumar | Stistician
 ```sql
 ALTER TABLE 
 ADD Department TEXT DEFAULT 'Data Science';
+
+SELECT * FROM Employee;
 ```   
 Output
 First_Name| Last_Name | Designation | Department
