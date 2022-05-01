@@ -4,9 +4,7 @@
 2. <a href='#id'>ID Column</a>
 3. <a href=#drop>DROP TABLE IF EXISTS</a>
 
----
-
-<h3 name='schema'>Changing Schema</h3>
+<h2 name='schema'>Changing Schema</h2>
 
 1. **Adding** columns in an existing table.
 2. **Removing** columns from an existing table.
@@ -50,7 +48,7 @@ Pavan | Kumar | Statistician | Data Science
 
 ---
 
-<h3 name='id'>ID Column</h3>
+<h2 name='id'>ID Column</h2>
 
 1. Column that holds a **unique** value for each row in a table.
 2. Typically ID columns are **automatically** populated or incrmented.
@@ -77,10 +75,9 @@ Employee_ID | First_Name| Last_Name | Designation
 1 | Kirankumar | Yadav | Data Scientist
 2 | Suraj | MS | MLE  
 3 | Pavan | Kumar | Stistician
-
 ---
 
-<h3 name=drop>DROP TABLE IF EXISTS</h3>
+<h2 name=drop>DROP TABLE IF EXISTS</h2>
 
 - Drop the table only if the table exists in a database otherwise.
 - No Error will be visible if there is no such table in the database.
