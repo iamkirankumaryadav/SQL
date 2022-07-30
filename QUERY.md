@@ -64,3 +64,11 @@ ORDER BY T.Salary ASC Limit 1;
 SELECT * FROM ((SELECT * FROM Employee ORDER BY Salary DESC Limit 5) AS T)
 ORDER BY T.Salary ASC Limit 1;
 ```
+
+7. Select count of employee hired every month and year
+```sql
+SELECT MONTH(Employee.StartDate), YEAR(Employee.StartDate), COUNT(1)
+FROM Employee
+GROUP BY MONTH(Employee.StartDate), YEAR(Employee.StartDate)
+ORDER BY 1, 2
+```
