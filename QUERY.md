@@ -79,3 +79,14 @@ SELECT * FROM Employee
 WHERE Employee.StartDate <= '2021-07-01'                           -- Before 1st July 2021
 AND (Employee.EndDate >= '2021-07-01' OR Employee.EndDate IS NULL) -- After 1st July 2021  
 ```
+
+9. How to get next month and last day of current month:
+```sql
+SELECT
+Dates.DateKey,
+DATE_TRUNC(Dates.DateKey, "month") Month,
+DATE_ADD(DATE_TRUNC(Dates.DateKey, "month"), 1, "month") Next_Month,
+DATE_ADD(DATE_ADD(DATE_TRUNC(Dates.DateKey, "month"), 1, "month"), -1, "day") End_of_Month
+FROM Dates
+LIMIT 10;
+```
