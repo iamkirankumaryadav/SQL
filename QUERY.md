@@ -72,3 +72,10 @@ FROM Employee
 GROUP BY MONTH(Employee.StartDate), YEAR(Employee.StartDate)
 ORDER BY 1, 2
 ```
+
+8. Select employee active on given date:
+```sql
+SELECT * FROM Employee
+WHERE Employee.StartDate <= '2021-07-01'                           -- Before 1st July 2021
+AND (Employee.EndDate >= '2021-07-01' OR Employee.EndDate IS NULL) -- After 1st July 2021  
+```
