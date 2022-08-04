@@ -33,3 +33,10 @@ SET Rating = CASE
              END;  
 ```
 
+### DECODE vs CASE
+
+DECODE | CASE
+:--- | :---
+Function | Statement
+Only works for `=` operator | Works for all the logical operators
+Use only in SQL statement | Also used in PL-SQL
