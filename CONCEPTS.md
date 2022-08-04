@@ -20,6 +20,42 @@
 8. <a href=#null>NULL value</a>
 9. <a href=#order>Ordering rows</a>
 
+## SELECT (Most used query)
+
+```sql
+SELECT
+ApplicantID, ApplicantName, Position, StageName, ApplicantStatus
+FROM Applicants
+WHERE
+ApplicantStatus="New" 
+AND Country IN ("India", "UK", "USA") 
+AND (Age BETWEEN 25 AND 30)
+AND Position LIKE "%Engineer%";
+```
+
+```sql
+SELECT
+Position, COUNT(ApplicantID) AS ApplicantCount, AVG(SalaryExpectation) AS AvgSalary
+FROM Applicants
+WHERE
+SalaryExpectations > 2000
+GROUP BY 1
+HAVING ApplicantCount > 10 
+ORDER BY AvgSalary ASC
+LIMIT 3;
+```
+
+```sql
+SELECT
+Position, COUNT(ApplicantID) AS ApplicantCount
+FROM db1.Applicants App
+LEFT JOIN db2.Channels Ch
+ON App.ApplicantID = Ch.ID
+WHERE Source IN ("GlassDoor")
+GROUP BY Position
+ORDER BY ApplicantCount DESC
+```
+
 <h2 name=create>Creating a table</h2>
 
 ```sql
