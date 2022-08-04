@@ -1,5 +1,6 @@
 # Fundamental Concepts
 
+- `SQL` acts as a standardized language to communicate with `RDBMS`
 - `Database` is an actual set of data while `DBMS` is software that helps you manage information in database.
 - `DBMS` simplifies your `data collection`, `maintenance`, `storage` and `tracking`
 - `DBMS` helps organize and maintain your data.
