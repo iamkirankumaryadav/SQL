@@ -1,5 +1,9 @@
 # Fundamental Concepts
 
+- `Database` is an actual set of data while `DBMS` is software that helps you manage information in database.
+- `DBMS` simplifies your `data collection`, `maintenance`, `storage` and `tracking`
+- `DBMS` helps organize and maintain your data.
+
 1. <a href=#create>Creating a table</a>
 2. <a href=#insert>Inserting rows</a>
 3. <a href=#drow>Deleting rows</a>
