@@ -53,4 +53,4 @@ DECODE | CASE
 :--- | :---
 Function | Statement
 Only works for `=` operator | Works for all the logical `=`, `<>`, `>`, `>=`, `<`, `<=` operators
-Use only in SQL statement | Also used in PL-SQL
+Use only in SQL SELECT statement | Also used in PL-SQL
