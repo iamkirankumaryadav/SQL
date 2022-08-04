@@ -4,11 +4,14 @@
 -- Syntax:
 WITH CTE_Name AS (CTE Query...);
 
--- Example:
-WITH CTE1 AS (SELECT * FROM Employee LIMIT 10)
+-- Example 1: Retrieve a snapshot from a table.
+WITH CTE1 
+AS (SELECT * FROM Employee LIMIT 10)
 SELECT * FROM CTE1;
 
-WITH CTE2 AS (SELECT Dept_ID, AVG(Salary) AS AVG_Salary FROM Employee GROUP BY Dept_ID)
+-- Example 2: Retrieve Maximum Average Salary from Employee Table.
+WITH CTE2 
+AS (SELECT Dept_ID, AVG(Salary) AS AVG_Salary FROM Employee GROUP BY Dept_ID)
 SELECT MAX(AVG_Salary) FROM CTE2;
 ```
 
