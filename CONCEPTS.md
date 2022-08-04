@@ -58,6 +58,7 @@ DELETE FROM Employee WHERE ID = 3
 ```
 
 <h2 name=delete>Deleting a table</h2>
+
 ```sql
 DROP TABLE Employee
 ```
