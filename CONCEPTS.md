@@ -1,9 +1,13 @@
 # Fundamental Concepts
 
-- `SQL` acts as a standardized language to communicate with `RDBMS`
+- `SQL` is as a standardized structured query language that helps to communicate with `RDBMS`
 - `Database` is an actual set of data while `DBMS` is software that helps you manage information in database.
 - `DBMS` simplifies your `data collection`, `maintenance`, `storage` and `tracking`
 - `DBMS` helps organize and maintain your data.
+- `SQL` helps to define tables using columns and rows to find and update the values in specific cells.
+- `Columns`in relational database tables must have a unique name and homogeneous values.
+- `Row` is a single record of data.
+- `NULL` value stands for a blank field (Not zero and no whitespace)
 
 1. <a href=#create>Creating a table</a>
 2. <a href=#insert>Inserting rows</a>
