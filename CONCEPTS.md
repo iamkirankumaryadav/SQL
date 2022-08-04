@@ -8,6 +8,7 @@
 - `Columns`in relational database tables must have a unique name and homogeneous values.
 - `Row` is a single record of data.
 - `NULL` value stands for a blank field (Not zero and no whitespace)
+- `Database` acts as a folder for multiple tables and views.
 
 1. <a href=#create>Creating a table</a>
 2. <a href=#insert>Inserting rows</a>
