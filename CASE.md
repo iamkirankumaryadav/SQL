@@ -38,9 +38,13 @@ SET Rating = CASE
 ```sql
 ---  Syntax:
 SELECT DECODE (ColumnName, IF, THEN valuee, ELSE IF, THEN value , ELSE, Value)
+AS Alias
+FROM TableName
 
 --- Example:
 SELECT DECODE (Grade, 'A', 1, `B`, 2, `C`, 3, `D`, 4, 0)
+AS Points
+FROM Students
 ```
 
 ### DECODE vs CASE
