@@ -33,10 +33,20 @@ SET Rating = CASE
              END;  
 ```
 
+### DECODE
+
+```sql
+---  Syntax:
+SELECT DECODE (ColumnName, IF, THEN valuee, ELSE IF, THEN value , ELSE, Value)
+
+--- Example:
+SELECT DECODE (Grade, 'A', 1, `B`, 2, `C`, 3, `D`, 4, 0)
+```
+
 ### DECODE vs CASE
 
 DECODE | CASE
 :--- | :---
 Function | Statement
-Only works for `=` operator | Works for all the logical operators
+Only works for `=` operator | Works for all the logical `=`, `<>`, `>`, `>=`, `<`, `<=` operators
 Use only in SQL statement | Also used in PL-SQL
