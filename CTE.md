@@ -8,8 +8,8 @@ WITH CTE_Name AS (CTE Query...);
 WITH CTE1 AS (SELECT * FROM Employee LIMIT 10)
 SELECT * FROM CTE1;
 
-WITH CTE2 AS (SELECT Dept_ID, AVG(Sales) AS AVG_Sale FROM Employee GROUP BY Dept_ID)
-SELECT MAX(AVG_Sale) FROM CTE2;
+WITH CTE2 AS (SELECT Dept_ID, AVG(Salary) AS AVG_Salary FROM Employee GROUP BY Dept_ID)
+SELECT MAX(AVG_Salary) FROM CTE2;
 ```
 
 - `WITH` clause can include one or more CTE's seperated by `,`
