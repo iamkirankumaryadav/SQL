@@ -54,8 +54,26 @@ ON E.EmployeeID = M.EmployeeID
 5. `2nd` Highest Salary
 
 ```SQL
+--- Query 1:
 SELECT * FROM ((SELECT * FROM Employee ORDER BY Salary DESC Limit 2) AS T)
 ORDER BY T.Salary ASC Limit 1;
+
+-- Query 2:
+SELECT Salary 
+FROM (SELECT Salary FROM Employee ORDER BY Salary DESC LIMIT 2)
+AS Emp
+ORDER BY Emp.Salary LIMIT 1;
+
+-- Query 3:
+SELECT TOP 1 Salary 
+FROM (SELECT TOP 2 Salary FROM Employee ORDER BY Salary DESC)
+AS Emp
+ORDER BY Emp.Salary ASC;
+
+-- Query 4: 
+SELECT MAX(Salary) 
+FROM Employee
+WHERE Salary < (SELECT MAX(Salary) FROM Employee);
 ```
 
 6. `5th` Highest Salary
