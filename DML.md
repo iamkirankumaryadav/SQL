@@ -9,7 +9,7 @@
 ```sql
 -- Employee_ID will increment automatically. 
 INSERT INTO Employee(FirstName, LastName, Email)  
-VALUES('Kirankumar', 'Yadav', 'Kirankumaryadav@gmail.com')
+VALUES('Kirankumar', 'Yadav', 'Kirankumaryadav@gmail.com');
 ```
 
 `Multiple` rows:
@@ -28,13 +28,13 @@ UPDATE Employee
 SET Designation = 'Data Scientist'
 WHERE FirstName = 'Kirankumar' 
 AND LastName = 'Yadav' 
-AND DateOfBirth = '07/02/1996'
+AND DateOfBirth = '07/02/1996';
 ```
 
 ### `DELETE`
 ```sql
 DELETE 
 FROM Supplier
-WHERE SupplierID = 2
+WHERE SupplierID = 2;
 -- WHERE Clause is only used with DELETE command (Not with DROP and TRUNCATE commands)
 ```
