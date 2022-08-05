@@ -17,8 +17,8 @@
 ### Optionality and Cardinality are controlled automatically based on constraints.
 
 Relationship | Constraints
-:--- | :---
-0..1 | NULL + UNIQUE
-1..1 | NOT NULL + UNIQUE
-1..N | NOT NULL + Not UNIQUE
-0..N | NULL + Not UNIQUE
+:---: | :---
+`0..1` | NULL + UNIQUE
+`1..1` | NOT NULL + UNIQUE
+`1..N` | NOT NULL + Not UNIQUE
+`0..N` | NULL + Not UNIQUE
