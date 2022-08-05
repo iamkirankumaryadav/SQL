@@ -13,9 +13,9 @@ CREATE DATABASE KTECH;
 
 -- Create Schemas for each Department:
 USE DATABASE KTECH;
-CREATE SCHEMA IF NOT EXISTS IT;
-CREATE SCHEMA IF NOT EXISTS HR;
-CREATE SCHEMA IF NOT EXISTS Marketing;
+CREATE SCHEMA IF NOT EXISTS IT; -- All IT related data will be stored in IT Schema.
+CREATE SCHEMA IF NOT EXISTS HR; -- All HR related data will be stored in HR Schema.
+CREATE SCHEMA IF NOT EXISTS Marketing; -- All Marketing related data will be stored in Marketing Schema.
 
 -- Access each schema for creating tables:
 CREATE TABLE IF NOT EXISTS KTECH.IT.Employee (ID INT...);
