@@ -4,13 +4,13 @@ Creates the data structures ( Schemas, Tables, Views and Indexes ) which helps t
 
 ## `CREATE` 
 
-### `CREATE TABLE`
-
-`CREATE SCHEMA`
+### `CREATE SCHEMA`
 
 ```sql
 CREATE SCHEMA IF NOT EXISTS SchemaName;
 ```
+
+### `CREATE TABLE`
 
 ```sql
 CREATE Table Employee
