@@ -1,4 +1,4 @@
-# Difference
+# Difference Between
 
 <table>
         <tr><th align=left><a href = '#dt'>1. Delete vs Truncate</a></th></tr>
