@@ -1,6 +1,7 @@
 # `Normalization`
 
 - A series of rules that describe proper database design.
+- Normalization process removes `redundant` information from the database.
 - Rules for table structure are called `normal forms`
 - Helps to keep the data secure, valid and maintain the consistency and efficiency.
 
