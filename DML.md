@@ -1,8 +1,8 @@
 # `DML` : Data Manipulation Language
 
-### `SELECT`
+## `SELECT`
 
-### `INSERT`
+## `INSERT`
 
 `Single` row:
 
@@ -22,7 +22,7 @@ VALUES('Kirankumar', 'Yadav', 'Kirankumar.Yadav@gmail.com'),
       ('Arpit', 'Yadav', 'Arpit.Yadav@gmail.com');
 ```
 
-### `UPDATE` 
+## `UPDATE` 
 ```sql
 UPDATE Employee
 SET Designation = 'Data Scientist'
@@ -31,7 +31,7 @@ AND LastName = 'Yadav'
 AND DateOfBirth = '07/02/1996';
 ```
 
-### `DELETE`
+## `DELETE`
 ```sql
 DELETE 
 FROM Supplier
