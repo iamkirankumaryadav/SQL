@@ -16,6 +16,7 @@
 
 ### Optionality and Cardinality are controlled automatically based on constraints.
 
+|
 :--- | :---
 0..1 | NULL + UNIQUE
 1..1 | NOT NULL + UNIQUE
