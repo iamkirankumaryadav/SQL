@@ -1,6 +1,6 @@
 # `DDL` : Data Definition Language
 
-Creates the data structures which helps to organize data.
+Creates the data structures ( Schemas, Tables, Views and Indexes ) which helps to organize data.
 
 ### `CREATE` 
 ```sql
