@@ -138,8 +138,8 @@ CREATE TABLE Employee
   Designation TEXT
 );
 
-INSERT INTO Test VALUES ('Kirankumar', 'Yadav', 'Data Scientist'),
-INSERT INTO Test VALUES ('Suraj', 'MS', 'MLE'),
+INSERT INTO Test VALUES ('Kirankumar', 'Yadav', 'Data Scientist');
+INSERT INTO Test VALUES ('Suraj', 'MS', 'MLE');
 INSERT INTO Test VALUES ('Pavan', 'Kumar', 'Statistician');
 
 SELECT * FROM Employee;
