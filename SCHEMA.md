@@ -25,6 +25,8 @@ CREATE TABLE IF NOT EXISTS KTECH.Marketing.Employee (ID INT...);
 
 Each database vendors have there own way of representing schemas.
 
+Better organized schema helps to reduce `code complexity`
+
 ### `Collection` of database objects:
 
 1. Tables (Store Data)
