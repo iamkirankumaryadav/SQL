@@ -1,5 +1,9 @@
 # `Normalization`
 
+- A series of rules that describe proper database design.
+- Rules for table structure are called `normal forms`
+- Helps to keep the data secure, valid and maintain the consistency and efficiency.
+
 ### `1NF` : First Normal Form
 - `1NF` requires that all the fields only include a single piece of data.
 - e.g We should keep the addresses in seperate columns Address, City, Pincode, State, Country instead of keeping in one single column.
