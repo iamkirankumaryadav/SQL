@@ -6,7 +6,7 @@
 
 `Professional Business` Terms : `Relations` | `Domains` | `Tuples`
 
-`Developer` & `Technical` Terms : `Tables` | `Columns` | `Rows`
+`Developer` & `Technical` Terms : `Tables` | `Field` or `Attributes` or `Columns` | `Records` or `Rows`
 
 ### Vendors:
 
