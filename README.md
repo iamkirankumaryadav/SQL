@@ -1,7 +1,11 @@
 <p align=right><a href='https://github.com/KIRANKUMAR7296/CSharp'>Navigate to C#</a></p>
 
-# SQL
-Structured Query Language
+# `SQL`
+- Structured Query Language
+- `Create`, `Retrieve`, `Update` and `Delete` data based on the selected criteria (C.R.U.D)
+-  Organize data in the selected order (Ascending or Descending)
+- `Join` multiple tables using a shared key.
+- Build simple data sources for dashboards.
 
 ### SQL Categories | Subset of SQL
 <table>
@@ -47,8 +51,7 @@ Structured Query Language
   </tr>
 </table>
 
-
-### Most Basic Query
+### Most Basic and Common Queries:
 
 ```SQL
 SELECT * <All Columns>
