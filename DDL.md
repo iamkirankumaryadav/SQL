@@ -11,12 +11,6 @@ CREATE Table Employee
 )
 ```
 
-### `INSERT`
-```sql
-INSERT INTO Employee(First_Name, Last_Name, Email)  # Employee_ID will increment automatically. 
-VALUES('Kirankumar', 'Yadav', 'Kirankumaryadav@gmail.com')
-```
-
 ### `ALTER`
 Change the structure (Data type, column names, add or drop columns) of table.
 ```sql
