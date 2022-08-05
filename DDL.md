@@ -1,5 +1,7 @@
 # `DDL` : Data Definition Language
 
+Creates the data structures which helps to organize data.
+
 ### `CREATE` 
 ```sql
 CREATE Table Employee
