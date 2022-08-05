@@ -6,6 +6,12 @@ Creates the data structures ( Schemas, Tables, Views and Indexes ) which helps t
 
 ### `CREATE TABLE`
 
+`CREATE SCHEMA`
+
+```sql
+CREATE SCHEMA IF NOT EXISTS SchemaName;
+```
+
 ```sql
 CREATE Table Employee
 (
@@ -13,7 +19,7 @@ CREATE Table Employee
     FirstName   NVARCHAR(60),
     LastName    NVARCHAR(60),
     Email       NVARCHAR(60)
-)
+);
 ```
 
 ### `CREATE VIEW`
@@ -26,7 +32,7 @@ S.LastName
 CD.Company
 FROM Staff S
 LEFT JOIN Company_Division CD
-ON S.Department = CD.Department
+ON S.Department = CD.Department;
 ```
 
 ### `CREATE INDEX`
@@ -34,7 +40,7 @@ ON S.Department = CD.Department
 ```sql
 CREATE INDEX idx_staff_last_name
 ON Staff
-USING (Last_Name)
+USING (Last_Name);
 ```
 
 ## `ALTER`
@@ -44,17 +50,19 @@ Change the structure (Data type, column names, add or drop columns) of table.
 ```sql
 -- DROP Column:
 ALTER Table Employee
-DROP Column Email
+DROP Column Email;
 ```
+
 ```sql
 -- Add new columns:
 ALTER Table Employee
-ADD Age INT, Department NVARCHAR(50)
+ADD Age INT, Department NVARCHAR(50);
 ```
+
 ```sql
 -- Modify size and data type:
 ALTER Table Employee
-ALTER Column Country NVARCHAR(30)
+ALTER Column Country NVARCHAR(30);
 ```
 
 ## `TRUNCATE`
@@ -63,7 +71,7 @@ Delete data from the table, while retaining the structure of the table.
 
 ```sql
 TRUNCATE Table Employee
-DROP Column Email
+DROP Column Email;
 ```
 
 ## `DROP`
@@ -71,5 +79,5 @@ DROP Column Email
 Delete the entire table data including structure and constraints.
 
 ```sql
-DROP Table Employee
+DROP Table Employee;
 ```
