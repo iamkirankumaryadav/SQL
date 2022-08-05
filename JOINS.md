@@ -92,3 +92,16 @@ SELECT EmployeeName, DepartmentName, Manager, Salary
 FROM Employee E, Salary S, Department D
 WHERE E.E_ID = D.E_ID AND D.D_ID = S.D_ID;
 ```
+
+### Example
+
+```sql
+SELECT 
+PositionName, Channel, COUNT(ApplicantID) AS ApplicantCount
+FROM Applicants AS App
+INNER JOIN Positions AS Po ON App.Position = Po.PositionIndex
+INNER JOJN Channels AS Ch ON App.ApplicantID = Ch.ID
+GROUP BY 1, 2
+HAVING COUNT(ApplicantID) > 4
+ORDER BY 1, 3 DESC;
+```
