@@ -4,10 +4,6 @@
 
 You can't `Modify` Data in the View.
 
-### Columns = Fields 
-
-### Rows = Records
-
 - Selecting `Fields` | `Columns` from one or more Tables present in Database
 - There is no `Records` | `Rows` in the View ( Only holds Definition of Table and Fetches Data from the Table and View it )
 
