@@ -3,6 +3,9 @@
 Creates the data structures ( Schemas, Tables, Views and Indexes ) which helps to organize data.
 
 ### `CREATE` 
+
+`CREATE TABLE`
+
 ```sql
 CREATE Table Employee
 (
@@ -11,6 +14,27 @@ CREATE Table Employee
     LastName   NVARCHAR(60),
     Email      NVARCHAR(60)
 )
+```
+
+`CREATE VIEW`
+
+```sql
+CREATE VIEW Staff_View AS
+SELECT
+S.ID
+S.LastName
+CD.Company
+FROM Staff S
+LEFT JOIN Company_Division CD
+ON S.Department = CD.Department
+```
+
+`CREATE INDEX`
+
+```sql
+CREATE INDEX idx_staff_last_name
+ON Staff
+USING (Last_Name)
 ```
 
 ### `ALTER`
