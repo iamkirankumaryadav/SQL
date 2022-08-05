@@ -42,14 +42,17 @@ USING (Last_Name)
 Change the structure (Data type, column names, add or drop columns) of table.
 
 ```sql
+-- DROP Column:
 ALTER Table Employee
 DROP Column Email
 ```
 ```sql
+-- Add new columns:
 ALTER Table Employee
 ADD Age INT, Department NVARCHAR(50)
 ```
 ```sql
+-- Modify size and data type:
 ALTER Table Employee
 ALTER Column Country NVARCHAR(30)
 ```
