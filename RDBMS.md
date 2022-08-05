@@ -2,6 +2,12 @@
 
 ### Creating and managing relational databases. 
 
+### Important terms:
+
+`Professional Business` Terms : `Relations` | `Domains` | `Tuples`
+
+`Developer` & `Technical` Terms : `Tables` | `Columns` | `Rows`
+
 ### Vendors:
 
 1. Microsoft SQL Server
