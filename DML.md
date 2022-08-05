@@ -4,7 +4,7 @@
 
 ### `INSERT`
 
-`Insert` single row:
+`Single` row:
 
 ```sql
 -- Employee_ID will increment automatically. 
@@ -12,7 +12,7 @@ INSERT INTO Employee(FirstName, LastName, Email)
 VALUES('Kirankumar', 'Yadav', 'Kirankumaryadav@gmail.com')
 ```
 
-`Insert` multiple rows:
+`Multiple` rows:
 
 ```sql
 INSERT INTO Employee(FirstName, LastName, Email)  
