@@ -12,3 +12,12 @@
 - Usually 1 or N
 - If the product can have only one supplier, `cardinality = 1`
 - If the product can have multiple supplier, `cardinality = N`
+
+
+### Optionality and Cardinality are controlled automatically based on constraints.
+
+:--- | :---
+0..1 | NULL + UNIQUE
+1..1 | NOT NULL + UNIQUE
+1..N | NOT NULL + Not UNIQUE
+0..N | NULL + Not UNIQUE
