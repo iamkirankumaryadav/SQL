@@ -43,5 +43,7 @@ Better organized schema helps to reduce `code complexity`
 ```sql
 -- User can view all the databases and schemas together:
 SHOW DATABASES
+
+SHOW DATABASES LIKE "%...%"
 ```
 
