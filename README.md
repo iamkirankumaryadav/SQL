@@ -3,6 +3,7 @@
 # SQL
 Structured Query Language
 
+### SQL Categories | Subset of SQL
 <table>
   <tr>
     <th>DDL</th><th>DQL</th><th>DML</th><th>DCL</th>
