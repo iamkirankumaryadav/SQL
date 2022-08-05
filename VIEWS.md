@@ -10,13 +10,6 @@ You can't `Modify` Data in the View.
 
 ### CREATE VIEWS
 
-```SQL
-CREATE VIEW ViewName AS
-SELECT Column1, Column2, Column3
-FROM TablName
-WHERE Conditions;
-```
-
 ### Single Table
 ```SQL
 CREATE VIEW Details AS
@@ -27,7 +20,7 @@ WHERE Age > 18;
 
 We can also Add GROUP BY, HAVING, ORDER BY...
 
-### Multiple Table
+### Multiple Tables
 ```SQL
 CREATE VIEW Details AS
 SELECT S.Name, S.Address, M.Marks
