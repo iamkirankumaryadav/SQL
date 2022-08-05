@@ -4,7 +4,8 @@
 
 ### `INSERT`
 ```sql
-INSERT INTO Employee(FirstName, LastName, Email)  # Employee_ID will increment automatically. 
+-- Employee_ID will increment automatically. 
+INSERT INTO Employee(FirstName, LastName, Email)  
 VALUES('Kirankumar', 'Yadav', 'Kirankumaryadav@gmail.com')
 ```
 ### `UPDATE` 
