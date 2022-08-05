@@ -10,3 +10,8 @@ VALUES('Kirankumar', 'Yadav', 'Kirankumaryadav@gmail.com')
 ### `UPDATE` 
 
 ### `DELETE`
+```sql
+DELETE 
+FROM Supplier
+WHERE SupplierID = 2
+```
