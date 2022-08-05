@@ -105,3 +105,13 @@ GROUP BY 1, 2
 HAVING COUNT(ApplicantID) > 4
 ORDER BY 1, 3 DESC;
 ```
+
+```sql
+SELECT 
+Manager, PositionName, Recruiter, ApplicantName
+FROM Applicant AS App
+INNER JOIN Positions AS Po ON App.Position = Po.PositionIndex
+FULL JOIN Channels AS Ch ON App.ApplicantID = Ch.ID
+INNER JOIN Managers AS Mn ON Po.Department = mn.department
+ORDER BY 1, 2, 3
+```
