@@ -23,14 +23,20 @@ CREATE TABLE IF NOT EXISTS KTECH.HR.Employee (ID INT...);
 CREATE TABLE IF NOT EXISTS KTECH.Marketing.Employee (ID INT...);
 ```
 
+Each database vendors have there own way of representing schemas.
+
 ### `Collection` of database objects:
 
 1. Tables (Store Data)
 2. Views (Snapshot of a table)
-3. Procedures 
-4. Functions
-5. Indexes
-6. Triggers
+3. Fields
+4. Relationships
+5. Packages
+6. Procedures 
+7. Functions
+8. Indexes
+9. Triggers
+10. Directories
 
 ```sql
 -- User can view all the databases and schemas together:
