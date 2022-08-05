@@ -36,4 +36,5 @@ AND DateOfBirth = '07/02/1996'
 DELETE 
 FROM Supplier
 WHERE SupplierID = 2
+-- WHERE Clause is only used with DELETE command ( Not with DROP and TRUNCATE commands )
 ```
