@@ -1,4 +1,4 @@
-# `DML` : Data Manipulation Language
+# `DML` : **Data Manipulation Language**
 
 ## `SELECT`
 
