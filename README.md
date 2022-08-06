@@ -11,7 +11,7 @@
 ### Difference in databases
 - `Syntax` of a particular database may be different ( i.e. `TOP` : Microsoft SQL and `LIMIT` : MySQL )
 - `Data types` may be different. 
-- `Funtions` may have different name or argument types or order of arguments might be different.
+- `Funtions` might be different based om name or argument types or order of arguments.
 
 ### SQL Categories | Subset of SQL
 <table>
