@@ -1,5 +1,16 @@
 # `Numeric` Functions and Operations
 
+### `Aggregate Functions`
+
+```sql
+SELECT
+SUM(Salary) AS TotalSalary,
+AVG(Salary) AS AverageSalary,
+MIN(Salary) AS MinimumSalary,
+MAX(Salary) AS MaximumSalary
+FROM Employee;
+```
+
 ### `TRUNC` : Drop all the decimal values
 
 ```sql
