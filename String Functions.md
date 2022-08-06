@@ -37,6 +37,8 @@ WHERE Designation LIKE '%Developer' -- Ends with Developer LIKE (Software Develo
 ...
 WHERE Designation LIKE 'Data%'      -- Starts with Data LIKE (Data Scientist, Data Analyst, Data Engineer...)
 
+...
+WHERE Designation LIKE 'Data%|%Developer' -- Starts with Data or Ends with Developer.
 ```
 
 ### `CONCAT` multiple strings
