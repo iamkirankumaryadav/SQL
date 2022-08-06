@@ -51,7 +51,7 @@ Aggregate funtions are not allowed | Aggregate functions are allowed
 Only supports filter conditions based on the existing columns | Support filters based on aggregated results 
 
 - Aggregate Funtions: `COUNT`, `SUM`, `AVG`, `MIN`, `MAX` ...
-- `HAVING` clause is used only after `GROUP` BY clause.
+- `HAVING` clause is used only after `GROUP BY` clause.
 - **Aggregate Functions** are use to `Summarize` Data ( Returns single value for multiple rows )
 
 ### SUM | AVG | COUNT | MAX | MIN
