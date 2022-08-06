@@ -102,3 +102,21 @@ SOUNDEX('Postgres') = SOUNDEX('Postgress') AS Soundex
 Soundex
 :---
 true
+
+
+```sql
+SELECT 
+LEVENSHTEIN('Kiran', 'Kisan') AS LS
+```
+
+LS
+:---
+1
+
+```sql
+SELECT LEVENSHTEIN('Happy', 'Unhappy') AS LS
+```
+
+LS
+:---
+2
