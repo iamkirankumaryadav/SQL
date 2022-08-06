@@ -1,11 +1,12 @@
 # Views
 
-### Virtual Table (Do not Exist in Reality)
+### Virtual Table ( Do not Exist in Reality )
 
 You can't `Modify` Data in the View.
 
+- `Database` object that presents data from one or more tables.
 - Selecting `Fields` | `Columns` from one or more Tables present in Database
-- There is no `Records` | `Rows` in the View ( Only holds Definition of Table and Fetches Data from the Table and View it )
+- There is no `Records` | `Rows` in the View ( Only holds Definition of table and fetches data from the table and view it )
 
 
 ### CREATE VIEWS
