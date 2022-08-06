@@ -26,33 +26,33 @@
   </tr>
   <tr>
     <td>
-      <ul>
+      <ol>
         <li>CREATE</li>
         <li>ALTER</li>
         <li>DROP</li>
         <li>RENAME</li>
         <li>TRUNCATE</li>
         <li>COMMENT</li>
-      </ul>
+      </ol>
     </td>
     <td>
-      <ul>
+      <ol>
         <li>SELECT</li>     
-      </ul>
+      </ol>
     </td>
     <td>
-      <ul>
+      <ol>
         <li>INSERT</li>
         <li>UPDATE</li>
         <li>DELETE</li>
         <li>MERGE</li>
-      </ul>
+      </ol>
     </td>    
     <td>
-      <ul>
+      <ol>
         <li>GRANT</li>
         <li>REVOKE</li>
-      </ul>
+      </ol>
     </td>    
   </tr>
 </table>
