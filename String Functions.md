@@ -1,6 +1,6 @@
 # `String` Functions and Operations
 
-### Create BOOLEAN Result
+### Create `BOOLEAN` Result
 
 ```sql
 SELECT 
