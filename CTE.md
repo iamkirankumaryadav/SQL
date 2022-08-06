@@ -17,5 +17,6 @@ SELECT MAX(AVG_Salary) FROM CTE2;
 
 - `WITH` clause can include one or more CTE's seperated by `,`
 - Enables user to write and maintain complex queries more easily with good readability and simplification.
-- CTE's can be a useful tool when you need to generate `temporary` result sets that can be accessed by `SELECT`, `INSERT`, `UPDATE`, `DELETE` and `MERGE` statement.
-- A CTE must be followed by a single `SELECT`, `INSERT`, `UPDATE` or `DELETE` statement that references some or all CTE columns.
+- CTE's can be a useful tool when you need to generate `temporary` tables used only within a query.
+- CTE's tables can be used by `SELECT`, `INSERT`, `UPDATE`, `DELETE` and `MERGE` statement.
+- A `CTE` must be followed by a single `SELECT`, `INSERT`, `UPDATE` or `DELETE` statement that references some or all CTE columns.
