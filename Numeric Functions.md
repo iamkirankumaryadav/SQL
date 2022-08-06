@@ -1,6 +1,6 @@
 # `Numeric` Functions and Operations
 
-### `TRUNC` : Remove all the decimals
+### `TRUNC` : Drop all the decimal values
 
 ```sql
 SELECT TRUNC(1234.5678) AS Amount;
@@ -9,3 +9,13 @@ SELECT TRUNC(1234.5678) AS Amount;
 Amount
 :---
 1234
+
+### `ROUND`
+
+```sql
+SELECT ROUND(1234.5678) AS Amount;
+```
+
+Amount
+:---
+1235
