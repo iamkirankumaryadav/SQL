@@ -47,9 +47,12 @@ DROP Table Employee;
 
 WHERE | HAVING
 --- | ---
-`Filter` Rows | Works on `Aggregated` Data
+Aggregate funtions are not allowed | Aggregate functions are allowed 
+Only supports filter conditions based on the existing columns | Support filters based on aggregated results 
 
-**Aggregate Functions** are use to `Summarize` Data ( Returns Single Value for Multiple Rows )
+- Aggregate Funtions: `COUNT`, `SUM`, `AVG`, `MIN`, `MAX` ...
+- `HAVING` clause is used only after `GROUP` BY clause.
+- **Aggregate Functions** are use to `Summarize` Data ( Returns single value for multiple rows )
 
 ### SUM | AVG | COUNT | MAX | MIN
 
