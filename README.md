@@ -16,7 +16,7 @@
 ### SQL Categories | Subset of SQL
 <table>
   <tr>
-    <th>DDL</th><th>DQL</th><th>DML</th><th>DCL</th>
+    <th><h3>DDL</h3></th><th><h3>DQL</h3></th><th><h3>DML</h3></th><th><h3>DCL</h3></th>
   </tr>
   <tr>
     <th>Data Definition Language</th><th>Data Query Language</th><th>Data Manipulation Language</th><th>Data Control Language</th>
