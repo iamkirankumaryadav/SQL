@@ -30,3 +30,13 @@ SELECT LOWER('Kirankumar Yadav') AS Name;
 Name
 :---
 kirankumar yadav
+
+`TRIM`
+
+```sql
+SELECT "  Kirankumar Yadav  " AS Name;
+```
+
+Name
+:---
+Kirankumar Yadav
