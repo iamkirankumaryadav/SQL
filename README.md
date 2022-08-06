@@ -5,7 +5,8 @@
 - `Create`, `Retrieve`, `Update` and `Delete` data based on the selected criteria (C.R.U.D)
 -  Organize data in the selected order ( ASC or DESC )
 - `Join` multiple tables using a shared key.
-- Build simple data sources for dashboards.
+- Build simple data sources for `dashboards`
+- All the databases uses standard SQL under the skin, but there is little difference in syntax, data types support and funtions may have different name or argument types or order of arguments might be different.
 
 ### SQL Categories | Subset of SQL
 <table>
