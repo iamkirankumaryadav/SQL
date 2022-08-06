@@ -10,6 +10,6 @@ DepartmentID,
 FirstName,
 LastName,
 Salary,
-first_value(salary) OVER (PARTITION BY DepartmentID)
+first_value(salary) OVER (PARTITION BY DepartmentID ORDER BY Salary)
 FROM Employee
 ```
