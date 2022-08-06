@@ -26,7 +26,7 @@ Name
 :---
 Kirankumar
 
-### `CONCAT`
+### `CONCAT` multiple strings
 
 ```sql
 SELECT CONCAT(FirstName, ' ', LastName) AS Name;
@@ -57,7 +57,7 @@ Name
 :---
 kirankumar yadav
 
-`TRIM`
+### `TRIM`
 
 ```sql
 SELECT "  Kirankumar Yadav  " AS Name;
@@ -66,3 +66,11 @@ SELECT "  Kirankumar Yadav  " AS Name;
 Name
 :---
 Kirankumar Yadav
+
+### Select DISTINCT values from column
+
+```sql
+SELECT 
+DISTINCT(Designation)
+FROM Employee;
+```
