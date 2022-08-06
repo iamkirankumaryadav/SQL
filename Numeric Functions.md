@@ -2,7 +2,7 @@
 
 ### `TRUNC` : Remove all the decimals
 
-```
+```sql
 SELECT TRUNC(1234.5678) AS Amount;
 ```
 
