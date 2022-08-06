@@ -94,7 +94,11 @@ FROM Employee;
 
 ```sql
 CREATE EXTENSION IF NOT EXISTS fuzzystrmatch
+```
 
+### `SOUNDEX` : Finding similar sounding words.
+
+```sql
 SELECT 
 SOUNDEX('Postgres') = SOUNDEX('Postgress') AS Soundex
 ```
