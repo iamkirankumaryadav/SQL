@@ -20,4 +20,7 @@ AS (SELECT Dept_ID, AVG(Salary) AS AVG_Salary FROM Employee GROUP BY Dept_ID)
 SELECT MAX(AVG_Salary) FROM CTE2;
 ```
 
+```sql
+
+```
 
