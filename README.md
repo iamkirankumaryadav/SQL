@@ -68,6 +68,7 @@ FROM     <Table Name>
 SELECT   <Columns>
 FROM     <Table>
 JOIN     <Another Table>
+ON       <Common Columns>
 WHERE    <Filter Condition>
 GROUP BY <Grouping>
 HAVING   <Aggregate Filter>
