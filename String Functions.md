@@ -89,3 +89,16 @@ SELECT
 DISTINCT(Designation)
 FROM Employee;
 ```
+
+### Extension
+
+```sql
+CREATE EXTENSION IF NOT EXISTS fuzzystrmatch
+
+SELECT 
+SOUNDEX('Postgres') = SOUNDEX('Postgress') AS Soundex
+```
+
+Soundex
+:---
+true
