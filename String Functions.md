@@ -32,10 +32,10 @@ Kirankumar
 SELECT 
 Name, Age, Designation 
 FROM Employee
-WHERE Designation LIKE '%Developer' -- Ends with Developer LIKE (Software Developer, Hardware Developer, BI Developer...)
+WHERE Designation LIKE '%Developer' -- Ends with Developer LIKE (Software Developer, Hardware Developer...)
 
 ...
-WHERE Designation LIKE 'Data%'      -- Starts with Data LIKE (Data Scientist, Data Analyst, Data Engineer, Data Modelling Expert...)
+WHERE Designation LIKE 'Data%'      -- Starts with Data LIKE (Data Scientist, Data Analyst, Data Engineer...)
 
 ```
 
