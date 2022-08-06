@@ -1,5 +1,15 @@
 # `String` Functions and Operations
 
+### `SUBSTRING`
+
+```sql
+SELECT SUBSTRING('Kirankumar Yadav', 1, 10) AS NAME
+```
+
+Name
+:---
+Kirankumar
+
 ### `CONCAT`
 
 ```sql
