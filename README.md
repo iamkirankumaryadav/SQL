@@ -1,7 +1,7 @@
 <p align=right><a href='https://github.com/KIRANKUMAR7296/CSharp'>Navigate to C#</a></p>
 
 # `SQL`
-- Structured Query Language
+- `ANSI` : American National Standards Institute - Standard `Structured Query Language`.
 - `Create`, `Retrieve`, `Update` and `Delete` data based on the selected criteria (C.R.U.D)
 -  Organize data in the selected order ( ASC or DESC )
 - `Join` multiple tables using a shared key.
