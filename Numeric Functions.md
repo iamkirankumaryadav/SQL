@@ -24,9 +24,9 @@ Amount
 ### `ROUND`
 
 ```sql
-SELECT ROUND(1234.5678) AS Amount;
+SELECT ROUND(1234.5678, 2) AS Amount;
 ```
 
 Amount
 :---
-1235
+1235.57
