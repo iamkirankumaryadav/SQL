@@ -30,3 +30,13 @@ SELECT ROUND(1234.5678, 2) AS Amount;
 Amount
 :---
 1235.57
+
+### `CEIL`
+
+```sql
+SELECT CEIL(1234.56) AS Amount;
+```
+
+Amount
+:---
+1235
