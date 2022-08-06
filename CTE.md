@@ -1,6 +1,6 @@
 # `CTE` : Common Table Expressions
 
-- CTE's is a useful tool to generate `temporary` tables used only within a query.
+- CTE's is a useful tool to generate `temporary` tables used only within a query, helps to simplify complex queries.
 - `CTE` must be followed by a single `SELECT`, `INSERT`, `UPDATE` or `DELETE` statement that references CTE columns.
 - `WITH` clause can include one or more CTE's seperated by using `,` ( Commas )
 - Enables user to write and maintain complex queries more easily with good readability and simplification.
