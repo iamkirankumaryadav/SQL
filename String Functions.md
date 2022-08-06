@@ -1,5 +1,21 @@
 # `String` Functions and Operations
 
+### Create BOOLEAN Result
+
+```sql
+SELECT 
+Name, Age, Designation, (Designation LIKE 'Data Scientist') AS DataScience
+FROM Employee;
+```
+
+Name | Age | Designation | DataScience
+:--- | :--- | :--- | :---
+Kirankumar Yadav | 26 | Data Scientist | true
+Paramveer Yadav | 27 | Data Analyst | false
+Suraj MS | 27 | Data Scientist | true
+Gaurav Sonar | 28 | Angular Developer | false
+Pranit Sorte | 29 | Program Manager | false
+
 ### `SUBSTRING`
 
 ```sql
