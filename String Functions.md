@@ -56,8 +56,8 @@ Kirankumar Yadav
 ```sql
 SELECT 
 UPPER('Kirankumar Yadav') AS UpperCaseName,
-UPPER('Kirankumar Yadav') AS LowerCaseName,
-UPPER('kirankumar yadav') AS TitleCaseName;
+LOWER('Kirankumar Yadav') AS LowerCaseName,
+INITCAP('kirankumar yadav') AS TitleCaseName;
 ```
 
 UpperCaseName | LowerCaseName | TitleCaseName
