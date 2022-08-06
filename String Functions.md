@@ -51,26 +51,18 @@ Name
 :---
 Kirankumar Yadav
 
-### `UPPER`
+### `UPPER` | `LOWER` | `INITCAP`
 
 ```sql
-SELECT UPPER('Kirankumar Yadav') AS Name;
+SELECT 
+UPPER('Kirankumar Yadav') AS UpperCaseName,
+UPPER('Kirankumar Yadav') AS LowerCaseName,
+UPPER('kirankumar yadav') AS TitleCaseName;
 ```
 
-Name
-:---
-KIRANKUMAR YADAV
-
-
-### `LOWER`
-
-```sql
-SELECT LOWER('Kirankumar Yadav') AS Name;
-```
-
-Name
-:---
-kirankumar yadav
+UpperCaseName | LowerCaseName | TitleCaseName
+:--- | :--- | :---
+KIRANKUMAR YADAV | kirankumar yadav | Kirankumar Yadav
 
 ### `TRIM`
 
