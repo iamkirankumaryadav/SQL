@@ -28,7 +28,9 @@ ORDER BY Salary DESC
 LIMIT 3
 ```
 
-### `FETCH FIRST`
+### `FETCH FIRST N ROWS ONLY`
+
+- Used in standard SQL.
 
 ```sql
 SELECT 
