@@ -1,6 +1,7 @@
 # `HAVING`
 
-Only used after `GROUP BY` clause.
+- Only used after `GROUP BY` clause.
+- Supports Aggregate Conditions ( i.e SUM(Salary) > 200000, AVG(Salary) < 1000000 )
 
 ```sql
 SELECT
