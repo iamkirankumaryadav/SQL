@@ -82,7 +82,7 @@ Name
 :---
 Kirankumar Yadav
 
-### Select DISTINCT values from column
+### Select `DISTINCT` values from column
 
 ```sql
 SELECT 
@@ -90,7 +90,7 @@ DISTINCT(Designation)
 FROM Employee;
 ```
 
-### Extension
+### `Extension`
 
 ```sql
 CREATE EXTENSION IF NOT EXISTS fuzzystrmatch
