@@ -15,3 +15,27 @@ Salary,
 first_value(salary) OVER (PARTITION BY DepartmentID ORDER BY Salary DESC)
 FROM Employee
 ```
+
+Numeric function should be applied on entire window.
+
+```sql
+SELECT
+DepartmentID,
+FirstName,
+LastName,
+ROUND(AVG(salary) OVER (PARTITION BY DepartmentID ORDER BY Salary DESC), 2) AS AverageSalary
+FROM Employee
+```
+
+### `NTILE`
+
+```sql
+SELECT
+DepartmentID,
+FirstName,
+LastName,
+NTILE(4) OVER (PARTITION BY DepartmentID ORDER BY Salary DESC) AS Quartile
+FROM Employee
+```
+
+### `NTH_VALUE`
