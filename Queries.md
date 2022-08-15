@@ -1,6 +1,6 @@
 # Queries
 
-### 1. Query the List of City Names from A Table that do not Start with `Vowels` and do not End with `Vowels` + Result cannot contain Duplicates.
+1. Query the list of city names from a table that do not start with `vowels` and do not end with `vowels` + result cannot contain duplicates.
 
 `SUBSTRING(Column, Index, Length)`
 
