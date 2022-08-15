@@ -3,11 +3,13 @@
 ### `Constraints`
 
 ```
-1. PRIMARY KEY 
-2. FOREIGN KEY 
-3. UNIQUE KEY 
-4. NULL
-5. NOT NULL
+1. PRIMARY KEY  : A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table.
+2. FOREIGN KEY  : Prevents actions that would destroy links between tables.
+3. UNIQUE       : Ensures that all values in a column are different.
+4. NOT NULL     : Ensures that a column cannot have a NULL value.
+5. CHECK        : Ensures that the values in a column satisfies a specific condition.
+6. DEFAULT      : Sets a default value for a column if no value is specified.
+7. CREATE_INDEX : Used to create and retrieve data from the database very quickly.
 ```
 
 ### `Aggregate` Functions 
