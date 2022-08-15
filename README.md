@@ -242,27 +242,24 @@ SELECT Email
 FROM Employee
 GROUP BY Email
 HAVING COUNT(Email) > 1
+```
 
 ### Drop Duplicates from Table
 
-1. Using `Temporary` Table
-
 ```SQL
+-- Create temporary table:
 SELECT DISTINCT * 
 INTO NewTable
 FROM OldTable
-```
 
-```SQL
+-- DROP old table:
 DROP * FROM OldTable
-```
 
-```SQL
+-- INSERT into old table from new table:
 INSERT INTO OldTable
 SELECT * FROM NewTable
-```
 
-```SQL
+-- DROP new table:
 DROP TABLE NewTable
 ```
 
