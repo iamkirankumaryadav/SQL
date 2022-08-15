@@ -32,7 +32,7 @@
 
 ### `Relationship` types in SQL ?
 
-```sql
+```
 1. One to One   : One person can choose one stream. 
 2. One to Many  : One teacher can teach many subjects.
 3. Many to Many : Many students can learn many subjects.
