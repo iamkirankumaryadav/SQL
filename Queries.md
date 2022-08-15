@@ -21,7 +21,6 @@ CREATE TABLE Employee
 );
 
 -- FOREIGN KEY:
-```SQL
 CREATE TABLE Employee
 (
   EID INT NOT NULL PRIMARY KEY,
@@ -30,12 +29,10 @@ CREATE TABLE Employee
 )
 
 -- UNIQUE:
-```SQL
 ALTER TABLE Employee
 ADD UNIQUE(ID);
 
 -- NOT NULL:
-```SQL
 CREATE TABLE Employee
 (
   ID           INT NOT NULL,
@@ -46,7 +43,6 @@ ALTER TABLE Employee
 MODIFY EmployeeName NOT NULL;
 
 -- CHECK:
-```SQL
 CREATE TABLE Employee
 (
   ID INT NOT NULL,
