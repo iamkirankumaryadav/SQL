@@ -241,7 +241,7 @@ ORDER BY Salary ASC;
 SELECT Email
 FROM Employee
 GROUP BY Email
-HAVING COUNT(Email) > 1
+HAVING COUNT(Email) > 1;
 ```
 
 ### Drop Duplicates from Table
@@ -250,22 +250,22 @@ HAVING COUNT(Email) > 1
 -- Create temporary table:
 SELECT DISTINCT * 
 INTO NewTable
-FROM OldTable
+FROM OldTable;
 
 -- DROP old table:
-DROP * FROM OldTable
+DROP * FROM OldTable;
 
 -- INSERT into old table from new table:
 INSERT INTO OldTable
-SELECT * FROM NewTable
+SELECT * FROM NewTable;
 
 -- DROP new table:
-DROP TABLE NewTable
+DROP TABLE NewTable;
 ```
 
 ### Compare Two Columns
 
 ```SQL
 SELECT * FROM Employee
-WHERE Employee_Name IN (SELECT Employee_Name FROM Department)
+WHERE Employee_Name IN (SELECT Employee_Name FROM Department);
 ```
