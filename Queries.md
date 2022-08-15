@@ -1,6 +1,6 @@
 # Queries
 
-### `Constraints`
+### `Constraints` : Rules and Validations
 
 ```
 1. PRIMARY KEY  : A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table.
@@ -10,6 +10,48 @@
 5. CHECK        : Ensures that the values in a column satisfies a specific condition.
 6. DEFAULT      : Sets a default value for a column if no value is specified.
 7. CREATE_INDEX : Used to create and retrieve data from the database very quickly.
+```
+
+```SQL
+-- PRIMARY KEY:
+CREATE TABLE Employee
+(
+  ID INT NOT NULL PRIMARY KEY,
+  Name VARCHAR(255)
+);
+
+-- FOREIGN KEY:
+```SQL
+CREATE TABLE Employee
+(
+  EID INT NOT NULL PRIMARY KEY,
+  Name VARCHAR(255),
+  DID INT NOT NULL FOREIGN KEY REFERENCES Department(DID)
+)
+
+-- UNIQUE:
+```SQL
+ALTER TABLE Employee
+ADD UNIQUE(ID);
+
+-- NOT NULL:
+```SQL
+CREATE TABLE Employee
+(
+  ID           INT NOT NULL,
+  EmployeeName VARCHAR(255) NOT NULL
+);
+
+ALTER TABLE Employee
+MODIFY EmployeeName NOT NULL;
+
+-- CHECK:
+```SQL
+CREATE TABLE Employee
+(
+  ID INT NOT NULL,
+  Age INT CHECK(AGE >= 18)
+);
 ```
 
 ### `Aggregate` Functions 
