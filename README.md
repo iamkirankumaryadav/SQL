@@ -216,40 +216,32 @@ IN (SELECT ID, MAX(Salary)
 
 17. Second Highest Salary
 
-MAX | LIMIT | TOP
-
-A. MAX 
 ```SQL
+-- MAX:
 SELECT MAX(Salary) 
 FROM Employee
-WHERE Salary < (SELECT MAX(Salary) 
-                FROM Employee);                               
-```
+WHERE Salary < (SELECT MAX(Salary) FROM Employee);                               
 
-18. Find all Duplicate Emails
-```SQL
-SELECT Email
-FROM Employee
-GROUP BY Email
-HAVING COUNT(Email) > 1
-```
-
-B. LIMIT
-```SQL
+-- LIMIT:
 SELECT Salary
 FROM (SELECT Salary FROM Employee ORDER BY  Salary DESC LIMIT 2)
 AS EmployeeSalary 
 ORDER BY Salary LIMIT 1;
-```
 
-C. TOP
-```SQL
+-- TOP:
 SELECT Top 1 Salary
 FROM (SELECT Top 2 Salary FROM Employee ORDER BY  Salary DESC)
 AS EmployeeSalary 
 ORDER BY Salary ASC;
 ```
 
+18. Find all Duplicate Emails
+
+```SQL
+SELECT Email
+FROM Employee
+GROUP BY Email
+HAVING COUNT(Email) > 1
 
 ### Drop Duplicates from Table
 
