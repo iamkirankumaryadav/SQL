@@ -6,9 +6,9 @@ Controls what type of data is allowed into a table ( `PRIMARY KEY`, `FOREIGN KEY
 
 ### `Aggregate` Functions 
 
-```python
+```
 1. SUM()   : Returns a total
-2. AVG()`   : Returns the averages of numbers.
+2. AVG()`  : Returns the averages of numbers.
 3. MIN()   : Returns the lowest or oldest(date)
 4. MAX()   : Returns the highest or newest(date)
 5. COUNT() : Returns the numbers of values (Frequency)
@@ -23,6 +23,17 @@ Controls what type of data is allowed into a table ( `PRIMARY KEY`, `FOREIGN KEY
 4. TCL : Transaction Control Language
 5. DQL : Data Query Language
 ```
+
+### `Relationship` types in SQL ?
+```sql
+1. One to One   : One person can choose one stream. 
+2. One to Many  : One teacher can teach many subjects.
+3. Many to Many : Many students can learn many subjects.
+```
+
+### `UNION` vs `UNION ALL`
+- Number of the columns, data type and order of the columns should be same.
+- `UNION` keeps only `DISTINCT` where as `UNION ALL` preserves duplicates.
 
 ### Select All 
 - Select `all` columns of the Table.
