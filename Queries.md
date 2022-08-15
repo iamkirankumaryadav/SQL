@@ -16,10 +16,10 @@
 
 ```
 1. SUM()   : Returns a total
-2. AVG()`  : Returns the averages of numbers.
-3. MIN()   : Returns the lowest or oldest(date)
-4. MAX()   : Returns the highest or newest(date)
-5. COUNT() : Returns the numbers of values (Frequency)
+2. AVG()   : Returns the averages of numbers.
+3. MIN()   : Returns the lowest or oldest ( date )
+4. MAX()   : Returns the highest or newest ( date )
+5. COUNT() : Returns the numbers of values ( Frequency )
 ```
 
 ### SQL `Categorization` 
