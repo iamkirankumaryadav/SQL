@@ -250,55 +250,6 @@ AS EmployeeSalary
 ORDER BY Salary ASC;
 ```
 
-### Constraints ( Rules )
-
-CREATE Table and ALTER Table
-
-1. NOT NULL (Non Empty Values in the Column)
-```SQL
-CREATE TABLE Employee
-(
-  ID           INT NOT NULL,
-  EmployeeName VARCHAR(255) NOT NULL
-);
-
-ALTER TABLE Employee
-MODIFY EmployeeName NOT NULL;
-```
-
-2. UNIQUE (Different Values in the Column)
-```SQL
-ALTER TABLE Employee
-ADD UNIQUE(ID);
-```
-
-3. PRIMARY KEY
-```SQL
-CREATE TABLE Employee
-(
-  ID INT NOT NULL PRIMARY KEY,
-  Name VARCHAR(255)
-);
-```
-
-4. FOREIGN KEY
-```SQL
-CREATE TABLE Employee
-(
-  EID INT NOT NULL PRIMARY KEY,
-  Name VARCHAR(255),
-  DID INT NOT NULL FOREIGN KEY REFERENCES Department(DID)
-)
-```
-
-5. CHECK
-```SQL
-CREATE TABLE Employee
-(
-  ID INT NOT NULL,
-  Age INT CHECK(AGE >= 18)
-);
-```
 
 ### Drop Duplicates from Table
 
