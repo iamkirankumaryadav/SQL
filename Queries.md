@@ -1,5 +1,28 @@
 # Queries
 
+### `Constraints`
+
+Controls what type of data is allowed into a table ( `PRIMARY KEY`, `FOREIGN KEY`, `UNIQUE KEY`, `NOT NULL` )
+
+### `Aggregate` Functions 
+
+```python
+1. SUM()   : Returns a total
+2. AVG()`   : Returns the averages of numbers.
+3. MIN()   : Returns the lowest or oldest(date)
+4. MAX()   : Returns the highest or newest(date)
+5. COUNT() : Returns the numbers of values (Frequency)
+```
+
+### SQL `Categorization` 
+
+```
+1. DDL : Data Definition Language
+2. DML : Data Manipulation Language
+3. DCL : Data Control Language
+4. TCL : Transaction Control Language
+5. DQL : Data Query Language
+```
 
 ### Select All 
 - Select `all` columns of the Table.
