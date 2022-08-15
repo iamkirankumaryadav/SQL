@@ -2,7 +2,13 @@
 
 ### `Constraints`
 
-Controls what type of data is allowed into a table ( `PRIMARY KEY`, `FOREIGN KEY`, `UNIQUE KEY`, `NOT NULL` )
+```
+1. PRIMARY KEY 
+2. FOREIGN KEY 
+3. UNIQUE KEY 
+4. NULL
+5. NOT NULL
+```
 
 ### `Aggregate` Functions 
 
@@ -25,6 +31,7 @@ Controls what type of data is allowed into a table ( `PRIMARY KEY`, `FOREIGN KEY
 ```
 
 ### `Relationship` types in SQL ?
+
 ```sql
 1. One to One   : One person can choose one stream. 
 2. One to Many  : One teacher can teach many subjects.
