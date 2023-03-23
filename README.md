@@ -1,6 +1,10 @@
 <p align=right><a href='https://github.com/KIRANKUMAR7296/CSharp'>Navigate to C#</a></p>
 
 # `SQL`
+- Programming language used to manage and manipulate the data within the relational databases.
+- Standard language used by most `RDBMS`, i.e. `MySQL`, `Oracle`, `SQL Server`, etc.
+- Used to `create`, `modify`, `filter`, `sort`, `aggregate` and `query` databases. 
+- Allows `developers` and `database administrators` to manage large amount of data effectively.
 - `ANSI` : American National Standards Institute - Standard `Structured Query Language`
 - `Create`, `Retrieve`, `Update` and `Delete` data based on the selected criteria ( `C.R.U.D` )
 -  Organize data in the selected order ( `ASC` or `DESC` )
