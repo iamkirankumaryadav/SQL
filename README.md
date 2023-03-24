@@ -9,13 +9,11 @@
 - `Create`, `Retrieve`, `Update` and `Delete` data based on the selected criteria ( `C.R.U.D` )
 -  Organize data in the selected order ( `ASC` or `DESC` )
 - `Join` multiple tables using a shared key.
-- Build simple data sources for `dashboards`
-- All the databases uses standard SQL under the skin with minor differences. 
 
 ### Difference in databases
 - `Syntax` of a particular database may be different ( i.e. `TOP` : Microsoft SQL and `LIMIT` : MySQL )
 - `Data types` may be different. 
-- `Funtions` might be different based om name or argument types or order of arguments.
+- `Funtions` might be different based on name or argument types or order of arguments.
 
 ### SQL Categories | Subset of SQL
 <table>
