@@ -6,7 +6,7 @@ The command is not auto commited (It can't permanently save all the changes in t
 
 <a href=#insert><code>INSERT</code></a> <a href=#update><code>UPDATE</code></a> <a href=#delete><code>DELETE</code></a> 
 
-<h2 name='insert'><code>INSERT</code></h2>
+<h2 name=insert color=green><code>INSERT</code></h2>
 
 `Insert` data into the row of a table.
 
