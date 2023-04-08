@@ -71,7 +71,7 @@ ALTER Table Employee
 ALTER Column Country NVARCHAR(30);
 ```
 
-<h2 name=truncate><code>TRUNCATE`</code></h>
+<h2 name=truncate><code>TRUNCATE</code></h>
 
 Delete data from the table, while retaining the structure of the table.
 
@@ -80,7 +80,7 @@ TRUNCATE Table Employee
 DROP Column Email;
 ```
 
-    <h2 name=drop><code>DROP`<code></h>
+<h2 name=drop><code>DROP`<code></h>
 
 Delete the entire table data including structure and constraints.
 
