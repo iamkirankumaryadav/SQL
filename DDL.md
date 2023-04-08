@@ -1,6 +1,8 @@
 # `DDL` : Data Definition Language
 
-Creates the data structures ( Schemas, Tables, Views and Indexes ) which helps to organize data.
+Creates the data structures ( `Schemas`, `Tables`, `Views` and `Indexes` ) which helps to organize data.
+
+All the `commands` of DDL are auto commited (Permanently save all the changes in the database)
 
 ## `CREATE` 
 
@@ -45,7 +47,9 @@ USING (Last_Name);
 
 ## `ALTER`
 
-Change the structure (Data type, column names, add or drop columns) of table.
+Alter | Change the structure (Data type, column names, add or drop columns) of table.
+
+Either to `modify` the characteristics of an existing attribute or probably to `add` a new attribute.
 
 ```sql
 -- DROP Column:
