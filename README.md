@@ -8,6 +8,7 @@
 - Used to `create`, `retrieve`, `update`, `delete`, `modify`, `filter`, `sort`, `aggregate` and `query` databases. 
 - `Join` multiple tables using a shared key.
 -  Organize data in the selected order ( `ASC` or `DESC` )
+-  SQL `commands` are instructions used to communicate with the `database`
 
 ### Difference in databases
 - `Syntax` of a particular database may be different ( i.e. `TOP` : Microsoft SQL and `LIMIT` : MySQL )
