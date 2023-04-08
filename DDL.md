@@ -4,7 +4,9 @@ Creates the data structures ( `Schemas`, `Tables`, `Views` and `Indexes` ) which
 
 All the `commands` of DDL are auto commited (Permanently save all the changes in the database)
 
-## `CREATE` 
+<a href=#create><code>CREATE</code></a>
+
+<h2 name=create><code>CREATE</code><h2>
 
 ### `CREATE SCHEMA`
 
