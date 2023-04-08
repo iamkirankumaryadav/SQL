@@ -13,14 +13,11 @@ The command is not auto commited (It can't permanently save all the changes in t
 `Single` row:
 
 ```sql
--- Employee_ID will increment automatically. 
+-- Insert single row:
 INSERT INTO Employee(FirstName, LastName, Email)  
 VALUES('Kirankumar', 'Yadav', 'Kirankumaryadav@gmail.com');
-```
 
-`Multiple` rows:
-
-```sql
+-- Insert multiple rows:
 INSERT INTO Employee(FirstName, LastName, Email)  
 VALUES('Kirankumar', 'Yadav', 'Kirankumar.Yadav@gmail.com'),
       ('Kisankumar', 'Yadav', 'Kisankumar.Yadav@gmail.com'),
