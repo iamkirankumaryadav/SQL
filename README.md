@@ -1,14 +1,13 @@
 <p align=right><a href='https://github.com/KIRANKUMAR7296/CSharp'>Navigate to C#</a></p>
 
-# `SQL`
+# `SQL` - `Structured Query Language`
 - Programming language used to manage and manipulate the data within the relational databases.
 - Standard language used by most `RDBMS`, i.e. `MySQL`, `Oracle`, `SQL Server`, etc.
-- Used to `create`, `modify`, `filter`, `sort`, `aggregate` and `query` databases. 
 - Allows `developers` and `database administrators` to manage large amount of data effectively.
-- `ANSI` : American National Standards Institute - Standard `Structured Query Language`
-- `Create`, `Retrieve`, `Update` and `Delete` data based on the selected criteria ( `C.R.U.D` )
--  Organize data in the selected order ( `ASC` or `DESC` )
+- `C.R.U.D`: `Create`, `Retrieve`, `Update` and `Delete` 
+- Used to `create`, `retrieve`, `update`, `delete`, `modify`, `filter`, `sort`, `aggregate` and `query` databases. 
 - `Join` multiple tables using a shared key.
+-  Organize data in the selected order ( `ASC` or `DESC` )
 
 ### Difference in databases
 - `Syntax` of a particular database may be different ( i.e. `TOP` : Microsoft SQL and `LIMIT` : MySQL )
