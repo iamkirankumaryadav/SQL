@@ -80,7 +80,7 @@ TRUNCATE Table Employee
 DROP Column Email;
 ```
 
-<h2 name=drop><code>DROP`<code></h>
+<h2 name=drop><code>DROP<code></h>
 
 Delete the entire table data including structure and constraints.
 
