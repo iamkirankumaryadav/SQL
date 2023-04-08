@@ -1,6 +1,8 @@
 # `DML` : **Data Manipulation Language**
 
-## `SELECT`
+`Modify` the databases. It is responsible for all form of changes in the database.
+
+The command is not auto commited (It can't permanently save all the changes in the database) they can be `rollback`
 
 ## `INSERT`
 
