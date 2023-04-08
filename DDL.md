@@ -4,7 +4,7 @@ Creates the data structures ( `Schemas`, `Tables`, `Views` and `Indexes` ) which
 
 All the `commands` of DDL are auto commited (Permanently save all the changes in the database)
 
-<a href=#create><code>CREATE</code></a> <a href=#alter><code>ALTER</code></a> <a href=#drop><code>DROP</code></a> <a href=#rename><code>RENAME</code></a> <a href=#truncate><code>TRUNCATE</code></a>
+<a href=#create><code>CREATE</code></a> <a href=#alter><code>ALTER</code></a> <a href=#rename><code>RENAME</code></a> <a href=#truncate><code>TRUNCATE</code></a> <a href=#drop><code>DROP</code></a>
 
 <h2 name=create><code>CREATE</code><h2>
 
@@ -71,6 +71,21 @@ ALTER Table Employee
 ALTER Column Country NVARCHAR(30);
 ```
 
+<h2 name=renam><code>RENAME</code></h2>
+    
+Rename old table name or any column of the table to a new name.   
+
+```sql
+-- Rename table name:    
+ALTER TABLE table_name
+RENAME TO new_table_name;    
+```    
+
+```
+ALTER TABLE table_name
+RENAME COLUMN old_name TO new_name;   
+```
+    
 <h2 name=truncate><code>TRUNCATE</code></h2>
     
 Delete data from the table, while retaining the structure of the table.
