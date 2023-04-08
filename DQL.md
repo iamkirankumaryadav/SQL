@@ -1,5 +1,9 @@
 # `DQL` : Data Query Language
 
+`Fetch` the data from the database.
+
+`SELECT` the attribute based on the conditions described by `WHERE` clause.
+
 Keyword Comparison Operators 
 ```
 1. BETWEEN     : Returns data within range of values.
