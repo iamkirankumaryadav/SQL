@@ -81,7 +81,7 @@ ALTER TABLE table_name
 RENAME TO new_table_name;    
 ```    
 
-```
+```sql
 ALTER TABLE table_name
 RENAME COLUMN old_name TO new_name;   
 ```
