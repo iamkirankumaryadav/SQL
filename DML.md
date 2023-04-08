@@ -4,7 +4,11 @@
 
 The command is not auto commited (It can't permanently save all the changes in the database) they can be `rollback`
 
-## `INSERT`
+<a href=#insert><code>INSERT</code></a> <a href=#update><code>UPDATE</code></a> <a href=#delete><code>DELETE</code></a> <a href=#merge><code>MERGE</code></a> 
+
+<h2 name='insert'><code>INSERT</code><h2>
+
+`Insert` data into the row of a table.
 
 `Single` row:
 
@@ -24,7 +28,10 @@ VALUES('Kirankumar', 'Yadav', 'Kirankumar.Yadav@gmail.com'),
       ('Arpit', 'Yadav', 'Arpit.Yadav@gmail.com');
 ```
 
-## `UPDATE` 
+<h2 name='update'><code>UPDATE</code></h2>
+      
+`Update` or `modify` the value of a column in a table.      
+      
 ```sql
 UPDATE Employee
 SET Designation = 'Data Scientist'
@@ -33,7 +40,10 @@ AND LastName = 'Yadav'
 AND DateOfBirth = '07/02/1996';
 ```
 
-## `DELETE`
+<h2 name=delete><code>DELETE</code></h2>
+      
+`Remove` one or more row from a table.
+
 ```sql
 DELETE 
 FROM Supplier
