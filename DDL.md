@@ -47,7 +47,7 @@ ON Staff
 USING (Last_Name);
 ```
 
-<h2 name=alter><code>ALTER</code><h2>
+<h2 name=alter><code>ALTER</code></h2>
 
 Alter | Change the structure (Data type, column names, add or drop columns) of table.
 
