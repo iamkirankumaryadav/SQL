@@ -82,6 +82,7 @@ RENAME TO new_table_name;
 ```    
 
 ```sql
+-- Rename column name:
 ALTER TABLE table_name
 RENAME COLUMN old_name TO new_name;   
 ```
