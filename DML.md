@@ -4,7 +4,7 @@
 
 The command is not auto commited (It can't permanently save all the changes in the database) they can be `rollback`
 
-<a href=#insert><code>INSERT</code></a> <a href=#update><code>UPDATE</code></a> <a href=#delete><code>DELETE</code></a> <a href=#merge><code>MERGE</code></a> 
+<a href=#insert><code>INSERT</code></a> <a href=#update><code>UPDATE</code></a> <a href=#delete><code>DELETE</code></a> 
 
 <h2 name='insert'><code>INSERT</code></h2>
 
