@@ -9,7 +9,7 @@ DCL commands are used to `grant` and take back the authority from any database u
 Give user access privileges to a database.
 
 ```sql
-GRANT SELECT, UPDATE ON MY_TABLE TO SOME_USER, ANOTHER_USER;
+GRANT SELECT, UPDATE ON TABLE TO USER1, USER2;
 ```
 
 <h2 name=revoke><code>REVOKE</code></h2>
