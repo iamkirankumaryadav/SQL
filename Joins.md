@@ -54,7 +54,7 @@ ON O.ID = C.ID;
 
 <h3 name='right'>3. RIGHT Join</h3>
 
-Join all the rows from `right` table and matching rows from `left` table,even if there are no matching rows in the left table.
+Join all the rows from `right` table and matching rows from `left` table, even if there are no matching rows in the left table.
 
 If there are no matches in the left table, `Null` values are returned for the left table columns.
 
