@@ -103,7 +103,7 @@ ON D.D_ID = S.D_ID;
 <h3 name='child'>7. Join using Child Parent Relationship</h3>
 
 ```SQL
-SELECT EmployeeName, DepartmentName, Manager, Salary
+SELECT E.EmployeeName, D.DepartmentName, E.Manager, S.Salary
 FROM Employee E, Salary S, Department D
 WHERE E.E_ID = D.E_ID AND D.D_ID = S.D_ID;
 ```
