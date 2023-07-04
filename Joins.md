@@ -2,15 +2,13 @@
 
 <table>
         <tr><th>Joins</th><th>Description</th></tr>
-        <tr>
-                <td><a href = '#inner'>1. Inner Join</a></td><td>Join matching rows in both tables</td>
-                <td><a href = '#left'>2. Left Join</a></td><td>Join all rows from left and matching rows from right table</td>
-                <td><a href = '#right'>3. Right Join</a></td><td>Join matching rows in both tables</td>
-                <td><a href = '#self'>4. Self Join</a></td><td>Join matching rows in both tables</td>
-                <td><a href = '#outer'>5. Outer Join</a></td><td>Join matching rows in both tables</td>
-                <td><a href = '#more'>6. Join More than 2 Tables</a></td><td>Join matching rows in both tables</td>
-                <td><a href = '#child'>7. Join Child Parent Relationship</a></td><td>Join matching rows in both tables</td>
-        </tr>    
+        <tr><td><a href = '#inner'>1. Inner Join</a></td><td>Join matching rows in both tables</td></tr>
+        <tr><td><a href = '#left'>2. Left Join</a></td><td>Join all rows from left and matching rows from right table</td></tr>
+        <tr><td><a href = '#right'>3. Right Join</a></td><td>Join matching rows in both tables</td></tr>
+        <tr><td><a href = '#self'>4. Self Join</a></td><td>Join matching rows in both tables</td></tr>
+        <tr><td><a href = '#outer'>5. Outer Join</a></td><td>Join matching rows in both tables</td></tr>
+        <tr><td><a href = '#more'>6. Join More than 2 Tables</a></td><td>Join matching rows in both tables</td></tr>
+        <tr><td><a href = '#child'>7. Join Child Parent Relationship</a></td><td>Join matching rows in both tables</td></tr>    
 </table>
 
 ### Tables (Example)
