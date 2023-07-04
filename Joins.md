@@ -41,7 +41,7 @@ ON Orders.ID = Customers.ID;
 
 <h3 name='left'>2. LEFT Join</h3>
 
-Join all the rows from `left` table and matching rows from `right` table. 
+Join all the rows from `left` table and matching rows from `right` table, even if there are no matching rows in the right table.
 
 If there are no matches in the right table, `Null` values are returned for the right table columns.
 
@@ -54,7 +54,7 @@ ON O.ID = C.ID;
 
 <h3 name='right'>3. RIGHT Join</h3>
 
-Join all the rows from `right` table and matching rows from the `left` table.
+Join all the rows from `right` table and matching rows from `left` table,even if there are no matching rows in the left table.
 
 If there are no matches in the left table, `Null` values are returned for the left table columns.
 
