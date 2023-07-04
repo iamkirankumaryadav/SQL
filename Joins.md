@@ -41,7 +41,9 @@ ON Orders.ID = Customers.ID;
 
 <h3 name='left'>2. LEFT Join</h3>
 
-Join all the rows from `left` table and matching rows from `right` table.
+Join all the rows from `left` table and matching rows from `right` table. 
+
+If there are no matches in the right table, `Null` values are returned for the right table columns.
 
 ```SQL
 SELECT O.ID, C.Name
@@ -53,6 +55,8 @@ ON O.ID = C.ID;
 <h3 name='right'>3. RIGHT Join</h3>
 
 Join all the rows from `right` table and matching rows from the `left` table.
+
+If there are no matches in the left table, `Null` values are returned for the left table columns.
 
 ```SQL
 SELECT O.ID, C.Name
@@ -75,6 +79,8 @@ ON E.ID = M.ID;
 <h3 name='outer'>5. OUTER Join</h3>
 
 Join all records from both tables, even if there is no matching row.
+
+`Null` values are returned for the columns that do not have a match.
 
 ```SQL
 SELECT DISTINCT E.Name
