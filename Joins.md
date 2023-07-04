@@ -6,9 +6,9 @@
         <tr><td><a href = '#left'>2. Left Join</a></td><td>Join all the rows from left and matching rows from right table</td></tr>
         <tr><td><a href = '#right'>3. Right Join</a></td><td>Join all the rows from right and matching rows from left table</td></tr>
         <tr><td><a href = '#self'>4. Self Join</a></td><td>Join by itself (Different columns of same table)</td></tr>
-        <tr><td><a href = '#outer'>5. Outer Join</a></td><td>Join matching rows in both tables</td></tr>
-        <tr><td><a href = '#more'>6. Join More than 2 Tables</a></td><td>Join matching rows in both tables</td></tr>
-        <tr><td><a href = '#child'>7. Join Child Parent Relationship</a></td><td>Join matching rows in both tables</td></tr>    
+        <tr><td><a href = '#outer'>5. Outer Join</a></td><td>Join all the rows from both tables</td></tr>
+        <tr><td><a href = '#more'>6. Join more than 2 tables</a></td><td></td></tr>
+        <tr><td><a href = '#child'>7. Join Child Parent Relationship</a></td><td></td></tr>    
 </table>
 
 ### Tables (Example)
