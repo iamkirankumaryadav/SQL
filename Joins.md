@@ -92,7 +92,7 @@ ON E.ID = M.ID;
 <h3 name='more'>6. Joins ( More than 2 Tables )</h3>
 
 ```SQL
-SELECT EmployeeName, DepartmentName, Manager, Salary
+SELECT E.EmployeeName, D.DepartmentName, E.Manager, S.Salary
 FROM Employee E
 INNER JOIN Salary S
 ON E.E_ID  = S.E_ID
