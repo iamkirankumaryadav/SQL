@@ -267,6 +267,14 @@ SELECT SUM(Column) AS SumColumn
 FROM Table WHERE Column = A;
 ```
 
+Aggregate Function + Group By + Having
+```sql
+SELECT state, COUNT(*) AS total_customers
+FROM customers
+GROUP BY state
+HAVING COUNT(*) > 100;
+```
+
 # `Joins`
 
 1. `Inner` Join : Matching `Rows` in both Table.
