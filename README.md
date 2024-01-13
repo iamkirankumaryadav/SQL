@@ -90,8 +90,7 @@ FROM Employee;
 ```SQL
 SELECT * 
 FROM Employee
-ORDER BY Salary
-DESC
+ORDER BY Salary DESC
 LIMIT 5;
 ```
 
