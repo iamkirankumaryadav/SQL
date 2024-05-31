@@ -9,7 +9,7 @@
 <a href=#truncate><strong>TRUNCATE</strong></a> | 
 <a href=#drop><strong>DROP</strong></a>
 
-<h2 name=create><code>CREATE</code><h2>
+<h2 name=create><strong>CREATE</strong><h2>
 
 ### **CREATE SCHEMA**
 
