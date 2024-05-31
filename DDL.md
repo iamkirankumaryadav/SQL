@@ -1,14 +1,13 @@
-# `DDL` : Data Definition Language
+# **DDL: Data Definition Language**
 
-Creates the data structures ( `Schemas`, `Tables`, `Views` and `Indexes` ) which helps to organize data.
+- Creates the data structures (Schemas, Tables, Views, and Indexes) that help organize data.
+- All the commands of DDL are auto-committed (Permanently save all the changes in the database)
 
-All the `commands` of DDL are auto commited (Permanently save all the changes in the database)
-
-<a href=#create><code>CREATE</code></a> <a href=#alter><code>ALTER</code></a> <a href=#rename><code>RENAME</code></a> <a href=#truncate><code>TRUNCATE</code></a> <a href=#drop><code>DROP</code></a>
+<a href=#create><strong>CREATE</strong></a> <a href=#alter><strong>ALTER</strong></a> <a href=#rename><strong>RENAME</strong></a> <a href=#truncate><strong>TRUNCATE</strong></a> <a href=#drop><strong>DROP</strong></a>
 
 <h2 name=create><code>CREATE</code><h2>
 
-### `CREATE SCHEMA`
+### **CREATE SCHEMA**
 
 ```sql
 CREATE SCHEMA IF NOT EXISTS SchemaName;
