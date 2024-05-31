@@ -1,6 +1,6 @@
 # **Data Control Language (DCL)**
 
-- DCL commands are used to grant and revoke the authority/permission/privileges from any database user.
+DCL commands are used to grant and revoke the authority/permission/privileges from any database user.
 
 ### **GRANT**
 
