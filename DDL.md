@@ -3,7 +3,11 @@
 - Creates the data structures (Schemas, Tables, Views, and Indexes) that help organize data.
 - All the commands of DDL are auto-committed (Permanently save all the changes in the database)
 
-<a href=#create><strong>CREATE</strong></a> <a href=#alter><strong>ALTER</strong></a> <a href=#rename><strong>RENAME</strong></a> <a href=#truncate><strong>TRUNCATE</strong></a> <a href=#drop><strong>DROP</strong></a>
+<a href=#create><strong>CREATE</strong></a> | 
+<a href=#alter><strong>ALTER</strong></a> | 
+<a href=#rename><strong>RENAME</strong></a> | 
+<a href=#truncate><strong>TRUNCATE</strong></a> | 
+<a href=#drop><strong>DROP</strong></a>
 
 <h2 name=create><code>CREATE</code><h2>
 
