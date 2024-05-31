@@ -1,6 +1,6 @@
 # **DDL: Data Definition Language**
 
-- Creates the data structures (Schemas, Tables, Views, and Indexes) that help organize data.
+- Define, modify, or delete the structure of the database objects (tables, views, indexes).
 - All the commands of DDL are auto-committed (Permanently save all the changes in the database)
 
 <a href=#create><strong>CREATE</strong></a> | 
