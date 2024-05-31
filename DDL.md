@@ -8,15 +8,15 @@
 <a href=#drop><strong>DROP</strong></a> | 
 <a href=#truncate><strong>TRUNCATE</strong></a> 
 
-### **CREATE SCHEMA**
+<h3 name=create><strong>CREATE</strong></h3>
 
 ```sql
+# Create Schema:
 CREATE SCHEMA IF NOT EXISTS SchemaName;
 ```
 
-### **CREATE TABLE**
-
 ```sql
+# Create Table:
 CREATE TABLE Employee
 (
     Employee_ID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,  # IDENTITY(1,1) Start from 1 and Increment by 1 
@@ -26,9 +26,8 @@ CREATE TABLE Employee
 );
 ```
 
-### **CREATE VIEW**
-
 ```sql
+# Create View:
 CREATE VIEW Staff_View AS
 SELECT s.ID, s.LastName, cd.Company
 FROM Staff s
@@ -36,9 +35,8 @@ LEFT JOIN Company_Division cd
 ON s.Department = cd.Department;
 ```
 
-### **CREATE INDEX**
-
 ```sql
+# Create Index:
 CREATE INDEX idx_staff_last_name
 ON Staff
 USING (Last_Name);
@@ -50,7 +48,7 @@ USING (Last_Name);
 - Either to modify the characteristics of an existing attribute or probably to add a new attribute.
 
 ```sql
-# DROP Column:
+# Drop Column:
 ALTER TABLE Employee
 DROP COLUMN Email;
 ```
