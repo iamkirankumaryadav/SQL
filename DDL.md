@@ -8,8 +8,6 @@
 <a href=#drop><strong>DROP</strong></a> | 
 <a href=#truncate><strong>TRUNCATE</strong></a> 
 
-<h3 name=create><strong>CREATE</strong><h3>
-
 ### **CREATE SCHEMA**
 
 ```sql
