@@ -52,31 +52,31 @@ USING (Last_Name);
 - Either to modify the characteristics of an existing attribute or probably to add a new attribute.
 
 ```sql
--- DROP Column:
-ALTER Table Employee
-DROP Column Email;
+# DROP Column:
+ALTER TABLE Employee
+DROP COLUMN Email;
 ```
 
 ```sql
--- Add new columns:
-ALTER Table Employee
+# Add new columns:
+ALTER TABLE Employee
 ADD Age INT, Department NVARCHAR(50);
 ```
 
 ```sql
--- Modify the size and data type:
-ALTER Table Employee
-ALTER Column Country NVARCHAR(30);
+# Modify the size and data type:
+ALTER TABLE Employee
+ALTER COLUMN Country NVARCHAR(30);
 ```
 
 ```sql
--- Rename table name:    
+# Rename table name:    
 ALTER TABLE table_name
 RENAME TO new_table_name;    
 ```    
 
 ```sql
--- Rename column name:
+# Rename column name:
 ALTER TABLE table_name
 RENAME COLUMN old_name TO new_name;   
 ```
@@ -84,13 +84,13 @@ RENAME COLUMN old_name TO new_name;
 
 ```sql
 # Delete the entire table data including structure and constraints.
-DROP Table Employee;
+DROP TABLE Employee;
 ```
     
 <h3 name=truncate><strong>TRUNCATE</strong></h3>
 
 ```sql
 # Delete data from the table, while retaining the structure of the table.
-TRUNCATE Table Employee
-DROP Column Email;
+TRUNCATE TABLE Employee
+DROP COLUMN Email;
 ```
