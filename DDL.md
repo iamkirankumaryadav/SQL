@@ -5,9 +5,8 @@
 
 <a href=#create><strong>CREATE</strong></a> | 
 <a href=#alter><strong>ALTER</strong></a> | 
-<a href=#rename><strong>RENAME</strong></a> | 
-<a href=#truncate><strong>TRUNCATE</strong></a> | 
-<a href=#drop><strong>DROP</strong></a>
+<a href=#drop><strong>DROP</strong></a> | 
+<a href=#truncate><strong>TRUNCATE</strong></a> 
 
 <h3 name=create><strong>CREATE</strong><h3>
 
@@ -70,10 +69,6 @@ ALTER Table Employee
 ALTER Column Country NVARCHAR(30);
 ```
 
-<h3 name=renam><strong>RENAME</strong></h3>
-    
-Rename the old table name or any table column to a new name.   
-
 ```sql
 -- Rename table name:    
 ALTER TABLE table_name
@@ -85,20 +80,17 @@ RENAME TO new_table_name;
 ALTER TABLE table_name
 RENAME COLUMN old_name TO new_name;   
 ```
-    
-<h3 name=truncate><strong>TRUNCATE</strong></h3>
-    
-Delete data from the table, while retaining the structure of the table.
-
-```sql
-TRUNCATE Table Employee
-DROP Column Email;
-```
-
 <h3 name=drop><strong>DROP</strong></h3>
 
-Delete the entire table data including structure and constraints.
+```sql
+# Delete the entire table data including structure and constraints.
+DROP Table Employee;
+```
+    
+<h3 name=truncate><strong>TRUNCATE</strong></h3>
 
 ```sql
-DROP Table Employee;
+# Delete data from the table, while retaining the structure of the table.
+TRUNCATE Table Employee
+DROP Column Email;
 ```
