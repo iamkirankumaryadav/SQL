@@ -32,10 +32,10 @@ CREATE TABLE Employee
 
 ```sql
 CREATE VIEW Staff_View AS
-SELECT S.ID, S.LastName, CD.Company
-FROM Staff S
-LEFT JOIN Company_Division CD
-ON S.Department = CD.Department;
+SELECT s.ID, s.LastName, cd.Company
+FROM Staff s
+LEFT JOIN Company_Division cd
+ON s.Department = cd.Department;
 ```
 
 ### **CREATE INDEX**
@@ -48,7 +48,7 @@ USING (Last_Name);
 
 <h3 name=alter><strong>ALTER</strong></h3>
 
-- Alter/Modify/Change table structure (Data type, column names, add or drop columns).
+- Alter/Modify/Change table structure (data type, column names, add or drop columns).
 - Either to modify the characteristics of an existing attribute or probably to add a new attribute.
 
 ```sql
@@ -80,6 +80,7 @@ RENAME TO new_table_name;
 ALTER TABLE table_name
 RENAME COLUMN old_name TO new_name;   
 ```
+
 <h3 name=drop><strong>DROP</strong></h3>
 
 ```sql
