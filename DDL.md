@@ -17,32 +17,29 @@
 CREATE SCHEMA IF NOT EXISTS SchemaName;
 ```
 
-### `CREATE TABLE`
+### **CREATE TABLE**
 
 ```sql
-CREATE Table Employee
+CREATE TABLE Employee
 (
-    Employee_ID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,  # IDENTITY(1,1) Start from 1 and Increment by 1 
+    Employee_ID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,  # IDENTITY(1,1) Start from 1 and Increment by 1 
     FirstName   NVARCHAR(60),
     LastName    NVARCHAR(60),
     Email       NVARCHAR(60)
 );
 ```
 
-### `CREATE VIEW`
+### **CREATE VIEW**
 
 ```sql
 CREATE VIEW Staff_View AS
-SELECT
-S.ID
-S.LastName
-CD.Company
+SELECT S.ID, S.LastName, CD.Company
 FROM Staff S
 LEFT JOIN Company_Division CD
 ON S.Department = CD.Department;
 ```
 
-### `CREATE INDEX`
+### **CREATE INDEX**
 
 ```sql
 CREATE INDEX idx_staff_last_name
@@ -50,11 +47,10 @@ ON Staff
 USING (Last_Name);
 ```
 
-<h2 name=alter><code>ALTER</code></h2>
+<h2 name=alter><strong>ALTER</strong></h2>
 
-Alter | Change the structure (Data type, column names, add or drop columns) of table.
-
-Either to `modify` the characteristics of an existing attribute or probably to `add` a new attribute.
+- Alter/Modify/Change table structure (Data type, column names, add or drop columns).
+- Either to modify the characteristics of an existing attribute or probably to add a new attribute.
 
 ```sql
 -- DROP Column:
@@ -69,14 +65,14 @@ ADD Age INT, Department NVARCHAR(50);
 ```
 
 ```sql
--- Modify size and data type:
+-- Modify the size and data type:
 ALTER Table Employee
 ALTER Column Country NVARCHAR(30);
 ```
 
-<h2 name=renam><code>RENAME</code></h2>
+<h2 name=renam><strong>RENAME</strong></h2>
     
-Rename old table name or any column of the table to a new name.   
+Rename the old table name or any table column to a new name.   
 
 ```sql
 -- Rename table name:    
@@ -90,7 +86,7 @@ ALTER TABLE table_name
 RENAME COLUMN old_name TO new_name;   
 ```
     
-<h2 name=truncate><code>TRUNCATE</code></h2>
+<h2 name=truncate><strong>TRUNCATE</strong></h2>
     
 Delete data from the table, while retaining the structure of the table.
 
@@ -99,7 +95,7 @@ TRUNCATE Table Employee
 DROP Column Email;
 ```
 
-<h2 name=drop><code>DROP</code></h2>
+<h2 name=drop><strong>DROP</strong></h2>
 
 Delete the entire table data including structure and constraints.
 
