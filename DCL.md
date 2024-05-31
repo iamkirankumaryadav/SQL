@@ -8,12 +8,14 @@
 
 ```sql
 # Give user access privileges to a database:
-GRANT SELECT, INSERT, UPDATE ON TABLE TO 'Kirankumar', 'Suraj';
+GRANT SELECT, INSERT, UPDATE
+ON TABLE TO 'Kirankumar', 'Suraj';
 ```
 
 <h2 name=revoke><strong>REVOKE</strong></h2>
 
 ```sql
 # Take back permissions from the user:
-REVOKE SELECT, INSERT, UPDATE ON TABLE FROM 'Suraj';
+REVOKE SELECT, INSERT, UPDATE
+ON TABLE FROM 'Suraj';
 ```
