@@ -11,6 +11,13 @@
 <h3 name=select><strong>SELECT</strong></h3>
 
 ```sql
+# Select all the columns:
+SELECT *
+FROM Employee;
+```            
+
+```sql
+# Select specific columns:
 SELECT first_name, last_name
 FROM Employee;
 ```
