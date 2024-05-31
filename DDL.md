@@ -1,4 +1,4 @@
-# **DDL: Data Definition Language**
+# **Data Definition Language (DDL)**
 
 - Define, modify, or delete the structure of the database objects (tables, views, indexes).
 - All the commands of DDL are auto-committed (Permanently save all the changes in the database)
