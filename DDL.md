@@ -9,7 +9,7 @@
 <a href=#truncate><strong>TRUNCATE</strong></a> | 
 <a href=#drop><strong>DROP</strong></a>
 
-<h2 name=create><strong>CREATE</strong><h2>
+<h3 name=create><strong>CREATE</strong><h3>
 
 ### **CREATE SCHEMA**
 
@@ -47,7 +47,7 @@ ON Staff
 USING (Last_Name);
 ```
 
-<h2 name=alter><strong>ALTER</strong></h2>
+<h3 name=alter><strong>ALTER</strong></h3>
 
 - Alter/Modify/Change table structure (Data type, column names, add or drop columns).
 - Either to modify the characteristics of an existing attribute or probably to add a new attribute.
@@ -70,7 +70,7 @@ ALTER Table Employee
 ALTER Column Country NVARCHAR(30);
 ```
 
-<h2 name=renam><strong>RENAME</strong></h2>
+<h3 name=renam><strong>RENAME</strong></h3>
     
 Rename the old table name or any table column to a new name.   
 
@@ -86,7 +86,7 @@ ALTER TABLE table_name
 RENAME COLUMN old_name TO new_name;   
 ```
     
-<h2 name=truncate><strong>TRUNCATE</strong></h2>
+<h3 name=truncate><strong>TRUNCATE</strong></h3>
     
 Delete data from the table, while retaining the structure of the table.
 
@@ -95,7 +95,7 @@ TRUNCATE Table Employee
 DROP Column Email;
 ```
 
-<h2 name=drop><strong>DROP</strong></h2>
+<h3 name=drop><strong>DROP</strong></h3>
 
 Delete the entire table data including structure and constraints.
 
