@@ -36,6 +36,10 @@ SELECT orders.ID, customers.Name
 FROM orders
 INNER JOIN customers 
 ON orders.ID = customers.ID;
+
+SELECT * FROM employees e 
+INNER JOIN departments d
+ON e.department_id = d.department_id
 ```
 
 <h3 name='left'>2. LEFT Join</h3>
@@ -48,6 +52,10 @@ SELECT o.ID, c.Name
 FROM Orders o
 LEFT JOIN Customers c
 ON o.ID = c.ID;
+
+SELECT * FROM employees e 
+LEFT JOIN departments d
+ON e.department_id = d.department_id
 ```
 
 <h3 name='right'>3. RIGHT Join</h3>
@@ -60,17 +68,27 @@ SELECT o.ID, c.Name
 FROM Orders o
 RIGHT JOIN Customers c
 ON o.ID = c.ID;
+
+SELECT * FROM employees e 
+RIGHT JOIN departments d
+ON e.department_id = d.department_id;
 ```
 
 <h3 name='self'>4. SELF Join</h3>
 
-Join with Itself.
-
 ```SQL
+# Join the table with Itself:
 SELECT DISTINCT E.Name
 FROM Employees E
 INNER JOIN Managers M
 ON E.ID = M.ID;
+
+SELECT * FROM employees e 
+INNER JOIN departments d
+ON e.department_id = d.department_id;
+
+SELECT * FROM employees e1, employee e2
+WHERE e1.employee_id = e2.employee_id;
 ```
 
 <h3 name='outer'>5. OUTER Join</h3>
@@ -84,6 +102,16 @@ SELECT DISTINCT E.Name
 FROM Employees E
 FULL OUTER JOIN Managers M
 ON E.ID = M.ID;
+
+SELECT *
+FROM employees e
+LEFT JOIN departments d
+ON e.employee_id = d.employee_id
+UNION
+SELECT *
+FROM employees
+RIGHT JOIN departments
+ON e.employee_id = d.employee_id;
 ```
 
 <h3 name='more'>6. Joins ( More than 2 Tables )</h3>
