@@ -1,10 +1,14 @@
 # **Data Query Language (DQL)**
 
-- Fetch the data from the database.
-- SELECT the attribute based on the conditions described by the WHERE clause.
+Fetch the data from the database. SELECT the data based on the conditions described by the WHERE clause.
 
 Operators | Description
 --- | ---
+SELECT | Retrieve data from a database.
+WHERE | Filter rows based on a specified condition.
+ORDER BY | Sort the result set in ascending or descending order.
+GROUP BY | Groups rows based on the values in a specified column.
+HAVING | Filters grouped results based on a specified condition.
 BETWEEN | Returns data within a range of values.
 IN | Returns data within a list of values.
 LIKE | Returns data similar to the given pattern (Using Wildcard)
