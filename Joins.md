@@ -3,8 +3,8 @@
 <table>
         <tr><th>Joins</th><th>Description</th></tr>
         <tr><td><a href = '#inner'>1. Inner Join</a></td><td>Join matching rows in both tables</td></tr>
-        <tr><td><a href = '#left'>2. Left Join</a></td><td>Join all the rows from left and matching rows from right table</td></tr>
-        <tr><td><a href = '#right'>3. Right Join</a></td><td>Join all the rows from right and matching rows from left table</td></tr>
+        <tr><td><a href = '#left'>2. Left Join</a></td><td>Join all the rows from the left and matching rows from the right table</td></tr>
+        <tr><td><a href = '#right'>3. Right Join</a></td><td>Join all the rows from the right and matching rows from the left table</td></tr>
         <tr><td><a href = '#self'>4. Self Join</a></td><td>Join by itself (Different columns of same table)</td></tr>
         <tr><td><a href = '#outer'>5. Outer Join</a></td><td>Join all the rows from both tables</td></tr>
         <tr><td><a href = '#more'>6. Join more than 2 tables</a></td><td></td></tr>
@@ -13,30 +13,30 @@
 
 ### Tables (Example)
 
-### Employee Table
+### **Employee Table**
 
 E_ID | EmployeeName
 --- | ---
 
-### Salary Table
+### **Salary Table**
 
 E_ID | D_ID |  Salary
 --- | --- | ---
 
-### Department Table
+### **Department Table**
 
 D_ID | DepartmentName | Manager
 --- | --- | ---
 
 <h3 name='inner'>1. Inner Join</h3>
 
-Join matching `rows` | `records` in both the tables.
+Join matching rows | records in both tables.
 
 ```SQL
-SELECT Orders.ID, Customers.Name
-FROM Orders
-INNER JOIN Customers 
-ON Orders.ID = Customers.ID;
+SELECT orders.ID, customers.Name
+FROM orders
+INNER JOIN customers 
+ON orders.ID = customers.ID;
 ```
 
 <h3 name='left'>2. LEFT Join</h3>
