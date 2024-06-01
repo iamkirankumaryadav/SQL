@@ -11,6 +11,8 @@ GROUP BY | Groups rows based on the values in a specified column.
 HAVING | Filters grouped results based on a specified condition.
 BETWEEN | Returns data within a range of values.
 IN | Returns data within a list of values.
+ANY | Compare a value to any value returned by a subquery.
+ALL | Compare a value to all values returned by a subquery.
 LIKE | Returns data similar to the given pattern (Using Wildcard)
 IS NULL | Returns null values.
 IS NOT NULL | Returns not null values.
@@ -125,6 +127,29 @@ SELECT First_Name, DATENAME(Year, Birthday) as BirthYear
 FROM Customer
 WHERE Birthday BETWEEN '1980' AND '1982'
 ORDER BY BirthYear DESC
+```
+
+### **IN**
+
+```sql
+SELECT * FROM customers
+WHERE city IN (SELECT city from suppliers)
+```
+
+### **ANY**
+
+```sql
+SELECT * FROM products
+WHERE price < ANY(SELECT unit_price
+                  FROM supplier_products)
+```
+
+### **ALL**
+
+```sql
+SELECT * FROM orders
+WHERE order_amount > ALL(SELECT total_amount
+                         FROM previous_orders)
 ```
 
 ### **COALESCE**
