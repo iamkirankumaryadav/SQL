@@ -30,9 +30,8 @@ D_ID | DepartmentName | Manager
 
 <h3 name='inner'>1. Inner Join</h3>
 
-Join matching rows | records in both tables.
-
 ```SQL
+# Join matching rows in both tables:
 SELECT orders.ID, customers.Name
 FROM orders
 INNER JOIN customers 
@@ -41,28 +40,26 @@ ON orders.ID = customers.ID;
 
 <h3 name='left'>2. LEFT Join</h3>
 
-Join all the rows from `left` table and matching rows from `right` table, even if there are no matching rows in the right table.
-
-If there are no matches in the right table, `Null` values are returned for the right table columns.
+- Join all the rows from the left table and matching rows from the right table.
+- If there are no matches in the right table, Null values are returned for the right table columns.
 
 ```SQL
-SELECT O.ID, C.Name
-FROM Orders O
-LEFT JOIN Customers C
-ON O.ID = C.ID;
+SELECT o.ID, c.Name
+FROM Orders o
+LEFT JOIN Customers c
+ON o.ID = c.ID;
 ```
 
 <h3 name='right'>3. RIGHT Join</h3>
 
-Join all the rows from `right` table and matching rows from `left` table, even if there are no matching rows in the left table.
-
-If there are no matches in the left table, `Null` values are returned for the left table columns.
+- Join all the rows from the right table and matching rows from the left table.
+- If there are no matches in the left table, Null values are returned for the left table columns.
 
 ```SQL
-SELECT O.ID, C.Name
-FROM Orders O
-RIGHT JOIN Customers C
-ON O.ID = C.ID;
+SELECT o.ID, c.Name
+FROM Orders o
+RIGHT JOIN Customers c
+ON o.ID = c.ID;
 ```
 
 <h3 name='self'>4. SELF Join</h3>
