@@ -16,6 +16,44 @@ IS NULL | Returns null values.
 IS NOT NULL | Returns not null values.
 EXISTS | Determine if a subquery returns values or not.
 
+### **SELECT Statement**
+
+```sql
+SELECT first_name, last_name
+FROM Customers;
+```
+
+### **WHERE Clause**
+
+```sql
+SELECT * FROM Customers
+WHERE age > 30;
+```
+
+### **ORDER BY Clause**
+
+```sql
+SELECT * FROM products
+ORDER BY price DESC;
+```
+
+### **GROUP BY**
+
+```sql
+SELECT category, COUNT(*)
+FROM products
+GROUP BY category;
+```
+
+### **HAVING Clause**
+
+```sql
+SELECT category, COUNT(*)
+FROM products
+GROUP BY category
+HAVING count(*) > 5;
+```    
+
 ### Querying the table with the logical operator `LIKE` :
 ```sql
 # Underscore: _
