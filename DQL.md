@@ -1,18 +1,17 @@
-# `DQL` : Data Query Language
+# **Data Query Language (DQL)**
 
-`Fetch` the data from the database.
+- Fetch the data from the database.
+- SELECT the attribute based on the conditions described by the WHERE clause.
 
-`SELECT` the attribute based on the conditions described by `WHERE` clause.
+Operators | Description
+--- | ---
+BETWEEN | Returns data within a range of values.
+IN | Returns data within a list of values.
+LIKE | Returns data similar to the given pattern (Using Wildcard)
+IS NULL | Returns null values.
+IS NOT NULL | Returns not null values.
+EXISTS | Determine if a subquery returns values or not.
 
-Keyword Comparison Operators 
-```
-1. BETWEEN     : Returns data within range of values.
-2. IN          : Returns data within a list of values.
-3. LIKE        : Returns data similar to given pattern (Using Wildcard)
-4. IS NULL     : Returns null values.
-5. IS NOT NULL : Returns not null values.
-6. EXISTS      : Determine if a subquery returns values or not.
-```
 ### Querying the table with logical operator `LIKE` :
 ```sql
 Underscore : _
