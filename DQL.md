@@ -12,11 +12,12 @@ IS NULL | Returns null values.
 IS NOT NULL | Returns not null values.
 EXISTS | Determine if a subquery returns values or not.
 
-### Querying the table with logical operator `LIKE` :
+### Querying the table with the logical operator `LIKE` :
 ```sql
-Underscore : _
+# Underscore: _
 
-SELECT Code from Table
+SELECT Code
+FROM Table
 WHERE Code LIKE '_2_6'
 
 Results :
@@ -26,7 +27,7 @@ Results :
 ```
 
 ```sql
-Square Brackets : [ ] | or
+# Square Brackets: [ ] | or
 
 SELECT Last_Name 
 FROM Employee
@@ -39,17 +40,16 @@ Results :
 ```
 
 ```sql
-Percentage : %  
-
+# Percentage: %  
 ------------------------------
-Get only Google mails :
+# Get only Google mails:
 
 SELECT First_Name, Email 
 FROM Employee
 WHERE Email LIKE '%@gmail.com'
 
 ------------------------------
-Get mails another than gmail
+# Get emails other than Gmail
 
 SELECT First_Name, Email
 FROM Employee
@@ -62,7 +62,7 @@ FROM Employee
 WHERE First_Name LIKE 'B[iro]%' AND City NOT LIKE '%UL%'
 ```
 
-### Querying ythe table with logical operators IN and BETWEEN
+### Querying the table with logical operators IN and BETWEEN
 
 ```sql
 SELECT First_Name, Shirt_Size 
@@ -85,9 +85,10 @@ WHERE Birthday BETWEEN '1980' AND '1982'
 ORDER BY BirthYear DESC
 ```
 
-### `COALESCE`
-Return the first non null value in the list.
+### **COALESCE**
+
 ```sql
+# Return the first non-null value in the list:
 SELECT First_Name, Last_Name, Starting_Salary, Current_Salary, 
 COALESCE(Current_Salary*1.1, Starting_Salary) AS New_Salary 
 FROM Employee
