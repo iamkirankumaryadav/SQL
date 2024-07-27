@@ -1,10 +1,17 @@
-# `Constraints`
-
-### Constraints adds data validation rules.
-
+# **Constraints**
+- SQL constraints specify rules for the data in a table.
 - Invalid data won't be allowed in the database.
-- User will receive an error message and will need to try again.
 - Ensure that stored records meet the table's requirements.
+
+```sql
+-- Syntax
+
+CREATE TABLE table_name(
+  column1 datatype constraint,
+  column2 datatype constraint,
+  column3 datatype constraint
+)
+```
 
 ```sql
 CREATE TABLE IF NOT EXISTS DatabaseName.SchemaName.TableName(
@@ -12,30 +19,18 @@ CREATE TABLE IF NOT EXISTS DatabaseName.SchemaName.TableName(
 )
 ```
 
-### UNIQUE
-- Each value in a column will only appear once, it will not allow to insert duplicate value.
-
-### NULL
-- Column will allow NULL values ( Used for optional fields )
-
-### NOT NULL
-- Column will not allow NULL values ( Used for mandatory | required field )
-
-### DEFAULT
-- Default value will be considered automatically if the person fails to enter.
-
-### CHECK
-- Add condition for entering the data value, data is validated before saving.
-
-### PRIMARY KEY (PK)
-- Consider the column as a primary key. 
-
-### FOREIGN KEY (FK)
-- Consider the column as a foreign key.
+**Constraints** | **Definition**
+:--- | :---
+**NOT NULL** | Ensures that a column cannot have a NULL value
+**UNIQUE** | Ensures that all values in a column are unique
+**PRIMARY KEY** | A combination of a **NOT NULL** and **UNIQUE**. Uniquely identifies each row in a table
+**FOREIGN KEY** | A **FOREIGN KEY** is a column in one table, that refers to the **PRIMARY KEY** in another table.
+**CHECK** | Ensures that the values in a column satisfy a specific condition
+**DEFAULT** | Sets a default value for a column if no value is specified
 
 ### INDEXES
 - Keep track of records and help to retrieve the records easily and quickly.
 - Added to any columns used in frequent searches or joins.
 - Primary keys are created as a clustered index.
-- Indexes can also be added to any additional field other than primary key (Non Clustered Index)
-- Adding index slow downs the insert operations, after every insert or update the indexes are rebuilt.
+- Indexes can also be added to any additional field other than the primary key (Non Clustered Index)
+- Adding an index slows down the insert operations, after every insert or update the indexes are rebuilt.
