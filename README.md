@@ -79,14 +79,14 @@ LIMIT    <No. of Rows>
 ```
 
 
-1. Select Name in **Upper Case** as Alias
+1. **Select the name in upper case as an alias**
 ```SQL
 SELECT
 UPPER(Name) as UpperCaseName
 FROM Employee;
 ```
 
-2. Fetch **Top** N Employee and **Order By** Salary in **Descending** Order
+2. **Fetch top N employee and order by salary in descending order**
 ```SQL
 SELECT * 
 FROM Employee
@@ -94,35 +94,35 @@ ORDER BY Salary DESC
 LIMIT 5;
 ```
 
-3. Retrieve Employee **First Name** and Employee **Last Name** in a Single Column Employee **Full Name** with Space.
+3. **Concat employees **first name** and **last name** in a single column as **full name** with whitespace**
 ```SQL
 SELECT 
 CONCAT(FirstName, ' ', LastName) AS FullName
 FROM Employee;
 ```
 
-4. Retrieve **Designation** along with Total Salaries Paid for each of them.
+4. **Retrieve the designation along with the total salaries paid for each of them**
 ```SQL
 SELECT Designation, SUM(Salary)
 FROM Employee
 GROUP BY Designation;
 ```
 
-5. Retrieve **Name** of Employee which includes Name Kiran
+5. **Retrieve the name of the employee which includes the name "Kiran"**
 ```SQL
 SELECT * 
 FROM Employee
 WHERE Name Like 'Kiran%';
 ```
 
-6. Retrieve Only First Name from FullName
+6. **Retrieve only first name from full name**
 ```SQL
 SELECT 
 SUBSTRING(FullName, 0, Charindex(' ',FullName))
 FROM Employee;
 ```
 
-7. Fetch Duplicate Records from Table
+7. **Fetch duplicate records from a table**
 ```SQL
 SELECT EID, Department, COUNT(*)
 FROM Employee
@@ -130,7 +130,7 @@ GROUP BY EID, FullName
 HAVING COUNT(*) > 1;
 ```
 
-8. Remove Duplicates
+8. **Remove duplicates**
 ```SQL
 DELETE FROM Employee
 WHERE EID IN (SELECT EID FROM Employee
@@ -138,7 +138,7 @@ WHERE EID IN (SELECT EID FROM Employee
               HAVING COUNT(*) > 1);
 ```
 
-9. Clone Table or Empty Table with Same Structure
+9. **Clone table or empty table with same structure**
 ```SQL
 CREATE TABLE NewTable 
 SELECT * FROM OldTable;
@@ -157,53 +157,53 @@ SELECT *
 FROM OldTable;
 ```
 
-10. Fetch Common Records between 2 Tables
+10. **Fetch common records between 2 tables**
 ```SQL
 SELECT * FROM Table1
 INTERSECT
 SELECT * FROM Table2;
 ```
 
-11. **Increase** Income of all Employees by `5%` in a Table
+11. **Increase the income of all employees by 5% in a table**
 ```SQL
 UPDATE Employee
 SET Income = Income + (Income * 0.05);
 ```
 
-12. Find Names of Employee Starting with `A`
+12. **Find names of employees starting with "A"**
 ```SQL
 SELECT Name 
 FROM Employee
 WHERE Name LIKE 'A%';
 ```
 
-13. Find Number of Employees working in Department of Data Science
+13. **Find the number of employees working in the Department of Data Science**
 ```SQL
 SELECT COUNT(*) 
 FROM Employee
 WHERE Department = 'Data Science';
 ```
 
-14. Find Details of Employee whose FirstName End with 'A' and contains 6 Alphabets
+14. **Find details of the employees whose first name ends with 'A' and contains 6 alphabets**
 ```SQL
 SELECT * FROM Employee
 WHERE FirstName LIKE '______A'
 ```
 
-15. Find Employees whose Salary lies `between` 10,000 and 50,000
+15. **Find Employees whose Salary lies between 10,000 and 50,000**
 ```SQL
 SELECT * FROM Employee
 WHERE Salary BETWEEN 10000 AND 50000;
 ```
 
-16. Highest Salary in Department
+16. **Find the highest salary in the department**
 ```SQL
 SELECT ID, MAX(Salary) 
 FROM Employees
 GROUP BY ID;
 ```
 
-Select from Multiple Tables
+**Select from multiple tables (JOINS)** 
 ```SQL
 SELECT D.Name AS 'Department', E.Name AS 'Employee', E.Salary
 FROM Employee E
@@ -215,7 +215,7 @@ IN (SELECT ID, MAX(Salary)
     GROUP BY ID)
 ```
 
-17. Second Highest Salary
+17. **Select second highest salary**
 
 ```SQL
 -- MAX:
@@ -236,7 +236,7 @@ AS EmployeeSalary
 ORDER BY Salary ASC;
 ```
 
-18. Find all Duplicate Emails
+18. **Find all duplicate emails**
 
 ```SQL
 SELECT Email
@@ -245,10 +245,10 @@ GROUP BY Email
 HAVING COUNT(Email) > 1;
 ```
 
-### Drop Duplicates from Table
+### **Drop duplicates from the table**
 
 ```SQL
--- Create temporary table:
+-- Create a temporary table:
 SELECT DISTINCT * 
 INTO NewTable
 FROM OldTable;
@@ -256,7 +256,7 @@ FROM OldTable;
 -- DROP old table:
 DROP * FROM OldTable;
 
--- INSERT into old table from new table:
+-- INSERT into an old table from the new table:
 INSERT INTO OldTable
 SELECT * FROM NewTable;
 
@@ -264,7 +264,7 @@ SELECT * FROM NewTable;
 DROP TABLE NewTable;
 ```
 
-### Compare Two Columns
+### **Compare two columns**
 
 ```SQL
 SELECT * FROM Employee
