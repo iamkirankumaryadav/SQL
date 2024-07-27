@@ -1,19 +1,19 @@
 <p align=right><a href='https://github.com/KIRANKUMAR7296/CSharp'>Navigate to C#</a></p>
 
-# `SQL` - `Structured Query Language`
-- Programming language used to manage and manipulate the data within the relational databases.
-- Standard language used by most `RDBMS`, i.e. `MySQL`, `Oracle`, `SQL Server`, etc.
-- Allows `developers` and `database administrators` to manage large amount of data effectively.
-- `C.R.U.D`: `Create`, `Retrieve`, `Update` and `Delete` 
-- Used to `create`, `retrieve`, `update`, `delete`, `modify`, `filter`, `sort`, `aggregate` and `query` databases. 
-- `Join` multiple tables using a shared key.
--  Organize data in the selected order ( `ASC` or `DESC` )
--  SQL `commands` are instructions used to communicate with the `database`
+# **SQL: Structured Query Language** 
+- The programming language used to manage and manipulate the data within the relational databases.
+- Standard language used by most **RDBMS**, i.e. MySQL, Oracle, SQL Server, etc.
+- Allows developers and database administrators to manage large amounts of data effectively.
+- **C.R.U.D:** Create, Retrieve (Read / Select), Update (Alter) and Delete (Drop)
+- Used to create, retrieve, update, delete, modify, filter, sort, group, aggregate and query databases. 
+- Join multiple tables using a shared key (column).
+- Organize data in the selected order **ASC** (Ascending) or **DESC** (Descending)
+- SQL commands are instructions used to communicate with the database.
 
-### Difference in databases
-- `Syntax` of a particular database may be different ( i.e. `TOP` : Microsoft SQL and `LIMIT` : MySQL )
-- `Data types` may be different. 
-- `Funtions` might be different based on name or argument types or order of arguments.
+### **Differences in the databases**
+- Syntax of a particular database may be different (i.e. **TOP:** Microsoft SQL and **LIMIT:** MySQL)
+- **Data types** may be different. 
+- **Functions** might be different based on name or argument types or order of arguments.
 
 ### SQL Categories | Subset of SQL
 <table>
@@ -86,7 +86,7 @@ UPPER(Name) as UpperCaseName
 FROM Employee;
 ```
 
-2. Fetch `Top` N Employee and `Order By` Salary in `Descending` Order
+2. Fetch **Top** N Employee and **Order By** Salary in **Descending** Order
 ```SQL
 SELECT * 
 FROM Employee
@@ -118,7 +118,7 @@ WHERE Name Like 'Kiran%';
 6. Retrieve Only First Name from FullName
 ```SQL
 SELECT 
-SUBSTRING(FullName,0,Charindex(' ',FullName))
+SUBSTRING(FullName, 0, Charindex(' ',FullName))
 FROM Employee;
 ```
 
