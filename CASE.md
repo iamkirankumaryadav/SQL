@@ -37,7 +37,7 @@ SET Rating = CASE
 
 ```sql
 ---  Syntax:
-SELECT DECODE (ColumnName, IF, THEN valuee, ELSE IF, THEN value , ELSE, Value)
+SELECT DECODE (ColumnName, IF, THEN value, ELSE IF, THEN value, ELSE, Value)
 AS Alias
 FROM TableName
 
