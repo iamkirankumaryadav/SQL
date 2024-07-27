@@ -36,90 +36,88 @@ Keys | Description
 ## **SELECT**
 
 ```sql
-SELECT
-ApplicantID, ApplicantName, Position, StageName, ApplicantStatus
-FROM Applicants
-WHERE
-ApplicantStatus="New" 
-AND Country IN ("India", "UK", "USA") 
-AND (Age BETWEEN 25 AND 30)
-AND Position LIKE "%Engineer%";
+SELECT applicant_ID, applicant_name, position, stage_name, applicant_status
+FROM applicants
+WHERE applicant_status = "New" 
+AND country IN ("India", "UK", "USA") 
+AND (age BETWEEN 25 AND 30)
+AND position LIKE "%Engineer%";
 ```
 
 ```sql
-SELECT
-Position, COUNT(ApplicantID) AS ApplicantCount, AVG(SalaryExpectation) AS AvgSalary
+SELECT position, COUNT(applicant_ID) AS applicant_count, AVG(salary_expectation) AS AvgSalary
 FROM Applicants
-WHERE
-SalaryExpectations > 2000
+WHERE salary_expectations > 2000
 GROUP BY 1
-HAVING ApplicantCount > 10 
-ORDER BY AvgSalary ASC
+HAVING applicant_count > 10 
+ORDER BY avg_salary ASC
 LIMIT 3;
 ```
 
 ```sql
-SELECT
-Position, COUNT(ApplicantID) AS ApplicantCount
-FROM db1.Applicants App
-LEFT JOIN db2.Channels Ch
-ON App.ApplicantID = Ch.ID
-WHERE Source IN ("GlassDoor")
-GROUP BY Position
-ORDER BY ApplicantCount DESC
+SELECT position, COUNT(applicant_ID) AS applicant_count
+FROM db1.applicants app
+LEFT JOIN db2.channels ch
+ON app.applicant_ID = ch.ID
+WHERE source IN ("Glassdoor")
+GROUP BY position
+ORDER BY applicant_count DESC
 ```
 
 <h2 name=create>Creating a table</h2>
 
 ```sql
-CREATE TABLE Employee
+CREATE TABLE employee
 (
-  ID INTEGER PRIMARY KEY,
-  First_Name TEXT,
-  Last_Name TEXT,
-  Designation TEXT
+  ID INT PRIMARY KEY,
+  first_name VARCHAR(25),
+  last_name VARCHAR(25),
+  age INT CHECK (age > 18),
+  birthdate DATE,
+  designation VARCHAR(25)
 );
 ```
 
 <h2 name=insert>Inserting rows</h2>
 
 ```sql
-# Insert every row values :
+# Insert every row value:
 INSERT INTO Employee
 VALUES ('Kirankumar', 'Yadav', 'Data Scientist');
 
-# Insert only specific row values, rest will be NULL :
-INSERT INTO Employee (First_Name, Last_Name)
+# Insert only specific row values, the rest will be NULL :
+INSERT INTO Employee (first_name, last_name)
 VALUES ('Kisankumar', 'Yadav')
 
 # Insert a new row with NULL values :
-INSERT INTO Employee DEFAULT VALUES;
+INSERT INTO Employee
+DEFAULT VALUES;
 
 # Insert a new row values from an existing table :
-INSERT INTO Employee (First_Name, Last_Name, Designation)
-SELECT First, Last, Role FROM Training;
+INSERT INTO Employee (first_name, last_name, designation)
+SELECT first, last, role FROM training;
 ```
 
 <h2 name=drow>Deleting rows</h2>
 
 ```sql
-DELETE FROM Employee WHERE ID = 3
+DELETE FROM employee WHERE ID = 3
 ```
 
 <h2 name=delete>Deleting a table</h2>
 
 ```sql
-DROP TABLE Employee
+DROP TABLE employee
 ```
 
 <h2 name=drop>Deleting existing table</h2>
 
 - Drop the table only if that table exists in a database.
-- No Error will be visible if there is no such table in the database.
+- No error will be visible if there is no such table in the database.
 - Normally if we just drop the table it will display an error that there is no such table in the database.
 
 ```sql
-DROP TABLE IF EXISTS Employee;
+DROP TABLE IF EXISTS employee;
 ```
 
 <h2 name='schema'>Changing Schema</h2>
@@ -130,18 +128,19 @@ DROP TABLE IF EXISTS Employee;
 4. Changing **data type** of an existing column.
 
 ```sql
-CREATE TABLE Employee
+CREATE TABLE employee
 (
-  First_Name TEXT,
-  Last_Name TEXT,
-  Designation TEXT
+  first_name VARCHAR(25),
+  last_name VARCHAR(25),
+  designation VARCHAR(25)
 );
 
-INSERT INTO Test VALUES ('Kirankumar', 'Yadav', 'Data Scientist');
-INSERT INTO Test VALUES ('Suraj', 'MS', 'MLE');
-INSERT INTO Test VALUES ('Pavan', 'Kumar', 'Statistician');
+INSERT INTO employee
+VALUES ('Kirankumar', 'Yadav', 'Data Scientist'),
+       ('Suraj', 'MS', 'MLE'),
+       ('Pavan', 'Kumar', 'Statistician');
 
-SELECT * FROM Employee;
+SELECT * FROM employee;
 ```
 Output
 First_Name| Last_Name | Designation
@@ -152,12 +151,12 @@ Pavan | Kumar | Stistician
 
 ```sql
 ALTER TABLE 
-ADD Department TEXT DEFAULT 'Data Science';
+ADD department VARCHAR(25) DEFAULT 'Data Science';
 
-SELECT * FROM Employee;
+SELECT * FROM employee;
 ```   
 Output
-First_Name| Last_Name | Designation | Department
+first_name| last_name | designation | department
 :--- | :--- | :--- | :---
 Kirankumar | Yadav | Data Scientist | Data Science
 Suraj | MS | MLE | Data Science
@@ -171,23 +170,23 @@ Pavan | Kumar | Statistician | Data Science
 2. Typically ID columns are **automatically** populated or incrmented.
 
 ```sql
-CREATE TABLE Employee
+CREATE TABLE employee
 (
-  Employee_ID INTEGER PRIMARY KEY
-  First_Name TEXT,
-  Last_Name TEXT,
-  Designation TEXT
+  employee_ID INTEGER PRIMARY KEY
+  first_name VARCHAR(25),
+  last_name VARCHAR(25),
+  designation VARCHAR(25)
 );
 
-INSERT INTO Test ( First_Name, Last_Name, Designation )
+INSERT INTO employee (first_name, last_name, designation)
 VALUES ('Kirankumar', 'Yadav', 'Data Scientist'),
-VALUES ('Suraj', 'MS', 'MLE'),
-VALUES ('Pavan', 'Kumar', 'Statistician');
+       ('Suraj', 'MS', 'MLE'),
+       ('Pavan', 'Kumar', 'Statistician');
 
 SELECT * FROM Employee;
 ```
 Output
-Employee_ID | First_Name| Last_Name | Designation
+employee_ID | first_name| last_name | designation
 :--- |:--- | :--- | :--- 
 1 | Kirankumar | Yadav | Data Scientist
 2 | Suraj | MS | MLE  
@@ -197,30 +196,30 @@ Employee_ID | First_Name| Last_Name | Designation
 <h2 name=null>NULL value</h2>
 
 ```sql
-# Fetch only rows with NULL value :
-SELECT * FROM Employee
-WHERE Designation IS NULL
+# Fetch only rows with a NULL value :
+SELECT * FROM employee
+WHERE designation IS NULL
 
 # Fetch only NON NULL rows :
-SELECT * FROM Employee
-WHERE Designation IS NOT NULL
+SELECT * FROM employee
+WHERE designation IS NOT NULL
 ```
 
 <h2 name=order>Ordering rows</h2>
 
 ```sql
 # Order the rows in Ascending Order | ASC by default :
-SELECT First_Name, Last_Name, Designation 
-FROM Employee
-ORDER BY First_Name;
+SELECT first_name, last_name, designation 
+FROM employee
+ORDER BY first_name;
 
 # Order the rows in Descending Order :
-SELECT First_Name, Last_Name, Designation 
-FROM Employee
-ORDER BY First_Name DESC;
+SELECT first_name, last_name, designation 
+FROM employee
+ORDER BY first_name DESC;
 
 # Order the rows based on multiple columns :
-SELECT First_Name, Last_Name, Designation 
-FROM Employee
-ORDER BY First_Name ASC, Last_Name ASC, Designation DESC;
+SELECT first_name, last_name, designation 
+FROM employee
+ORDER BY first_name ASC, last_name ASC, designation DESC;
 ```
