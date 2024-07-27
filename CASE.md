@@ -13,13 +13,16 @@ END;
 
 ### Search Condition
 ```SQL
-SELECT Customer, CustomerName,
+SELECT first_name, last_name, age,
 CASE
-  WHEN Payment > 1000 THEN 'Payment is More than 1000'
-  WHEN Payment < 1000 THEN 'Payment is Less than 1000'
-  ELSE 'Payment is Equal to 1000'
-END AS Result
-FROM Customers;
+  WHEN salary < 300000 THEN 'Nil'
+  WHEN salary BETWEEN 300000 AND 600000 THEN '5%'
+  WHEN salary BETWEEN 600000 AND 900000 THEN '10%'
+  WHEN salary BETWEEN 900000 AND 1200000 THEN '15%'
+  WHEN salary BETWEEN 1200000 AND 1500000 THEN '20%'
+  ELSE '30%'
+END AS tax
+FROM payroll;
 ```
 
 ### Update using CASE
