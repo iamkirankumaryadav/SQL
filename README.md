@@ -1,21 +1,23 @@
 <p align=right><a href='https://github.com/KIRANKUMAR7296/CSharp'>Navigate to C#</a></p>
 
 # **SQL: Structured Query Language** 
-- The programming language used to manage and manipulate the data within the relational databases.
+- A specialized language used to manage and manipulate the data within the relational databases.
 - Standard language used by most **RDBMS**, i.e. MySQL, Oracle, SQL Server, etc.
+- To execute **SQL** queries we use a relational database management system **(RDBMS)** 
 - Allows developers and database administrators to manage large amounts of data effectively.
 - **C.R.U.D:** Create, Retrieve (Read / Select), Update (Alter) and Delete (Drop)
 - Used to create, retrieve, update, delete, modify, filter, sort, group, aggregate and query databases. 
-- Join multiple tables using a shared key (column).
+- Join multiple tables using a shared key (column)
+- Apply SQL constraints to specify rules for the data in a table.
 - Organize data in the selected order **ASC** (Ascending) or **DESC** (Descending)
 - SQL commands are instructions used to communicate with the database.
 
 ### **Differences in the databases**
-- Syntax of a particular database may be different (i.e. **TOP:** Microsoft SQL and **LIMIT:** MySQL)
-- **Data types** may be different. 
+- **Syntax/Keywords** of a particular database may be different (i.e. **TOP:** Microsoft SQL and **LIMIT:** MySQL)
+- **Data types** keywords may be different. 
 - **Functions** might be different based on name or argument types or order of arguments.
 
-### SQL Categories | Subset of SQL
+### **SQL Categories | Subset of SQL**
 <table>
   <tr>
     <th><h3>DDL</h3></th><th><h3>DQL</h3></th><th><h3>DML</h3></th><th><h3>DCL</h3></th>
@@ -59,7 +61,7 @@
   </tr>
 </table>
 
-### Most Basic and Common Queries:
+### **Most Basic and Common Queries:**
 
 ```SQL
 SELECT * <All Columns>
@@ -77,7 +79,6 @@ HAVING   <Aggregate Filter>
 ORDER BY <Column List>
 LIMIT    <No. of Rows>
 ```
-
 
 1. **Select the name in upper case as an alias**
 ```SQL
