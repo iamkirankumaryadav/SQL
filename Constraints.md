@@ -15,7 +15,12 @@ CREATE TABLE table_name(
 
 ```sql
 CREATE TABLE IF NOT EXISTS DatabaseName.SchemaName.TableName(
-  ID INT NOT NULL UNIQUE PRIMARY KEY,
+  employee_id INT NOT NULL UNIQUE PRIMARY KEY,
+  first_name VARCHAR(25),
+  last_name VARCHAR(25),
+  age INT CHECK (age >= 18),
+  birthdate DATE,
+  city VARCHAR(25) DEFAULT 'Bengaluru'
 )
 ```
 
