@@ -1,15 +1,15 @@
-# `CUBE`
+# **CUBE**
 
-Organize `GROUP BY`subsets using all possible combinations.
+Organize **GROUP BY** subsets using all possible combinations.
 
 ```SQL
 SELECT
 R.CountryName,
 R.RegionName,
 D.DepartmentName,
-COUNT(E.*) -- Count total number of employees.
+COUNT(E.*) -- Count the total number of employees.
 FROM Employee E
-JOIN Regiojn R 
+JOIN Region R 
 ON E.RegionID = R.ID
 JOIN Department D 
 ON E.DepartmentID = D.ID
