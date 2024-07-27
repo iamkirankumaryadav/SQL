@@ -1,7 +1,5 @@
 # **Numeric Functions + Operations**
 
-### **Aggregate Functions**
-
 **Aggregate Functions** | **Description**
 :--- | :---
 **SUM()** | Calculates the sum of values in a column
