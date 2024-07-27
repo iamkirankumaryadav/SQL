@@ -81,19 +81,19 @@ CREATE TABLE employee
 <h2 name=insert>Inserting rows</h2>
 
 ```sql
-# Insert every row value:
+-- Insert every row value:
 INSERT INTO Employee
 VALUES ('Kirankumar', 'Yadav', 'Data Scientist');
 
-# Insert only specific row values, the rest will be NULL :
+-- Insert only specific row values, the rest will be NULL :
 INSERT INTO Employee (first_name, last_name)
 VALUES ('Kisankumar', 'Yadav')
 
-# Insert a new row with NULL values :
+-- Insert a new row with NULL values :
 INSERT INTO Employee
 DEFAULT VALUES;
 
-# Insert a new row values from an existing table :
+-- Insert a new row values from an existing table :
 INSERT INTO Employee (first_name, last_name, designation)
 SELECT first, last, role FROM training;
 ```
@@ -196,11 +196,11 @@ employee_ID | first_name| last_name | designation
 <h2 name=null>NULL value</h2>
 
 ```sql
-# Fetch only rows with a NULL value :
+-- Fetch only rows with a NULL value :
 SELECT * FROM employee
 WHERE designation IS NULL
 
-# Fetch only NON NULL rows :
+-- Fetch only NON NULL rows :
 SELECT * FROM employee
 WHERE designation IS NOT NULL
 ```
@@ -208,17 +208,17 @@ WHERE designation IS NOT NULL
 <h2 name=order>Ordering rows</h2>
 
 ```sql
-# Order the rows in Ascending Order | ASC by default :
+-- Order the rows in Ascending Order | ASC by default :
 SELECT first_name, last_name, designation 
 FROM employee
 ORDER BY first_name;
 
-# Order the rows in Descending Order :
+-- Order the rows in Descending Order :
 SELECT first_name, last_name, designation 
 FROM employee
 ORDER BY first_name DESC;
 
-# Order the rows based on multiple columns :
+-- Order the rows based on multiple columns :
 SELECT first_name, last_name, designation 
 FROM employee
 ORDER BY first_name ASC, last_name ASC, designation DESC;
