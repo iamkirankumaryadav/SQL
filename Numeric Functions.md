@@ -1,6 +1,14 @@
-# `Numeric` Functions and Operations
+# **Numeric Functions + Operations**
 
-### `Aggregate Functions`
+### **Aggregate Functions**
+
+**Aggregate Functions** | **Description**
+:--- | :---
+**SUM()** | Calculates the sum of values in a column
+**AVG()** | Calculates the average of values in a column
+**MIN()** | Returns the minimum value in a column
+**MAX()** | Returns the maximum value in a column
+**COUNT()** | Counts the number of rows in a column
 
 ```sql
 SELECT
