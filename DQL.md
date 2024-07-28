@@ -1,34 +1,34 @@
 # **Data Query Language (DQL)**
 
-Fetch the data from the database. SELECT the data based on the conditions described by the WHERE clause.
+Fetch the data from the database. **SELECT** the data based on the conditions described by the WHERE clause.
 
-Operators | Description
+**Operators** | **Description**
 --- | ---
-SELECT | Retrieve data from a database.
-WHERE | Filter rows based on a specified condition.
-ORDER BY | Sort the result set in ascending or descending order.
-GROUP BY | Groups rows based on the values in a specified column.
-HAVING | Filters grouped results based on a specified condition.
-BETWEEN | Returns data within a range of values.
-IN | Returns data within a list of values.
-ANY | Compare a value to any value returned by a subquery.
-ALL | Compare a value to all values returned by a subquery.
-LIKE | Returns data similar to the given pattern (Using Wildcard)
-IS NULL | Returns null values.
-IS NOT NULL | Returns not null values.
-EXISTS | Determine if a subquery returns values or not.
+**SELECT** | Retrieve data from a database.
+**WHERE** | Filter rows based on a specified condition.
+**ORDER BY** | Sort the result set in ascending or descending order.
+**GROUP BY** | Groups rows based on the values in a specified column.
+**HAVING** | Filters grouped results based on a specified condition.
+**BETWEEN** | Returns data within a range of values.
+**IN** | Returns data within a list of values.
+**ANY** | Compare a value to any value returned by a subquery.
+**ALL** | Compare a value to all values returned by a subquery.
+**LIKE** | Returns data similar to the given pattern (Using Wildcard)
+**IS NULL** | Returns null values.
+**IS NOT NULL** | Returns not null values.
+**EXISTS** | Determine if a subquery returns values or not.
 
 ### **SELECT Statement**
 
 ```sql
 SELECT first_name, last_name
-FROM Customers;
+FROM employee;
 ```
 
 ### **WHERE Clause**
 
 ```sql
-SELECT * FROM Customers
+SELECT * FROM employee
 WHERE age > 30;
 ```
 
@@ -53,16 +53,16 @@ GROUP BY category;
 SELECT category, COUNT(*)
 FROM products
 GROUP BY category
-HAVING count(*) > 5;
+HAVING COUNT(*) > 5;
 ```    
 
-### Querying the table with the logical operator `LIKE` :
+### **Querying the table with the logical operator LIKE:**
 ```sql
-# Underscore: _
+-- Underscore: _
 
-SELECT Code
-FROM Table
-WHERE Code LIKE '_2_6'
+SELECT code
+FROM table
+WHERE code LIKE '_2_6'
 
 Results :
 '1216'
@@ -71,62 +71,60 @@ Results :
 ```
 
 ```sql
-# Square Brackets: [ ] | or
+-- Square Brackets: [ ] | or
 
-SELECT Last_Name 
-FROM Employee
-WHERE Last_Name LIKE 'Wi[lk]%' # 'Wi' followed with either 'l' or 'k'
+SELECT last_name 
+FROM employee
+WHERE last_name LIKE 'Wi[lk]%' -- 'Wi' followed by either 'l' or 'k'
 
 Results :
 'Williams'
-'Wiki'
-'Wikipedia'
+'Wilson'
+'Wikson'
 ```
 
 ```sql
-# Percentage: %  
+-- Percentage: %  
+
+-- Get only Google mails:
+SELECT first_name, email 
+FROM employee
+WHERE email LIKE '%@gmail.com'
+
 ------------------------------
-# Get only Google mails:
-
-SELECT First_Name, Email 
-FROM Employee
-WHERE Email LIKE '%@gmail.com'
-
-------------------------------
-# Get emails other than Gmail
-
-SELECT First_Name, Email
-FROM Employee
-WHERE Email NOT LIKE '%@gmail.com' 
+-- Get emails other than Gmail:
+SELECT first_name, email
+FROM employee
+WHERE email NOT LIKE '%@gmail.com' 
 
 ----------------------------------
 
-SELECT First_Name, City
-FROM Employee
-WHERE First_Name LIKE 'B[iro]%' AND City NOT LIKE '%UL%'
+SELECT first_name, city
+FROM employee
+WHERE first_name LIKE 'B[iro]%' AND City NOT LIKE '%UL%'
 ```
 
 ### Querying the table with logical operators IN and BETWEEN
 
 ```sql
-SELECT First_Name, Shirt_Size 
-FROM Customer
-WHERE Shirt_Size IN ('M', 'L', 'XL', 'XXL')
-ORDER BY Shirt_Size ASC
+SELECT first_name, shirt_size 
+FROM customer
+WHERE shirt_size IN ('M', 'L', 'XL', 'XXL')
+ORDER BY shirt_size ASC
 ```
 
 ```sql
-SELECT First_Name, Pant_Size, DATENAME(Month, Birthday) as BirthMonth 
-FROM Customer
-WHERE Dress_Size BETWEEN 2 AND 16 AND Pant_Size LIKE '%L'
-ORDER BY BirthMonth
+SELECT first_name, pant_size, DATENAME(Month, birthday) as birth_month 
+FROM customer
+WHERE pant_size BETWEEN 2 AND 16 AND shirt_size LIKE '%L'
+ORDER BY birth_month
 ```
 
 ```sql
-SELECT First_Name, DATENAME(Year, Birthday) as BirthYear 
-FROM Customer
-WHERE Birthday BETWEEN '1980' AND '1982'
-ORDER BY BirthYear DESC
+SELECT first_name, DATENAME(Year, birthday) as birth_year 
+FROM customer
+WHERE birthday BETWEEN '1980' AND '1982'
+ORDER BY birth_year DESC
 ```
 
 ### **IN**
@@ -155,9 +153,9 @@ WHERE order_amount > ALL(SELECT total_amount
 ### **COALESCE**
 
 ```sql
-# Return the first non-null value in the list:
-SELECT First_Name, Last_Name, Starting_Salary, Current_Salary, 
-COALESCE(Current_Salary*1.1, Starting_Salary) AS New_Salary 
-FROM Employee
-WHERE Starting_Salary <= 35000
+-- Return the first non-null value in the list:
+SELECT first_name, last_name, starting_salary, current_salary, 
+COALESCE(current_salary * 1.1, starting_salary) AS new_salary 
+FROM employee
+WHERE starting_salary <= 35000
 ```
