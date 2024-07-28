@@ -4,10 +4,10 @@
 
 ```SQL
 CASE
-  WHEN Condition1 THEN Result1
-  WHEN Condition2 THEN Result2
-  WHEN Condition3 THEN Result3
-  ELSE Result4
+  WHEN condition1 THEN result1
+  WHEN condition2 THEN result2
+  WHEN condition3 THEN result3
+  ELSE result4
 END;
 ```
 
@@ -25,10 +25,22 @@ END AS tax
 FROM payroll;
 ```
 
+```SQL
+-- While mapping with the same column:
+SELECT first_name, last_name, age,
+CASE gender
+  WHEN 'F' THEN 'Female'
+  WHEN 'M' THEN 'Male'
+  ELSE 'Transgender'
+END AS gender
+FROM employee;
+```
+
 ### Update using CASE
 ```SQL
-UPDATE Employees 
-SET Rating = CASE
+-- Updating the column value based on conditions:
+UPDATE employees 
+SET rating = CASE
                 WHEN RATE < 3 THEN 'Satisfactory'
                 WHEN RATE = 3 THEN 'Acceptable'
                 WHEN RATE > 3 THEN 'Excellent'
@@ -45,9 +57,9 @@ AS Alias
 FROM TableName
 
 --- Example:
-SELECT DECODE (Grade, 'A', 1, `B`, 2, `C`, 3, `D`, 4, 0)
-AS Points
-FROM Students
+SELECT DECODE (grade, 'A', 1, `B`, 2, `C`, 3, `D`, 4, 0)
+AS points
+FROM students
 ```
 
 ### DECODE vs CASE
