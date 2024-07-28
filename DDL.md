@@ -38,7 +38,7 @@ CREATE TABLE employee(
 ```
 
 ```sql
-# Create View:
+-- Create View:
 CREATE VIEW staff_view AS
 SELECT s.ID, s.last_name, cd.company
 FROM staff s
@@ -47,7 +47,7 @@ ON s.department = cd.department;
 ```
 
 ```sql
-# Create Index:
+-- Create Index:
 CREATE INDEX idx_staff_last_name
 ON staff
 USING (last_name);
@@ -71,7 +71,7 @@ ADD age INT, department VARCHAR(25);
 ```
 
 ```sql
-# Modify the size and data type of an existing column in a table:
+-- Modify the size and data type of an existing column in a table:
 ALTER TABLE employee
 ALTER COLUMN country VARCHAR(25);
 ```
