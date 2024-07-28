@@ -11,51 +11,51 @@
 <h3 name=select><strong>SELECT</strong></h3>
 
 ```sql
-# Select all the columns:
+-- Select all the columns:
 SELECT *
-FROM Employee;
+FROM employee;
 ```            
 
 ```sql
-# Select specific columns:
+-- Select specific columns:
 SELECT first_name, last_name
-FROM Employee;
+FROM employee;
 ```
 
 <h3 name=insert><strong>INSERT</strong></h3>
 
 ```sql
-# Insert single row:
-INSERT INTO Employee(FirstName, LastName, Email)  
-VALUES('Kirankumar', 'Yadav', 'Kirankumaryadav@gmail.com');
+-- Insert single row:
+INSERT INTO employee(first_name, last_name, email)  
+VALUES('Kirankumar', 'Yadav', 'kirankumar.yadav@gmail.com');
 ```
 
 ```sql
-# Insert multiple rows:
-INSERT INTO Employee(FirstName, LastName, Email)  
-VALUES('Kirankumar', 'Yadav', 'Kirankumar.Yadav@gmail.com'),
-      ('Kisankumar', 'Yadav', 'Kisankumar.Yadav@gmail.com'),
-      ('Rohit', 'Yadav', 'Rohit.Yadav@gmail.com'),
-      ('Arpit', 'Yadav', 'Arpit.Yadav@gmail.com');
+-- Insert multiple rows:
+INSERT INTO employee(first_name, last_name, email)  
+VALUES('Kirankumar', 'Yadav', 'kirankumar.yadav@gmail.com'),
+      ('Kisankumar', 'Yadav', 'kisankumar.yadav@gmail.com'),
+      ('Rohit', 'Yadav', 'rohit.yadav@gmail.com'),
+      ('Arpit', 'Yadav', 'arpit.yadav@gmail.com');
 ```
 
 <h3 name='update'><strong>UPDATE</strong></h3>
       
 ```sql
-# Update the value of a column in a table:
-UPDATE Employee
-SET Designation = 'Data Scientist'
-WHERE FirstName = 'Kirankumar' 
-AND LastName = 'Yadav' 
-AND DateOfBirth = '07/02/1996';
+-- Update the value of a column in a table:
+UPDATE employee
+SET designation = 'Data Scientist'
+WHERE first_name = 'Kirankumar' 
+AND last_name = 'Yadav' 
+AND birth_date = '1996-02-07';
 ```
 
 <h3 name=delete><strong>DELETE</strong></h3>
 
 ```sql
-# Remove one or more rows from a table:
+-- Remove one or more rows from a table:
 DELETE 
-FROM Supplier
-WHERE SupplierID = 2;
-# WHERE Clause is only used with DELETE command (Not with DROP and TRUNCATE commands)
+FROM supplier
+WHERE supplier_ID = 2;
+-- WHERE Clause is only used with DELETE command (Not with DROP and TRUNCATE commands)
 ```
