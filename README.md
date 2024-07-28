@@ -1,16 +1,25 @@
 <p align=right><a href='https://github.com/KIRANKUMAR7296/CSharp'>Navigate to C#</a></p>
 
 # **SQL: Structured Query Language** 
-- A specialized language used to manage and manipulate the data within the relational databases.
-- Standard language used by most **RDBMS**, i.e. MySQL, Oracle, SQL Server, etc.
+- A specialized and standard language used to manage and manipulate the data within the relational databases.
 - To execute **SQL** queries we use a relational database management system **(RDBMS)** 
 - Allows developers and database administrators to manage large amounts of data effectively.
-- **C.R.U.D:** Create, Retrieve (Read / Select), Update (Alter) and Delete (Drop)
+- SQL follows 4 basic operations **C.R.U.D:** Create, Retrieve (Read/Select), Update (Alter) and Delete (Drop)
 - Used to create, retrieve, update, delete, modify, filter, sort, group, aggregate and query databases. 
-- Join multiple tables using a shared key (column)
 - Apply SQL constraints to specify rules for the data in a table.
+- Join multiple tables using a shared key (column) (JOINS | UNION | UNION ALL)
 - Organize data in the selected order **ASC** (Ascending) or **DESC** (Descending)
 - SQL commands are instructions used to communicate with the database.
+
+### **Relational Database:**
+- A database that uses the tabular schema of rows and columns to store and manage data.
+- **Relational DBMS:** A program/software/application used to create, update, and manage relational databases.
+- The most well-known **RDBMS:** MySQL, PostgreSQL, MariaDB, Microsoft SQL Server, and Oracle Database.
+
+### **Non-Relational Database**  
+- A database that does not use the tabular schema of rows and columns found in most traditional database systems.
+- Non-relational databases store data as simple key/value pairs, as JSON, or as a graph consisting of edges and vertices.
+- **Non-RDBMS:** MongoDB, Amazon DynamoDB, Redis, Google Cloud Firestore, etc.
 
 ### **Differences in the databases**
 - **Syntax/Keywords** of a particular database may be different (i.e. **TOP:** Microsoft SQL and **LIMIT:** MySQL)
