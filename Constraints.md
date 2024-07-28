@@ -14,7 +14,7 @@ CREATE TABLE table_name(
 ```
 
 ```sql
-CREATE TABLE IF NOT EXISTS DatabaseName.SchemaName.TableName(
+CREATE TABLE IF NOT EXISTS <Database Name>.<Schema Name>.<Table Name>(
   employee_id INT NOT NULL UNIQUE PRIMARY KEY,
   first_name VARCHAR(25),
   last_name VARCHAR(25),
