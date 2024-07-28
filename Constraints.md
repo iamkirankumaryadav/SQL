@@ -5,7 +5,6 @@
 
 ```sql
 -- Syntax
-
 CREATE TABLE table_name(
   column1 datatype constraint,
   column2 datatype constraint,
