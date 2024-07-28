@@ -4,7 +4,7 @@
 - A specialized and standard language used to manage and manipulate the data within the relational databases.
 - To execute **SQL** queries we use a relational database management system **(RDBMS)** 
 - Allows developers and database administrators to manage large amounts of data effectively.
-- SQL follows 4 basic operations **C.R.U.D:** Create, Retrieve (Read/Select), Update (Alter) and Delete (Drop)
+- SQL is used to perform **C.R.U.D** operations: Create, Retrieve (Read/Select), Update (Alter) and Delete (Drop)
 - Used to create, retrieve, update, delete, modify, filter, sort, group, aggregate and query databases. 
 - Apply SQL constraints to specify rules for the data in a table.
 - Join multiple tables using a shared key (column) (JOINS | UNION | UNION ALL)
