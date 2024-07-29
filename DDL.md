@@ -36,7 +36,7 @@ CREATE DATABASE employee_details;
 -- Syntax:
 USE database_name
 
--- Example
+-- Example:
 USE employee_details;
 ```
 
@@ -87,12 +87,19 @@ USING (last_name);
 ALTER TABLE table_name
 DROP COLUMN column_name;
 
+-- Example:
 ALTER TABLE employee
 DROP COLUMN email;
 ```
 
 ```sql
 -- Add a new column in the table:
+
+-- Syntax:
+ALTER TABLE table_name
+ADD column1 datatype constraints, column2 datatype constraints;
+
+-- Example:
 ALTER TABLE employee
 ADD age INT, department VARCHAR(25);
 ```
