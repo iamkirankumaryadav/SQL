@@ -1,347 +1,339 @@
 # Difference Between
 
 <table>
-        <tr><th align=left><a href = '#dt'>1. Delete vs Truncate</a></th></tr>
-        <tr><th align=left><a href = '#wh'>2. Where vs Having</a></th></tr>
-        <tr><th align=left><a href = '#ua'>3. Union vs Union All</a></th></tr>
-        <tr><th align=left><a href = '#pku'>4. Primary Key vs Unique</a></th></tr>
-        <tr><th align=left><a href = '#pkfk'>5. Primary Key vs Foreign Key</a></th></tr>
-        <tr><th align=left><a href = '#ie'>6. In vs Exist</a></th></tr>
-        <tr><th align=left><a href = '#obgb'>7. Order By vs Group By</a></th></tr>
-        <tr><th align=left><a href = '#jsq'>8. Join vs Sub Query</a></th></tr>
-        <tr><th align=left><a href = '#uj'>9. Union vs Join</a></th></tr>
-        <tr><th align=left><a href = '#index'>10. Index</a></th></tr>
-        <tr><th align=left><a href = '#cluster'>11. Clustered Index vs Non Clustered Index</a></th></tr>
-        <tr><th align=left><a href = '#func'>12. Stored Procedure vs Function</a></th></tr>
-        <tr><th align=left><a href = '#inner'>13. Inner Join vs Outer Join</a></th></tr>
-        <tr><th align=left><a href = '#lr'>13. Left Join vs Right Join</a></th></tr>
+        <tr><th align=left><a href = '#dt'>1.DELETE vs TRUNCATE</a></th></tr>
+        <tr><th align=left><a href = '#wh'>2.WHERE vs HAVING</a></th></tr>
+        <tr><th align=left><a href = '#ua'>3.UNION vs UNION All</a></th></tr>
+        <tr><th align=left><a href = '#pku'>4.PRIMARY KEY vs UNIQUE</a></th></tr>
+        <tr><th align=left><a href = '#pkfk'>5.PRIMARY KEY vs FOREIGN KEY</a></th></tr>
+        <tr><th align=left><a href = '#ie'>6.IN vs EXIST</a></th></tr>
+        <tr><th align=left><a href = '#obgb'>7.ORDER BY vs GROUP BY</a></th></tr>
+        <tr><th align=left><a href = '#jsq'>8.JOIN vs Sub Query</a></th></tr>
+        <tr><th align=left><a href = '#uj'>9.UNION vs JOIN</a></th></tr>
+        <tr><th align=left><a href = '#index'>10.INDEX</a></th></tr>
+        <tr><th align=left><a href = '#cluster'>11.Clustered Index vs Non Clustered Index</a></th></tr>
+        <tr><th align=left><a href = '#func'>12.Stored Procedure vs Function</a></th></tr>
+        <tr><th align=left><a href = '#inner'>13.INNER JOIN vs OUTER JOIN</a></th></tr>
+        <tr><th align=left><a href = '#lr'>13.LEFT JOIN vs RIGHT JOIN</a></th></tr>
 </table>
 
-<h3 name='dt'>1. Delete vs Truncate vs Drop</h3>
+<h3 name='dt'>1.DELETE vs TRUNCATE vs DROP</h3>
 
-DELETE | TRUNCATE | DROP
---- | --- | ---
+**DELETE** | **TRUNCATE** | **DROP**
+:--- | :--- | :---
 DML | DDL | DDL
-Remove `Some` or `All` Rows | Remove `All` Rows | Remove `Table` from Database
-WHERE Clause | `No` WHERE Clause | `No` WHERE Clause
-Roll Back | `No` Roll Back | `No` Roll Back
-Do not Remove Permanently | Remove Records Permanently | Remove Records, Indexes, Structures Permanently
+Remove some or all rows | Remove all rows | Remove table from database
+WHERE Clause | No WHERE Clause | No WHERE Clause
+Roll Back | No Roll Back | No Roll Back
+Doesn't removes permanently | Remove records permanently | Remove records, indexes, structures, metadata permanently
 
-### DELETE 
+### **DELETE** 
 ```SQL 
-DELETE FROM Employee
-WHERE EID IN (1,2,3);
+DELETE FROM employee
+WHERE employee_ID IN (1,2,3);
 ```
 
-### TRUNCATE
+### **TRUNCATE**
 ```SQL
-TRUNCATE Table Employee;
+TRUNCATE TABLE employee;
 ```
 
 ### DROP 
 ```SQL
-DROP Table Employee;
+DROP TABLE employee;
 ```
 
-<h3 name='wh'>2. Where vs Having</h3>
+<h3 name='wh'>2.WHERE vs HAVING</h3>
 
-WHERE | HAVING
---- | ---
-Aggregate funtions are not allowed | Aggregate functions are allowed 
+**WHERE** | **HAVING**
+:--- | :---
+Aggregate funtions are not allowed | Aggregate functions are allowed (SUM, AVG, MIN, MAX, COUNT)
 Only supports filter conditions based on the existing columns | Support filters based on aggregated results 
 
-- Aggregate Funtions: `COUNT`, `SUM`, `AVG`, `MIN`, `MAX` ...
-- `HAVING` clause is used only after `GROUP BY` clause.
-- **Aggregate Functions** are use to `Summarize` Data ( Returns single value for multiple rows )
+- **HAVING** clause is used only after **GROUP BY** clause.
+- **Aggregate Functions** are use to summarize data (Returns single aggregated value for multiple rows)
 
-### SUM | AVG | COUNT | MAX | MIN
+### **SUM | AVG | COUNT | MAX | MIN**
 
-### WHERE
+### **WHERE**
 ```SQL
-SELECT * 
-FROM Employee
-WHERE Designation = 'Data Scientist';
+SELECT * FROM employee
+WHERE designation = 'Data Scientist';
 ```
 
-### HAVING
+### **HAVING**
 ```SQL
-SELECT MAX(Salary)
-FROM Employee
-GROUP BY Designation
-HAVING MAX(Salary) > 100000;
+SELECT MAX(salary)
+FROM employee
+GROUP BY designation
+HAVING MAX(salary) > 100000;
 ```
 
-<h3 name='ua'>3. Union vs Union All</h3>
+<h3 name='ua'>3.UNION vs UNION ALL</h3>
 
-Combines `2` or `more` Tables
-- Tables must have same Number of `Columns`
-- Columns must have same `Data Types`
-- Columns must have same `Order`
+Combines 2 or more tables
+- Tables must have same number of columns
+- Columns must have same data type
+- Columns must have same order of columns
 
-UNION | UNION
-`Remove` Duplicate Records | `Keep` Duplicate Records
+### **UNION** | **UNION ALL**
+:--- | :---
+Keep distinct records | Keep duplicate records
 
-### UNION
+### **UNION**
 ```SQL
-SELECT * FROM Sales
+SELECT * FROM sales
 UNION
-SELECT * FROM Product
-ORDER BY ProductName;
+SELECT * FROM product
+ORDER BY product_name;
 ```
 
-### UNION ALL
+### **UNION ALL**
 ```SQL
-SELECT * FROM Sales
+SELECT * FROM sales
 UNION ALL
-SELECT * FROM Product
-ORDER BY ProductName;
+SELECT * FROM product
+ORDER BY product_name;
 ```
 
-<h3 name='pku'>4. Primary Key vs Unique</h3>
+<h3 name='pku'>4.PRIMARY KEY vs UNIQUE</h3>
 
-Primary Key | Unique Key
+**Primary Key** | **Unique Key**
 :--- | :---
-We can have only one Primary Key in a Table | We can have more than one Unique Key in a Table
-Do not accept `NULL` Value | Accepts only `One` Null Value.
-Identify Unique `Row` from Table | Maintain Unique `Data` in a Column.
+We can have only one **PRIMARY KEY** in a table | We can have more than one **UNIQUE KEY** in a table
+Do not accept **NULL** values | Accepts only one **NULL** value.
+Identify UNIQUE rows in the table | Maintain UNIQUE data in a column.
 
-### Primary Key
+### **PRIMARY KEY**
 
 ```SQL
-CREATE TABLE Person
+CREATE TABLE person
 (
-    ID INT NOT NULL PRIMARY KEY,
-    Name VARCHAR(255) NOT NULL,    
-    Age INT
+    pID INT NOT NULL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,    
+    age INT
 );
 ```
 
-### Unique Key
+### **UNIQUE KEY**
 
 ```SQL
-CREATE TABLE Person
+CREATE TABLE person
 (
-    ID INT NOT NULL UNIQUE,
-    Name VARCHAR(255) NOT NULL,    
-    Age INT
+    pID INT NOT NULL UNIQUE,
+    name VARCHAR(255) NOT NULL,    
+    age INT
 );
 ```
 
-<h3 name = 'pkfk'>5. Primary Key vs Foreign Key</h3>
+<h3 name = 'pkfk'>5.PRIMARY KEY vs FOREIGN KEY</h3>
 
-Primary Key | Foreign Key
+**PRIMARY KEY** | **FOREIGN KEY**
 :--- | :---
-Identify Unique `Row` in the Table | Column in a Table which is Primary Key in another Table
-We can have only one Primary Key in the Table | We can have more than one Foreign Key in the Table
-Primary Key can not accept NULL Value | Foreign Key Accepts NULL Value
-Primary Key will not allow Duplicate Value | Foreign Key will allow Duplicate Value.
+Identify UNIQUE row in the table | Column in a table which is PRIMARY KEY in another table
+We can have only one PRIMARY KEY in the table | We can have more than one FOREIGN KEY in the table
+PRIMARY KEY can not accept NULL value | FOREIGN KEY accepts NULL values
+PRIMARY KEY will not allow Duplicate value | FOREIGN KEY will allow duplicate value.
 
-### Primary Key
+### **PRIMARY KEY**
 
 ```SQL
-CREATE TABLE Person
+CREATE TABLE person
 (
-    ID INT NOT NULL PRIMARY KEY,
-    Name VARCHAR(255) NOT NULL,    
-    Age INT
+    pID INT NOT NULL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,    
+    age INT
 );
 ```
 
-### Unique Key
+### **Unique Key**
 
 ```SQL
-CREATE TABLE Person
+CREATE TABLE person
 (
-    ID INT NOT NULL UNIQUE,
-    Name VARCHAR(255) NOT NULL,    
-    Age INT
+    pID INT NOT NULL UNIQUE,
+    name VARCHAR(255) NOT NULL,    
+    age INT
 );
 ```
 
-<h3 name='ie'>6. In vs Exist</h3>
+<h3 name='ie'>6.IN vs EXISTS</h3>
 
-### IN 
-- Multiple `OR`
+### **IN** 
+- Multiple OR
 
 ```SQL
-SELECT * FROM Employee
-WHERE City = 'Mumbai' OR City = 'Bangalore' OR City = 'Pune';
+SELECT * FROM employee
+WHERE city = 'Mumbai' OR city = 'Bangalore' OR city = 'Pune';
 ```
 
 ```SQL
-SELECT * FROM Employee
-WHERE City IN (`Mumbai`, `Bangalore`, `Pune`);
+SELECT * FROM employee
+WHERE city IN (`Mumbai`, `Bangalore`, `Pune`);
 ```
 
 ```SQL
-SELECT * FROM Sales
-WHERE City IN (SELECT City FROM Returns)
+SELECT * FROM sales
+WHERE city IN (SELECT city FROM returns)
 ```
 
-### EXISTS
-- Returns either `True` or `False` Value ( Tests for Existance of Record in a Sub Query )
+### **EXISTS**
+- Returns either True or False value (Tests for existance of records in a sub query)
 
 ```SQL
-SELECT * FROM Sales
-WHERE EXISTS (SELECT City FROM Returns
-              WHERE Returns.ID = Sales.ID AND Price < 500)
+SELECT * FROM sales
+WHERE EXISTS (SELECT city FROM returns
+              WHERE returns.ID = sales.ID AND price < 500)
 ```
 
-<h3 name='obgb'>7. Order By vs Group By</h3>
+<h3 name='obgb'>7.ORDER BY vs GROUP BY</h3>
 
-ORDER BY | GROUP BY
+**ORDER BY** | **GROUP BY*
 --- | ---
-Sorting in `ASC` or `DESC` Order | Used with `Aggregate` Functions
+Sorting in **ASC** or **DESC** order | Used with **Aggregate** functions
 
-### ORDER BY
+### **ORDER BY**
 
 ```SQL
-SELECT * FROM Sales
-ORDER BY City 
-DESC;
+SELECT * FROM sales
+ORDER BY city DESC;
 ```
 
-### GROUP BY
+### **GROUP BY**
 ```SQL
-SELECT IsActive, COUNT(*)
-FROM Customers
-GROUP BY IsActive;
+SELECT is_active, COUNT(*)
+FROM customers
+GROUP BY is_active;
 ```
 
-WHERE Clause is Used with SELECT Clause before GROUP BY
+**WHERE** Clause is used with **SELECT** Clause before **GROUP BY**
 ```SQL
-SELECT Designation, Salary 
-FROM Employee
-WHERE Designation IN ('Data Scientist', 'Data Analyst', 'Business Analyst', 'Data Architect', 'Machine Learning Engineer')
-GROUP BY Designation;
+SELECT designation, salary 
+FROM employee
+WHERE designation IN ('Data Scientist', 'Data Analyst', 'Business Analyst', 'Data Architect', 'Machine Learning Engineer')
+GROUP BY designation;
 ```
 
-HAVING Clause is used with GROUP BY and WHERE Clause `cannot` be used after GROUP BY
+**HAVING** Clause is used with **GROUP BY** and **WHERE** Clause can't be used after **GROUP BY**
 ```SQL
-SELECT Model, Price 
-FROM Vehicles
-GROUP BY Model
-HAVING SUM(Price) > 5000000
-ORDER BY Price DESC;
+SELECT model, price 
+FROM vehicles
+GROUP BY model
+HAVING SUM(price) > 5000000
+ORDER BY price DESC;
 ```
 
-<h3 name='jsq'>8. Join vs Sub Query</h3>
+<h3 name='jsq'>8.JOIN vs Sub Query</h3>
 
-`Combine` Data from Different Tables into a Single Table
+Combine data from different tables into a single table
 
-### Sub Query
-
-Select only from `First` Table
+### **Sub Query**
 
 ```SQL
-SELECT Phone, CustomerName
-FROM Customers
-WHERE C_ID IN (SELECT C_ID 
-               FROM Orders)
+-- Select only from first table:
+SELECT phone, customer_name
+FROM customer
+WHERE c_ID IN (SELECT c_ID 
+               FROM orders)
 ```
 
-### JOIN
-
-Select from `Either` of the Table
+### **JOIN**
 
 ```SQL
-SELECT Phone, CustomerName, OrderID
-FROM Customers C
-JOIN Orders O
-ON O.CustomerID = C.CustomerID
+-- Select from either of the table:
+SELECT phone, customer_name, order_ID
+FROM customers c
+JOIN orders o
+ON o.customer_ID = c.customer_ID
 ```
 
-<h3 name='uj'>9. Union vs Join</h3>
+<h3 name='uj'>9.UNION vs JOIN</h3>
 
-UNION | JOIN
---- | ---
-`Combine` Rows | `Merge` Columns  
-Number of `Columns` and Data Type of Columns should be same | Combines on the basis of Common `Column` ( ID )
-`Vertical` | `Horizontal`
+**UNION** | **JOIN**
+:--- | :---
+Combine rows | Merge columns  
+Number of columns and data type of columns should be same | Combines on the basis of common column (ID/Values)
+Vertical | Horizontal
 
-### UNION 
+### **UNION** 
 ```SQL
-SELECT City from Table1
+SELECT city from table1
 UNION
-SELECT City from Table2;
+SELECT city from table2;
 ```
 
-### JOIN
+### **JOIN**
 ```SQL
-SELECT A.City, B.Name
-FROM Departments A
-JOIN Employee B
-ON A.ID = B.ID;
+SELECT a.city, b.name
+FROM departments a
+JOIN employee b
+ON a.ID = b.ID;
 ```
 
-<h3 name='index'>10. Index</h3>
+<h3 name='index'>10.Index</h3>
 
-- `Index` are used for fast retrieval of data.
-- Index in the Database is very similar to an Index in the back of a book.
-- e.g. If you want to Refer to a pages in a book, you first refer to the `Index`.
+- Index are used for fast retrieval of data.
+- Index in the database is very similar to an Index in a book.
+- e.g. If you want to refer to a pages in a book, you first refer to the Index.
 
-### Types of Indexes
+### **Types of Indexes**
 
-#### Single Column Index
-- Index based on only `One` Column.
+**Single Column Index:** Index based on only one column.
 
 ```SQL
-CREATE INDEX IndexName 
-ON TableName (ColumnName);
+CREATE INDEX index_name 
+ON table_name (column_name);
 ```
 
-#### Unique Index
-- Does not allow any `Duplicate` Values to be inserted into the table.
+**Unique Index:** Does not allow any duplicate values to be inserted into the table.
 
 ```SQL
-CREATE UNIQUE INDEX IndexName
-ON TableName (ColumnName);
+CREATE UNIQUE INDEX index_name
+ON table_name (column_name);
 ```
 
-#### Composite Indexes
-- An Index on Two or More Columns of a Table.
+**Composite Indexes:** An Index on two or more columns of a table.
 
 ```SQL
-CREATE INDEX IndexName
-ON TableName (ColumnName1, ColumnName2);
+CREATE INDEX index_name
+ON table_name (column_name1, column_name2);
 ```     
 
-#### Implicit Indexes
-- Index Automatically created by `Primary Key` Constraints and `Unique` Constraints when an Object is created.
+**Implicit Indexes:** Index automatically created by PRIMARY KEY constraint and UNIQUE constraint when an object is created.
 
-<h3 name='cluster'>11. Clustered Index vs Non Clustered Index</h3>
+<h3 name='cluster'>11.Clustered Index vs Non Clustered Index</h3>
 
-#### Clustered Index
+#### **Clustered Index**
 
-- Defines the `Order` in which Data is Physically stored in a Table.
-- When we Create a Table with ID as `PRIMARY KEY`, this Automatically creates Clustered Index.
+- Defines the order in which data is physically stored in a table.
+- When we create a table with ID as PRIMARY KEY, this automatically creates Clustered Index.
 
-#### Non Clustered Index
+#### **Non Clustered Index**
 
-- Doesn't `Sort` the Physical Data inside the Table.
-- Non Clustered Index is stored at different place then the Table Data.
+- Doesn't sort the physical data inside the table.
+- Non Clustered Index is stored at different place then the table data.
 - e.g. Textbook content | Index is located on first page but the actual content is all at different pages.
-- Index contains column value and Address of the Record.
+- Index contains column value and address of the record.
 
-<h3 name='func'>12. Stored Procedure vs Function</h3>
+<h3 name='func'>12.Stored Procedure vs Function</h3>
 
-Stored Procedure | Function
+**Stored Procedure** | **Function**
 :--- | :---
-Stored Procedure can return `0` or `N` Values | Function must return a `Value`
-Can have Multiple `Input` as well as `Output` Parameters | Can have only One `Input` Parameter
-Procedures cannot be called from `Function` | Functions can be called from `Procedure`
+Stored procedure can return 0 or N values | Function must return a value
+Can have multiple Input as well as Output parameters | Can have only one Input parameter
+Procedures cannot be called from function | Functions can be called from procedure
 
-<h3 name='inner'>13. Inner Join vs Outer Join</h3>
+<h3 name='inner'>13.Inner Join vs Outer Join</h3>
 
-Inner Join | Outer Join
+**Inner Join** | **Outer Join**
 :--- | :---
-Return Only `Matching` Rows between both the Tables | Returns `Matching` and `Unmatching` Rows between both the Tables
-`Default` Join | It is not a Default Joint 
+Return only matching rows between both the tables | Returns matching and unmatching rows between both the tables
+Default Join | It is not a Default Join
 
-<h3 name='lr'>14. Left Join vs Right Join</h3>
+<h3 name='lr'>14.Left Join vs Right Join</h3>
 
-Left Join | Right Join
+**Left Join** | **Right Join**
 :--- | :---
-Return `All` the Rows from `Left` Table  | Return `All` the Rows from `Right` Table  
-Return Only `Matching` Rows from the `Right` Table | Return Only `Matching` Rows from the `Left` Table
+Return all the rows from the left table  | Return all the rows from the right table  
+Return only the matching rows from the right table | Return only the matching rows from the left table
 
