@@ -1,35 +1,33 @@
-# Views
+# **Views**
 
-### Virtual Table ( Do not Exist in Reality )
+### **Virtual Table** (Do not exist in reality)
 
-You can't `Modify` Data in the View.
+- You can't modify data in the **VIEW**.
+- Database object that presents data from one or more tables.
+- Selecting fields/columns from one or more tables present in database.
+- There is no records/rows in the VIEW (Only holds definition of table and fetches data from the table and view it)
 
-- `Database` object that presents data from one or more tables.
-- Selecting `Fields` | `Columns` from one or more Tables present in Database
-- There is no `Records` | `Rows` in the View ( Only holds Definition of table and fetches data from the table and view it )
+### **CREATE VIEWS**
 
-
-### CREATE VIEWS
-
-### Single Table
 ```SQL
-CREATE VIEW Details AS
-SELECT Name, Address
-FROM Students 
-WHERE Age > 18;
+-- Single Table:
+CREATE VIEW details AS
+SELECT name, address
+FROM students 
+WHERE age > 18;
 ```
 
-We can also Add GROUP BY, HAVING, ORDER BY...
+We can also add GROUP BY, HAVING, ORDER BY...
 
-### Multiple Tables
 ```SQL
-CREATE VIEW Details AS
-SELECT S.Name, S.Address, M.Marks
-FROM Students S, Marks M
-WHERE S.ID = M.ID
+-- Multiple Tables:
+CREATE VIEW details AS
+SELECT s.name, s.address, m.marks
+FROM students s, marks m
+WHERE s.ID = m.ID
 ```
 
-### DROP VIEWS
+### **DROP VIEWS**
 ```SQL
-DROP VIEW Details
+DROP VIEW details
 ```
