@@ -19,7 +19,7 @@ ON employee TO 'Kirankumar', 'Suraj';
 ### **REVOKE**
 
 ```sql
--- Syntax:
+-- Syntax: Here, SQL_COMMANDS means SELECT, INSERT, UPDATE, DELETE, etc.
 REVOKE SQL_COMMANDS
 ON table_name FROM 'username1', 'username2';
 ```  
