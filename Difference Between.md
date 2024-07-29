@@ -76,7 +76,7 @@ Combines 2 or more tables
 - Columns must have same data type
 - Columns must have same order of columns
 
-### **UNION** | **UNION ALL**
+**UNION** | **UNION ALL**
 :--- | :---
 Keep distinct records | Keep duplicate records
 
