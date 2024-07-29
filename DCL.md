@@ -5,9 +5,8 @@ DCL commands are used to **grant** and **revoke** the authority/permission/privi
 ### **GRANT**
 
 ```sql
--- Syntax:
--- Commands: SELECT, INSERT, UPDATE, DELETE, etc.
-GRANT Commands
+-- Syntax: Here, SQL_COMMANDS means SELECT, INSERT, UPDATE, DELETE, etc.
+GRANT SQL_COMMANDS
 ON table_name TO 'username1', 'username2';
 ```  
 
@@ -21,8 +20,7 @@ ON employee TO 'Kirankumar', 'Suraj';
 
 ```sql
 -- Syntax:
--- Commands: SELECT, INSERT, UPDATE, DELETE, etc.
-REVOKE Commands
+REVOKE SQL_COMMANDS
 ON table_name FROM 'username1', 'username2';
 ```  
 
