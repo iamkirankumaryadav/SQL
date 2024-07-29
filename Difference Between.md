@@ -1,23 +1,23 @@
 # Difference Between
 
 <table>
-        <tr><th align=left><a href = '#dt'>1.DELETE vs TRUNCATE</a></th></tr>
-        <tr><th align=left><a href = '#wh'>2.WHERE vs HAVING</a></th></tr>
-        <tr><th align=left><a href = '#ua'>3.UNION vs UNION All</a></th></tr>
-        <tr><th align=left><a href = '#pku'>4.PRIMARY KEY vs UNIQUE</a></th></tr>
-        <tr><th align=left><a href = '#pkfk'>5.PRIMARY KEY vs FOREIGN KEY</a></th></tr>
-        <tr><th align=left><a href = '#ie'>6.IN vs EXIST</a></th></tr>
-        <tr><th align=left><a href = '#obgb'>7.ORDER BY vs GROUP BY</a></th></tr>
-        <tr><th align=left><a href = '#jsq'>8.JOIN vs Sub Query</a></th></tr>
-        <tr><th align=left><a href = '#uj'>9.UNION vs JOIN</a></th></tr>
-        <tr><th align=left><a href = '#index'>10.INDEX</a></th></tr>
-        <tr><th align=left><a href = '#cluster'>11.Clustered Index vs Non Clustered Index</a></th></tr>
-        <tr><th align=left><a href = '#func'>12.Stored Procedure vs Function</a></th></tr>
-        <tr><th align=left><a href = '#inner'>13.INNER JOIN vs OUTER JOIN</a></th></tr>
-        <tr><th align=left><a href = '#lr'>13.LEFT JOIN vs RIGHT JOIN</a></th></tr>
+        <tr><th align=left><a href = '#dt'>1. DELETE vs TRUNCATE</a></th></tr>
+        <tr><th align=left><a href = '#wh'>2. WHERE vs HAVING</a></th></tr>
+        <tr><th align=left><a href = '#ua'>3. UNION vs UNION All</a></th></tr>
+        <tr><th align=left><a href = '#pku'>4. PRIMARY KEY vs UNIQUE</a></th></tr>
+        <tr><th align=left><a href = '#pkfk'>5. PRIMARY KEY vs FOREIGN KEY</a></th></tr>
+        <tr><th align=left><a href = '#ie'>6. IN vs EXIST</a></th></tr>
+        <tr><th align=left><a href = '#obgb'>7. ORDER BY vs GROUP BY</a></th></tr>
+        <tr><th align=left><a href = '#jsq'>8. JOIN vs Sub Query</a></th></tr>
+        <tr><th align=left><a href = '#uj'>9. UNION vs JOIN</a></th></tr>
+        <tr><th align=left><a href = '#index'>10. INDEX</a></th></tr>
+        <tr><th align=left><a href = '#cluster'>11. Clustered Index vs Non Clustered Index</a></th></tr>
+        <tr><th align=left><a href = '#func'>12. Stored Procedure vs Function</a></th></tr>
+        <tr><th align=left><a href = '#inner'>13. INNER JOIN vs OUTER JOIN</a></th></tr>
+        <tr><th align=left><a href = '#lr'>14. LEFT JOIN vs RIGHT JOIN</a></th></tr>
 </table>
 
-<h3 name='dt'>1.DELETE vs TRUNCATE vs DROP</h3>
+<h3 name='dt'>1. DELETE vs TRUNCATE vs DROP</h3>
 
 **DELETE** | **TRUNCATE** | **DROP**
 :--- | :--- | :---
@@ -43,7 +43,7 @@ TRUNCATE TABLE employee;
 DROP TABLE employee;
 ```
 
-<h3 name='wh'>2.WHERE vs HAVING</h3>
+<h3 name='wh'>2. WHERE vs HAVING</h3>
 
 **WHERE** | **HAVING**
 :--- | :---
@@ -69,7 +69,7 @@ GROUP BY designation
 HAVING MAX(salary) > 100000;
 ```
 
-<h3 name='ua'>3.UNION vs UNION ALL</h3>
+<h3 name='ua'>3. UNION vs UNION ALL</h3>
 
 Combines 2 or more tables
 - Tables must have same number of columns
@@ -96,7 +96,7 @@ SELECT * FROM product
 ORDER BY product_name;
 ```
 
-<h3 name='pku'>4.PRIMARY KEY vs UNIQUE</h3>
+<h3 name='pku'>4. PRIMARY KEY vs UNIQUE</h3>
 
 **Primary Key** | **Unique Key**
 :--- | :---
@@ -126,7 +126,7 @@ CREATE TABLE person
 );
 ```
 
-<h3 name = 'pkfk'>5.PRIMARY KEY vs FOREIGN KEY</h3>
+<h3 name = 'pkfk'>5. PRIMARY KEY vs FOREIGN KEY</h3>
 
 **PRIMARY KEY** | **FOREIGN KEY**
 :--- | :---
@@ -157,7 +157,7 @@ CREATE TABLE person
 );
 ```
 
-<h3 name='ie'>6.IN vs EXISTS</h3>
+<h3 name='ie'>6. IN vs EXISTS</h3>
 
 ### **IN** 
 - Multiple OR
@@ -186,9 +186,9 @@ WHERE EXISTS (SELECT city FROM returns
               WHERE returns.ID = sales.ID AND price < 500)
 ```
 
-<h3 name='obgb'>7.ORDER BY vs GROUP BY</h3>
+<h3 name='obgb'>7. ORDER BY vs GROUP BY</h3>
 
-**ORDER BY** | **GROUP BY*
+**ORDER BY** | **GROUP BY**
 --- | ---
 Sorting in **ASC** or **DESC** order | Used with **Aggregate** functions
 
@@ -223,7 +223,7 @@ HAVING SUM(price) > 5000000
 ORDER BY price DESC;
 ```
 
-<h3 name='jsq'>8.JOIN vs Sub Query</h3>
+<h3 name='jsq'>8. JOIN vs Sub Query</h3>
 
 Combine data from different tables into a single table
 
@@ -247,7 +247,7 @@ JOIN orders o
 ON o.customer_ID = c.customer_ID
 ```
 
-<h3 name='uj'>9.UNION vs JOIN</h3>
+<h3 name='uj'>9. UNION vs JOIN</h3>
 
 **UNION** | **JOIN**
 :--- | :---
@@ -270,7 +270,7 @@ JOIN employee b
 ON a.ID = b.ID;
 ```
 
-<h3 name='index'>10.Index</h3>
+<h3 name='index'>10. Index</h3>
 
 - Index are used for fast retrieval of data.
 - Index in the database is very similar to an Index in a book.
@@ -301,7 +301,7 @@ ON table_name (column_name1, column_name2);
 
 **Implicit Indexes:** Index automatically created by PRIMARY KEY constraint and UNIQUE constraint when an object is created.
 
-<h3 name='cluster'>11.Clustered Index vs Non Clustered Index</h3>
+<h3 name='cluster'>11. Clustered Index vs Non Clustered Index</h3>
 
 #### **Clustered Index**
 
@@ -315,7 +315,7 @@ ON table_name (column_name1, column_name2);
 - e.g. Textbook content | Index is located on first page but the actual content is all at different pages.
 - Index contains column value and address of the record.
 
-<h3 name='func'>12.Stored Procedure vs Function</h3>
+<h3 name='func'>12. Stored Procedure vs Function</h3>
 
 **Stored Procedure** | **Function**
 :--- | :---
@@ -323,14 +323,14 @@ Stored procedure can return 0 or N values | Function must return a value
 Can have multiple Input as well as Output parameters | Can have only one Input parameter
 Procedures cannot be called from function | Functions can be called from procedure
 
-<h3 name='inner'>13.Inner Join vs Outer Join</h3>
+<h3 name='inner'>13. Inner Join vs Outer Join</h3>
 
 **Inner Join** | **Outer Join**
 :--- | :---
 Return only matching rows between both the tables | Returns matching and unmatching rows between both the tables
 Default Join | It is not a Default Join
 
-<h3 name='lr'>14.Left Join vs Right Join</h3>
+<h3 name='lr'>14. Left Join vs Right Join</h3>
 
 **Left Join** | **Right Join**
 :--- | :---
