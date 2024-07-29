@@ -12,23 +12,45 @@
 
 ```sql
 -- Create Schema:
+
+-- Syntax:
 CREATE SCHEMA IF NOT EXISTS schema_name;
+
+-- Example:
+CREATE SCHEMA IF NOT EXISTS employee_schema;
 ```
 
 ```sql
 -- Create database:
+
+-- Syntax:
+CREATE DATABASE database_name;
+
+-- Example:
 CREATE DATABASE employee_details;
 ```
 
 ```sql
 -- Enter into the database:
--- USE database_name
 
+-- Syntax:
+USE database_name
+
+-- Example
 USE employee_details;
 ```
 
 ```sql
 -- Create Table:
+
+-- Syntax:
+CREATE TABLE table_name(
+    column1 datatype constraints,
+    column2 datatype constraints,
+    column3 datatype constraints
+);
+
+-- Example
 CREATE TABLE employee(
     employee_ID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY, -- IDENTITY(1,1) Start from 1 and increment by 1.
     first_name VARCHAR(25),
@@ -60,6 +82,11 @@ USING (last_name);
 
 ```sql
 -- Drop an existing column from the table:
+
+-- Syntax:
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
 ALTER TABLE employee
 DROP COLUMN email;
 ```
