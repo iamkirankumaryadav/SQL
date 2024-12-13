@@ -43,13 +43,17 @@ CREATE TABLE table_name(
     column3 datatype constraints
 );
 
--- Example
+-- Example:
 CREATE TABLE employee(
-    employee_ID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY, -- IDENTITY(1,1) Start from 1 and increment by 1.
-    first_name VARCHAR(25),
-    last_name VARCHAR(25),
-    email VARCHAR(25)
-);
+  employee_id INT IDENTITY PRIMARY KEY,
+  first_name VARCHAR(25),
+  last_name VARCHAR(25),
+  age INT CHECK (Age >= 18) NOT NULL,
+  birth_date DATE,
+  gender VARCHAR(1),
+  designation VARCHAR(25),
+  city VARCHAR(25) DEFAULT 'Bengaluru'
+)
 ```
 **Create View:**
 ```sql
