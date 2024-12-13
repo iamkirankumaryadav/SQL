@@ -1,5 +1,3 @@
-<p align=right><a href='https://github.com/KIRANKUMAR7296/CSharp'>Navigate to C#</a></p>
-
 # SQL: Structured Query Language
 - A standard language used to manage and manipulate the data within the relational databases.
 - To execute **SQL** queries we use a relational database management system **(RDBMS)** 
@@ -31,7 +29,7 @@
 <table>
   <tr>
     <th><h3><a href="DDL - Data Definition Language.md">DDL</a></h3></th>
-    <th><h3>DQL</h3></th>
+    <th><h3><a href="DQL - Data Query Language.md"> DQL</a>a></h3></th>
     <th><h3>DML</h3></th>
     <th><h3>DCL</h3></th>
   </tr>
