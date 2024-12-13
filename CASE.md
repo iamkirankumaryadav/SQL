@@ -12,6 +12,8 @@ END;
 ```
 
 ### Search Condition
+
+**Create a new column:**
 ```SQL
 SELECT first_name, last_name, age,
 CASE
@@ -24,9 +26,8 @@ CASE
 END AS tax
 FROM payroll;
 ```
-
+**Mapping with the existing column:**
 ```SQL
--- While mapping with the same column:
 SELECT first_name, last_name, age,
 CASE gender
   WHEN 'F' THEN 'Female'
