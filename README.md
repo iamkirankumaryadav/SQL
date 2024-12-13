@@ -29,9 +29,9 @@
 <table>
   <tr>
     <th><h3><a href="DDL - Data Definition Language.md">DDL</a></h3></th>
-    <th><h3><a href="DQL - Data Query Language.md"> DQL</a>a></h3></th>
-    <th><h3>DML</h3></th>
-    <th><h3>DCL</h3></th>
+    <th><h3><a href="DQL - Data Query Language.md"> DQL</a></h3></th>
+    <th><h3><a href="">DML</a></h3></th>
+    <th><h3><a href="">DCL</a></h3></th>
   </tr>
   <tr>
     <th>Data Definition Language</th><th>Data Query Language</th><th>Data Manipulation Language</th><th>Data Control Language</th>
