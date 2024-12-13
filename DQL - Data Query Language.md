@@ -1,4 +1,4 @@
-# **Data Query Language (DQL)**
+# Data Query Language (DQL)
 
 Fetch the data from the database. **SELECT** the data based on the conditions described by the WHERE clause.
 
@@ -18,37 +18,32 @@ Fetch the data from the database. **SELECT** the data based on the conditions de
 **IS NOT NULL** | Returns not null values.
 **EXISTS** | Determine if a subquery returns values or not.
 
-### **SELECT Statement**
-
+### SELECT Statement
 ```sql
 SELECT first_name, last_name
 FROM employee;
 ```
 
-### **WHERE Clause**
-
+### WHERE Clause
 ```sql
 SELECT * FROM employee
 WHERE age > 30;
 ```
 
-### **ORDER BY Clause**
-
+### ORDER BY Clause
 ```sql
 SELECT * FROM products
 ORDER BY price DESC;
 ```
 
-### **GROUP BY**
-
+### GROUP BY
 ```sql
 SELECT category, COUNT(*)
 FROM products
 GROUP BY category;
 ```
 
-### **HAVING Clause**
-
+### HAVING Clause
 ```sql
 SELECT category, COUNT(*)
 FROM products
@@ -56,7 +51,7 @@ GROUP BY category
 HAVING COUNT(*) > 5;
 ```    
 
-### **Querying the table with the logical operator LIKE:**
+### Querying the table with the logical operator LIKE:
 ```sql
 -- Underscore: _
 
@@ -105,7 +100,6 @@ WHERE first_name LIKE 'B[iro]%' AND City NOT LIKE '%UL%'
 ```
 
 ### Querying the table with logical operators IN and BETWEEN
-
 ```sql
 SELECT first_name, shirt_size 
 FROM customer
@@ -127,31 +121,27 @@ WHERE birthday BETWEEN '1980' AND '1982'
 ORDER BY birth_year DESC
 ```
 
-### **IN**
-
+### IN
 ```sql
 SELECT * FROM customers
 WHERE city IN (SELECT city from suppliers)
 ```
 
-### **ANY**
-
+### ANY
 ```sql
 SELECT * FROM products
 WHERE price < ANY(SELECT unit_price
                   FROM supplier_products)
 ```
 
-### **ALL**
-
+### ALL
 ```sql
 SELECT * FROM orders
 WHERE order_amount > ALL(SELECT total_amount
                          FROM previous_orders)
 ```
 
-### **COALESCE**
-
+### COALESCE
 ```sql
 -- Return the first non-null value in the list:
 SELECT first_name, last_name, starting_salary, current_salary, 
