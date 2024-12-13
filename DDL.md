@@ -20,8 +20,6 @@ CREATE SCHEMA IF NOT EXISTS employee_schema;
 ```
 **Create database:**
 ```sql
--- 
-
 -- Syntax:
 CREATE DATABASE database_name;
 
