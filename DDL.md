@@ -95,7 +95,7 @@ ADD column1 datatype constraints, column2 datatype constraints;
 ALTER TABLE employee
 ADD age INT, department VARCHAR(25);
 ```
-**Modify the size and data type of an existing column in a table:**
+**Modify the data type of an existing column in a table:**
 ```sql
 ALTER TABLE employee
 ALTER COLUMN country VARCHAR(25);
