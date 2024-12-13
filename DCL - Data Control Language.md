@@ -5,7 +5,7 @@
 - **Data Integrity:** Prevents unauthorized modifications to data.
 - **GRANT:** Assigns specific privileges to users or roles.
 - **REVOKE:** Revokes previously granted privileges.
-- Here, **SQL_COMMANDS** means SELECT, INSERT, UPDATE, DELETE, etc.
+- **SQL_COMMANDS:** SELECT, INSERT, UPDATE, DELETE, etc.
 
 ### GRANT
 ```sql
