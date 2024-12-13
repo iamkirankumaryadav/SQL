@@ -1,6 +1,6 @@
 # Data Control Language (DCL)
-- Data Control Language (DCL) commands are used to control access to data within a database.
-- DCL commands manage user privileges and permissions, ensuring data security and integrity.
+- **Data Control Language (DCL)** commands are used to control access to data within a database.
+- **DCL** commands manage user privileges and permissions, ensuring data security and integrity.
 - **Data Security:** Protects sensitive data by restricting access to authorized users.
 - **Data Integrity:** Prevents unauthorized modifications to data.
 - **GRANT:** Assigns specific privileges to users or roles.
