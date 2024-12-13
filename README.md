@@ -50,7 +50,7 @@
       </ol>
     </td>
     <td>
-        <li>SELECT</li>     
+        SELECT
     </td>
     <td>
       <ol>
