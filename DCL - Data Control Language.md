@@ -23,9 +23,7 @@ ON employee TO 'Kirankumar', 'Suraj';
 -- Syntax: 
 REVOKE SQL_COMMANDS
 ON table_name FROM 'username1', 'username2';
-```  
 
-```sql
 -- Example:
 REVOKE SELECT, INSERT, UPDATE, DELETE
 ON employee FROM 'Suraj';
