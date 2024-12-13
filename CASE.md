@@ -1,7 +1,6 @@
 # SQL Case Statement
 
 ### Multiple IF THEN ELSE Statement
-
 ```SQL
 CASE
   WHEN condition1 THEN result1
@@ -12,7 +11,6 @@ END;
 ```
 
 ### Search Condition
-
 **Create a new column:**
 ```SQL
 SELECT first_name, last_name, age,
@@ -38,8 +36,8 @@ FROM employee;
 ```
 
 ### Update using CASE
+**Updating the column value based on conditions:**
 ```SQL
--- Updating the column value based on conditions:
 UPDATE employees 
 SET rating = CASE
                 WHEN RATE < 3 THEN 'Satisfactory'
