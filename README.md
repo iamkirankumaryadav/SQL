@@ -1,29 +1,30 @@
 <p align=right><a href='https://github.com/KIRANKUMAR7296/CSharp'>Navigate to C#</a></p>
 
-# **SQL: Structured Query Language** 
-- A specialized and standard language used to manage and manipulate the data within the relational databases.
+# SQL: Structured Query Language
+- A standard language used to manage and manipulate the data within the relational databases.
 - To execute **SQL** queries we use a relational database management system **(RDBMS)** 
 - Allows developers and database administrators to manage large amounts of data effectively.
 - SQL is used to perform **C.R.U.D** operations: Create, Retrieve (Read/Select), Update (Alter) and Delete (Drop)
 - Used to create, retrieve, update, delete, modify, filter, sort, group, aggregate and query databases. 
-- Apply SQL constraints to specify rules for the data in a table.
+- Apply SQL constraints to specify and apply rules for the data in a table.
 - Join multiple tables using a shared key (column) (JOINS | UNION | UNION ALL)
-- Organize data in the selected order **ASC** (Ascending) or **DESC** (Descending)
-- SQL commands are instructions used to communicate with the database.
+- Organize data in the desired order **ASC** (Ascending) or **DESC** (Descending)
+- SQL commands are instructions and language used to communicate with the database.
 
-### **Relational Database:**
+### Relational Database:
 - A database that uses the tabular schema of rows and columns to store and manage data.
+- SQL (Structured Query Language) is used to manage and manipulate the data within the relational databases.
 - **Relational DBMS:** A program/software/application used to create, update, and manage relational databases.
 - The most well-known **RDBMS:** MySQL, PostgreSQL, MariaDB, Microsoft SQL Server, and Oracle Database.
 
-### **Non-Relational Database**  
+### Non-Relational Database
 - A database that does not use the tabular schema of rows and columns found in most traditional database systems.
 - Non-relational databases store data as simple key/value pairs, as JSON, or as a graph consisting of edges and vertices.
 - **Non-RDBMS:** MongoDB, Amazon DynamoDB, Redis, Google Cloud Firestore, etc.
 
-### **Differences in the databases**
+### Differences in the databases
 - **Syntax/Keywords** of a particular database may be different (i.e. **TOP:** Microsoft SQL and **LIMIT:** MySQL)
-- **Data types** keywords may be different. 
+- **Data types** and default keywords may be different. 
 - **Functions** might be different based on name or argument types or order of arguments.
 
 ### **SQL Categories | Subset of SQL**
@@ -70,7 +71,7 @@
   </tr>
 </table>
 
-### **Most Basic and Common Queries:**
+### Most Basic and Common Queries:
 
 ```SQL
 SELECT * <All Columns>
