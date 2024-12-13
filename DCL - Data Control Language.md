@@ -25,6 +25,6 @@ REVOKE SQL_COMMANDS
 ON table_name FROM 'username1', 'username2';
 
 -- Example:
-REVOKE SELECT, INSERT, UPDATE, DELETE
+REVOKE INSERT, UPDATE, DELETE
 ON employee FROM 'Suraj';
 ```
