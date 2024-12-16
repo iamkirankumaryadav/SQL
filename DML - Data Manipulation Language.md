@@ -1,6 +1,6 @@
 # **Data Manipulation Language (DML)**
 
-- SQL commands designed to interact with the data stored within database tables.
+- SQL commands designed to interact and manipulate the data stored within database tables.
 - The command is not auto-committed (It can't permanently save all the changes in the database) they can be rollbacked.
  
 <a href=#insert><strong>INSERT</strong></a> | 
