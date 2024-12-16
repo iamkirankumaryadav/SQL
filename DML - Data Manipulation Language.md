@@ -42,5 +42,5 @@ AND birth_date = '1996-02-07';
 DELETE 
 FROM supplier
 WHERE supplier_ID = 2;
--- WHERE Clause is only used with DELETE command (Not with DROP and TRUNCATE commands)
 ```
+**WHERE Clause is only used with DELETE command (Not with DROP and TRUNCATE commands)**
