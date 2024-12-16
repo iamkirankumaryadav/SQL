@@ -1,6 +1,7 @@
 # **Data Definition Language (DDL)**
 
-- Define, modify, or delete the structure of the database objects (tables, views, indexes).
+- DDL statements define the blueprint of the database.
+- Define, modify, manage or delete the structure of the database objects (tables, views, indexes).
 - All the commands of DDL are auto-committed (Permanently save all the changes in the database)
 
 <a href=#create><strong>CREATE</strong></a> | 
