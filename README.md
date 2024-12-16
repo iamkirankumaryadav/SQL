@@ -11,19 +11,19 @@
 
 ### Relational Database:
 - A database that uses the tabular schema of rows and columns to store and manage data.
-- SQL (Structured Query Language) is used to manage and manipulate the data within the relational databases.
+- SQL (Structured Query Language) manages and manipulates the data within the relational databases.
 - **Relational DBMS:** A program/software/application used to create, update, and manage relational databases.
 - The most well-known **RDBMS:** MySQL, PostgreSQL, MariaDB, Microsoft SQL Server, and Oracle Database.
 
 ### Non-Relational Database
-- A database that does not use the tabular schema of rows and columns found in most traditional database systems.
+- A database not using the tabular schema of rows and columns found in most traditional database systems.
 - Non-relational databases store data as simple key/value pairs, as JSON, or as a graph consisting of edges and vertices.
 - **Non-RDBMS:** MongoDB, Amazon DynamoDB, Redis, Google Cloud Firestore, etc.
 
 ### Differences in the databases
 - **Syntax/Keywords** of a particular database may be different (i.e. **TOP:** Microsoft SQL and **LIMIT:** MySQL)
 - **Data types** and default keywords may be different. 
-- **Functions** might be different based on name or argument types or order of arguments.
+- **Functions** might differ based on name, argument types, or order of arguments.
 
 ### **SQL Categories | Subset of SQL**
 <table>
