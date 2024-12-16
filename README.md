@@ -58,7 +58,6 @@
         <li>INSERT</li>
         <li>UPDATE</li>
         <li>DELETE</li>
-        <li>MERGE</li>
       </ol>
     </td>    
     <td>
